@@ -209,12 +209,8 @@
 				F61AA89A16E69CF8001EC188 /* MainStoryboard_iPad.storyboard */,
 				F61AA89D16E69CF8001EC188 /* snfFirstViewController.h */,
 				F61AA89E16E69CF8001EC188 /* snfFirstViewController.m */,
-				F61AA8A016E69CF8001EC188 /* first.png */,
-				F61AA8A216E69CF8001EC188 /* first@2x.png */,
 				F61AA8A416E69CF8001EC188 /* snfSecondViewController.h */,
 				F61AA8A516E69CF8001EC188 /* snfSecondViewController.m */,
-				F61AA8A716E69CF8001EC188 /* second.png */,
-				F61AA8A916E69CF8001EC188 /* second@2x.png */,
 				F61AA8E916E6A0E9001EC188 /* snfTicketViewController.h */,
 				F61AA8EA16E6A0E9001EC188 /* snfTicketViewController.m */,
 				F61AA8EC16E6A567001EC188 /* snfProgrammViewController.h */,
@@ -267,6 +263,10 @@
 		F61AA8CE16E69F1A001EC188 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F61AA8A716E69CF8001EC188 /* second.png */,
+				F61AA8A916E69CF8001EC188 /* second@2x.png */,
+				F61AA8A016E69CF8001EC188 /* first.png */,
+				F61AA8A216E69CF8001EC188 /* first@2x.png */,
 				F6428E1716E911280041C4D8 /* snfrj_icon@2x.png */,
 				F6428E1516E911240041C4D8 /* snfrj_icon.png */,
 				F61AA8CC16E69E2E001EC188 /* Default@2x.png */,

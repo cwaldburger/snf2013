@@ -313,10 +313,10 @@
             </objects>
             <point key="canvasLocation" x="879" y="848"/>
         </scene>
-        <!--Snf Festbeizen View Controller - Festbeizen-->
+        <!--Snf Festbeizen Table View Controller - Festbeizen-->
         <scene sceneID="kSe-kH-B8h">
             <objects>
-                <viewController id="nPp-sJ-Dqk" customClass="snfFestbeizenViewController" sceneMemberID="viewController">
+                <viewController id="nPp-sJ-Dqk" customClass="snfFestbeizenTableViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iFs-eI-SUK">
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
