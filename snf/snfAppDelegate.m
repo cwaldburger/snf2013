@@ -14,16 +14,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Load example rows
-    ProgrammDoc *bug1 = [[ProgrammDoc alloc] initWithTitle:@"Potato Bug" rating:4 thumbImage:[UIImage imageNamed:@"snfrj_icon.png"] fullImage:[UIImage imageNamed:@"snfrj_icon.png"]];
-    ProgrammDoc *bug2 = [[ProgrammDoc alloc] initWithTitle:@"House Centipede" rating:3 thumbImage:[UIImage imageNamed:@"snfrj_icon.png"] fullImage:[UIImage imageNamed:@"snfrj_icon.png"]];
-    ProgrammDoc *bug3 = [[ProgrammDoc alloc] initWithTitle:@"Wolf Spider" rating:5 thumbImage:[UIImage imageNamed:@"snfrj_icon.png"] fullImage:[UIImage imageNamed:@"snfrj_icon.png"]];
-    ProgrammDoc *bug4 = [[ProgrammDoc alloc] initWithTitle:@"Lady Bug" rating:1 thumbImage:[UIImage imageNamed:@"snfrj_icon.png"] fullImage:[UIImage imageNamed:@"snfrj_icon.png"]];
-    NSMutableArray *programs = [NSMutableArray arrayWithObjects:bug1, bug2, bug3, bug4, nil];
-    
-    UITabBarController * navController = (UITabBarController *) self.window.rootViewController;
-    snfFestbeizenTableViewController * snfFestbeizenTableViewController = [navController.viewControllers objectAtIndex:0];
-    snfFestbeizenTableViewController.programs = programs;
+//    // Load example rows
+//    ProgrammDoc *bug1 = [[ProgrammDoc alloc] initWithTitle:@"Potato Bug" rating:4 thumbImage:[UIImage imageNamed:@"snfrj_icon.png"] fullImage:[UIImage imageNamed:@"snfrj_icon.png"]];
+//    ProgrammDoc *bug2 = [[ProgrammDoc alloc] initWithTitle:@"House Centipede" rating:3 thumbImage:[UIImage imageNamed:@"snfrj_icon.png"] fullImage:[UIImage imageNamed:@"snfrj_icon.png"]];
+//    ProgrammDoc *bug3 = [[ProgrammDoc alloc] initWithTitle:@"Wolf Spider" rating:5 thumbImage:[UIImage imageNamed:@"snfrj_icon.png"] fullImage:[UIImage imageNamed:@"snfrj_icon.png"]];
+//    ProgrammDoc *bug4 = [[ProgrammDoc alloc] initWithTitle:@"Lady Bug" rating:1 thumbImage:[UIImage imageNamed:@"snfrj_icon.png"] fullImage:[UIImage imageNamed:@"snfrj_icon.png"]];
+//    NSMutableArray *programs = [NSMutableArray arrayWithObjects:bug1, bug2, bug3, bug4, nil];
+//    
+//    UITabBarController * navController = (UITabBarController *) self.window.rootViewController;
+//    snfFestbeizenTableViewController * snfFestbeizenTableViewController = [navController.viewControllers objectAtIndex:0];
+//    snfFestbeizenTableViewController.programs = programs;
     
     // Override point for customization after application launch.
     return YES;
