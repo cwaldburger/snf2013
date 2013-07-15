@@ -18,7 +18,7 @@
 @end
 
 @implementation snfInfoViewController
-@synthesize infoView, planView, ovView, notfallView, ovWebView, humanReadable;
+@synthesize infoView, planView, ovView, notfallView, ovWebView, humanReadable, infoTextView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,15 +38,24 @@
     NSURL *url = [NSURL URLWithString: urlAddress];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [ovWebView loadRequest:requestObj];
+    
+    // Set Text of the infoTextView
+    NSString *infoText = @"Seenachtfest Rapperswil-Jona\n\
+c/o Verkehrsverein Rapperswil-Jona\n\
+Fischmarkplatz 1\n\
+8640 Rapperswil\n\
+info@seenachtfest-rj.ch\n\
+Tel: 055 220 57 57";
+    
+    UIFont *font=[UIFont fontWithName:@"Helvetica-Bold" size:14.0f];
 
-//    // Load JSON stuff
-//    dispatch_async(kBgQueue, ^{
-//        NSData* data = [NSData dataWithContentsOfURL: kLatestKivaLoansURL];
-//        [self performSelectorOnMainThread:@selector(fetchedData:) withObject:data waitUntilDone:YES];
-//    });
+    NSMutableAttributedString *myString = [[NSMutableAttributedString alloc] initWithString:infoText];
     
+    // make 1st line bold
+    [myString addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, 28)];
     
-    
+    infoTextView.attributedText = myString;
+
 }
 
 - (void)didReceiveMemoryWarning

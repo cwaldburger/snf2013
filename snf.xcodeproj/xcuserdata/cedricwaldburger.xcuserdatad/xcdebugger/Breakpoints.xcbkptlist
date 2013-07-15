@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "snf/snfInfoViewController.h"
-         timestampString = "385124762.58226"
+         timestampString = "395591473.010737"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "25"
-         endingLineNumber = "25"
+         startingLineNumber = "27"
+         endingLineNumber = "27"
          landmarkName = "@interface snfInfoViewController"
          landmarkType = "2">
       </FileBreakpoint>
@@ -138,11 +138,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "snf/snfInfoViewController.h"
-         timestampString = "395576778.561538"
+         timestampString = "395591473.010737"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "27"
-         endingLineNumber = "27">
+         startingLineNumber = "29"
+         endingLineNumber = "29">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

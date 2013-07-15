@@ -22,4 +22,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *jsonSummary;
 @property (strong, nonatomic) IBOutlet UILabel *humanReadable;
 
+@property (weak, nonatomic) IBOutlet UITextView *infoTextView;
+
 @end

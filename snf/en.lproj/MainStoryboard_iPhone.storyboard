@@ -262,9 +262,10 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text=" asd fsdf " translatesAutoresizingMaskIntoConstraints="NO" id="QiY-x2-mgs">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Info SNF" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QiY-x2-mgs">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="218" id="WCe-WY-Qkq"/>
+                                    <constraint firstAttribute="height" constant="180" id="c4d-Bq-BmY"/>
+                                    <constraint firstAttribute="width" constant="280" id="us7-7E-yNM"/>
                                 </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
@@ -279,19 +280,18 @@
                             <constraint firstItem="02l-XB-59C" firstAttribute="bottom" secondItem="pOF-Ie-jL3" secondAttribute="bottom" type="default" id="9t0-TX-JNd"/>
                             <constraint firstItem="02l-XB-59C" firstAttribute="top" secondItem="LKd-pR-md6" secondAttribute="top" type="default" id="Dq1-gb-36l"/>
                             <constraint firstItem="LKd-pR-md6" firstAttribute="bottom" secondItem="pOF-Ie-jL3" secondAttribute="bottom" type="default" id="E8R-PX-Wgh"/>
-                            <constraint firstItem="QiY-x2-mgs" firstAttribute="top" secondItem="pOF-Ie-jL3" secondAttribute="top" constant="209" id="GJq-tz-8cg"/>
                             <constraint firstItem="02l-XB-59C" firstAttribute="trailing" secondItem="ecz-rL-91n" secondAttribute="trailing" type="default" id="I8r-B4-cHb"/>
-                            <constraint firstItem="QiY-x2-mgs" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="J44-GV-dSn"/>
-                            <constraint firstItem="02l-XB-59C" firstAttribute="leading" secondItem="ecz-rL-91n" secondAttribute="leading" type="default" id="JXc-8r-DWJ"/>
+                            <constraint firstItem="QiY-x2-mgs" firstAttribute="bottom" secondItem="pOF-Ie-jL3" secondAttribute="bottom" type="default" id="IVx-ZC-na2"/>
                             <constraint firstItem="by4-C6-Lkw" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" type="default" id="K6M-0X-mN9"/>
                             <constraint firstItem="PGY-Zz-5hK" firstAttribute="leading" secondItem="by4-C6-Lkw" secondAttribute="trailing" type="default" id="K7n-zK-bzV"/>
+                            <constraint firstAttribute="trailing" secondItem="02l-XB-59C" secondAttribute="trailing" constant="-320" id="Mmx-6Q-jGX"/>
                             <constraint firstItem="02l-XB-59C" firstAttribute="top" secondItem="by4-C6-Lkw" secondAttribute="top" type="default" id="OdT-6m-rxA"/>
+                            <constraint firstItem="02l-XB-59C" firstAttribute="leading" secondItem="LKd-pR-md6" secondAttribute="leading" type="default" id="PVL-8G-b2r"/>
                             <constraint firstItem="ecz-rL-91n" firstAttribute="leading" secondItem="LKd-pR-md6" secondAttribute="leading" type="default" id="S2X-1g-gP9"/>
                             <constraint firstItem="ecz-rL-91n" firstAttribute="bottom" secondItem="pOF-Ie-jL3" secondAttribute="bottom" type="default" id="V5W-Sf-O7m"/>
-                            <constraint firstAttribute="trailing" secondItem="QiY-x2-mgs" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="VIM-9T-O0Y"/>
-                            <constraint firstItem="02l-XB-59C" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" constant="320" id="Zq8-zl-Gh8"/>
-                            <constraint firstAttribute="trailing" secondItem="ecz-rL-91n" secondAttribute="trailing" constant="-320" id="cPH-kC-Xey"/>
+                            <constraint firstItem="ecz-rL-91n" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" constant="320" id="Y0c-z5-7Au"/>
                             <constraint firstItem="PGY-Zz-5hK" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" type="default" id="eTc-vm-d0b"/>
+                            <constraint firstItem="QiY-x2-mgs" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" constant="14" id="l1J-ia-8ic"/>
                             <constraint firstItem="PGY-Zz-5hK" firstAttribute="top" secondItem="pOF-Ie-jL3" secondAttribute="top" type="default" id="m2J-ST-tLw"/>
                             <constraint firstItem="LKd-pR-md6" firstAttribute="trailing" secondItem="02l-XB-59C" secondAttribute="trailing" type="default" id="re0-aS-fwj"/>
                             <constraint firstItem="by4-C6-Lkw" firstAttribute="bottom" secondItem="pOF-Ie-jL3" secondAttribute="bottom" type="default" id="re3-42-Eg0"/>
@@ -303,6 +303,7 @@
                         <outlet property="call144Button" destination="P5U-0B-RmQ" id="rSA-w3-2AM"/>
                         <outlet property="infoNavBar" destination="PGY-Zz-5hK" id="PtP-Cj-mhL"/>
                         <outlet property="infoSegmentedControl" destination="lPN-dX-Frf" id="w3s-dw-mDz"/>
+                        <outlet property="infoTextView" destination="QiY-x2-mgs" id="Efe-LA-MgA"/>
                         <outlet property="infoView" destination="by4-C6-Lkw" id="NBi-hH-aAX"/>
                         <outlet property="notfallView" destination="02l-XB-59C" id="2ff-pC-B8k"/>
                         <outlet property="ovView" destination="ecz-rL-91n" id="5es-4v-8Lz"/>
@@ -441,6 +442,7 @@
                 <relationship kind="outlet" name="humanReadable" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="infoNavBar" candidateClass="UINavigationBar"/>
                 <relationship kind="outlet" name="infoSegmentedControl" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="infoTextView" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="infoView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="jsonSummary" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="notfallView" candidateClass="UIView"/>
