@@ -252,8 +252,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.89027124966393234" blue="0.51744579954257275" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="QiY-x2-mgs" firstAttribute="centerX" secondItem="by4-C6-Lkw" secondAttribute="centerX" type="default" id="gxO-Wx-Gie"/>
-                                    <constraint firstItem="QiY-x2-mgs" firstAttribute="top" secondItem="by4-C6-Lkw" secondAttribute="top" constant="138" id="w0F-Gb-zLe"/>
+                                    <constraint firstItem="QiY-x2-mgs" firstAttribute="top" secondItem="by4-C6-Lkw" secondAttribute="top" constant="220" id="IlU-w5-gL6"/>
+                                    <constraint firstItem="QiY-x2-mgs" firstAttribute="leading" secondItem="by4-C6-Lkw" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="YxF-WN-ydk"/>
                                 </constraints>
                             </view>
                             <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="PGY-Zz-5hK">
