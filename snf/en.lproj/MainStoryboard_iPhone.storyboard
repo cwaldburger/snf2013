@@ -239,7 +239,22 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="by4-C6-Lkw" userLabel="View-info">
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Info SNF" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QiY-x2-mgs">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="c4d-Bq-BmY"/>
+                                            <constraint firstAttribute="width" constant="280" id="us7-7E-yNM"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.89027124966393234" blue="0.51744579954257275" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="QiY-x2-mgs" firstAttribute="centerX" secondItem="by4-C6-Lkw" secondAttribute="centerX" type="default" id="gxO-Wx-Gie"/>
+                                    <constraint firstItem="QiY-x2-mgs" firstAttribute="top" secondItem="by4-C6-Lkw" secondAttribute="top" constant="138" id="w0F-Gb-zLe"/>
+                                </constraints>
                             </view>
                             <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="PGY-Zz-5hK">
                                 <items>
@@ -262,39 +277,28 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Info SNF" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QiY-x2-mgs">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="c4d-Bq-BmY"/>
-                                    <constraint firstAttribute="width" constant="280" id="us7-7E-yNM"/>
-                                </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ecz-rL-91n" firstAttribute="top" secondItem="02l-XB-59C" secondAttribute="top" type="default" id="2gw-0m-aq8"/>
-                            <constraint firstItem="ecz-rL-91n" firstAttribute="top" secondItem="PGY-Zz-5hK" secondAttribute="bottom" type="default" id="8Fn-0X-vkW"/>
+                            <constraint firstItem="LKd-pR-md6" firstAttribute="top" secondItem="PGY-Zz-5hK" secondAttribute="bottom" type="default" id="4l6-Tm-ECf"/>
+                            <constraint firstItem="ecz-rL-91n" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" type="default" id="6BC-Vg-qa4"/>
                             <constraint firstItem="PGY-Zz-5hK" firstAttribute="trailing" secondItem="pOF-Ie-jL3" secondAttribute="trailing" type="default" id="9Eu-0P-kn1"/>
                             <constraint firstItem="02l-XB-59C" firstAttribute="bottom" secondItem="pOF-Ie-jL3" secondAttribute="bottom" type="default" id="9t0-TX-JNd"/>
-                            <constraint firstItem="02l-XB-59C" firstAttribute="top" secondItem="LKd-pR-md6" secondAttribute="top" type="default" id="Dq1-gb-36l"/>
+                            <constraint firstItem="ecz-rL-91n" firstAttribute="trailing" secondItem="pOF-Ie-jL3" secondAttribute="trailing" type="default" id="AYg-2c-kbO"/>
                             <constraint firstItem="LKd-pR-md6" firstAttribute="bottom" secondItem="pOF-Ie-jL3" secondAttribute="bottom" type="default" id="E8R-PX-Wgh"/>
-                            <constraint firstItem="02l-XB-59C" firstAttribute="trailing" secondItem="ecz-rL-91n" secondAttribute="trailing" type="default" id="I8r-B4-cHb"/>
-                            <constraint firstItem="QiY-x2-mgs" firstAttribute="bottom" secondItem="pOF-Ie-jL3" secondAttribute="bottom" type="default" id="IVx-ZC-na2"/>
                             <constraint firstItem="by4-C6-Lkw" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" type="default" id="K6M-0X-mN9"/>
                             <constraint firstItem="PGY-Zz-5hK" firstAttribute="leading" secondItem="by4-C6-Lkw" secondAttribute="trailing" type="default" id="K7n-zK-bzV"/>
-                            <constraint firstAttribute="trailing" secondItem="02l-XB-59C" secondAttribute="trailing" constant="-320" id="Mmx-6Q-jGX"/>
                             <constraint firstItem="02l-XB-59C" firstAttribute="top" secondItem="by4-C6-Lkw" secondAttribute="top" type="default" id="OdT-6m-rxA"/>
-                            <constraint firstItem="02l-XB-59C" firstAttribute="leading" secondItem="LKd-pR-md6" secondAttribute="leading" type="default" id="PVL-8G-b2r"/>
-                            <constraint firstItem="ecz-rL-91n" firstAttribute="leading" secondItem="LKd-pR-md6" secondAttribute="leading" type="default" id="S2X-1g-gP9"/>
+                            <constraint firstItem="02l-XB-59C" firstAttribute="trailing" secondItem="pOF-Ie-jL3" secondAttribute="trailing" type="default" id="QhX-GR-QXf"/>
                             <constraint firstItem="ecz-rL-91n" firstAttribute="bottom" secondItem="pOF-Ie-jL3" secondAttribute="bottom" type="default" id="V5W-Sf-O7m"/>
-                            <constraint firstItem="ecz-rL-91n" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" constant="320" id="Y0c-z5-7Au"/>
+                            <constraint firstItem="LKd-pR-md6" firstAttribute="top" secondItem="02l-XB-59C" secondAttribute="top" type="default" id="aTb-U7-TcZ"/>
                             <constraint firstItem="PGY-Zz-5hK" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" type="default" id="eTc-vm-d0b"/>
-                            <constraint firstItem="QiY-x2-mgs" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" constant="14" id="l1J-ia-8ic"/>
+                            <constraint firstItem="LKd-pR-md6" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" type="default" id="ehe-cP-v18"/>
+                            <constraint firstItem="ecz-rL-91n" firstAttribute="top" secondItem="LKd-pR-md6" secondAttribute="top" type="default" id="kP5-1U-bZZ"/>
                             <constraint firstItem="PGY-Zz-5hK" firstAttribute="top" secondItem="pOF-Ie-jL3" secondAttribute="top" type="default" id="m2J-ST-tLw"/>
-                            <constraint firstItem="LKd-pR-md6" firstAttribute="trailing" secondItem="02l-XB-59C" secondAttribute="trailing" type="default" id="re0-aS-fwj"/>
+                            <constraint firstItem="LKd-pR-md6" firstAttribute="trailing" secondItem="pOF-Ie-jL3" secondAttribute="trailing" type="default" id="rNv-0t-HAc"/>
                             <constraint firstItem="by4-C6-Lkw" firstAttribute="bottom" secondItem="pOF-Ie-jL3" secondAttribute="bottom" type="default" id="re3-42-Eg0"/>
+                            <constraint firstItem="02l-XB-59C" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" type="default" id="zFI-Uh-uQd"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info" image="info.png" id="vDT-Wo-F8t"/>
