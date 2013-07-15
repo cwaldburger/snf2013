@@ -102,7 +102,15 @@ Tel: 055 220 57 57";
     }
 }
 - (IBAction)call144:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:144"]];
+    UIDevice *device = [UIDevice currentDevice];
+    if ([[device model] isEqualToString:@"iPhone"] ) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:144"]]];
+    } else {
+        UIAlertView *notpermitted=[[UIAlertView alloc] initWithTitle:@"Fehler" message:@"Ihr Gerät unterstützt keine Anrufe." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [notpermitted show];
+    }
+    
+//    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:144"]];
 }
 
 //// Support Method for the JSON parsing

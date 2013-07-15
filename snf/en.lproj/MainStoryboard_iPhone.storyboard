@@ -219,7 +219,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5U-0B-RmQ">
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="CALL 144">
+                                        <state key="normal" title="144">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -230,12 +230,23 @@
                                             <action selector="call144:" destination="4AR-oS-Crk" eventType="touchUpInside" id="2xT-gM-MaI"/>
                                         </connections>
                                     </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hier kommt der Text zur Notfall-Seite hin." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oVo-cg-E6c">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="VxQ-H0-nNh"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.92311319531895453" green="0.57949937221095982" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.70314056045692608" green="0.07927406551759475" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="P5U-0B-RmQ" firstAttribute="top" secondItem="02l-XB-59C" secondAttribute="top" constant="200" id="FxH-Iw-DoU"/>
                                     <constraint firstItem="P5U-0B-RmQ" firstAttribute="leading" secondItem="02l-XB-59C" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ply-Rt-N27"/>
+                                    <constraint firstAttribute="trailing" secondItem="oVo-cg-E6c" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="SX5-QZ-VTw"/>
+                                    <constraint firstAttribute="bottom" secondItem="P5U-0B-RmQ" secondAttribute="bottom" constant="97" id="WTh-Mc-b22"/>
+                                    <constraint firstItem="oVo-cg-E6c" firstAttribute="leading" secondItem="02l-XB-59C" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="djA-dJ-3D1"/>
                                     <constraint firstAttribute="trailing" secondItem="P5U-0B-RmQ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="une-f8-L5v"/>
+                                    <constraint firstItem="oVo-cg-E6c" firstAttribute="top" secondItem="02l-XB-59C" secondAttribute="top" constant="81" id="xvG-o5-K49"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="by4-C6-Lkw" userLabel="View-info">
@@ -280,24 +291,24 @@
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LKd-pR-md6" firstAttribute="top" secondItem="PGY-Zz-5hK" secondAttribute="bottom" type="default" id="4l6-Tm-ECf"/>
-                            <constraint firstItem="ecz-rL-91n" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" type="default" id="6BC-Vg-qa4"/>
+                            <constraint firstItem="by4-C6-Lkw" firstAttribute="top" secondItem="PGY-Zz-5hK" secondAttribute="bottom" type="default" id="6nx-aF-bch"/>
+                            <constraint firstAttribute="trailing" secondItem="by4-C6-Lkw" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="8gW-z7-MVc"/>
                             <constraint firstItem="PGY-Zz-5hK" firstAttribute="trailing" secondItem="pOF-Ie-jL3" secondAttribute="trailing" type="default" id="9Eu-0P-kn1"/>
                             <constraint firstItem="02l-XB-59C" firstAttribute="bottom" secondItem="pOF-Ie-jL3" secondAttribute="bottom" type="default" id="9t0-TX-JNd"/>
-                            <constraint firstItem="ecz-rL-91n" firstAttribute="trailing" secondItem="pOF-Ie-jL3" secondAttribute="trailing" type="default" id="AYg-2c-kbO"/>
+                            <constraint firstItem="by4-C6-Lkw" firstAttribute="top" secondItem="LKd-pR-md6" secondAttribute="top" type="default" id="Cbc-Yb-u2r"/>
                             <constraint firstItem="LKd-pR-md6" firstAttribute="bottom" secondItem="pOF-Ie-jL3" secondAttribute="bottom" type="default" id="E8R-PX-Wgh"/>
-                            <constraint firstItem="by4-C6-Lkw" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" type="default" id="K6M-0X-mN9"/>
-                            <constraint firstItem="PGY-Zz-5hK" firstAttribute="leading" secondItem="by4-C6-Lkw" secondAttribute="trailing" type="default" id="K7n-zK-bzV"/>
-                            <constraint firstItem="02l-XB-59C" firstAttribute="top" secondItem="by4-C6-Lkw" secondAttribute="top" type="default" id="OdT-6m-rxA"/>
+                            <constraint firstItem="ecz-rL-91n" firstAttribute="top" secondItem="by4-C6-Lkw" secondAttribute="top" type="default" id="QeJ-aE-Luy"/>
                             <constraint firstItem="02l-XB-59C" firstAttribute="trailing" secondItem="pOF-Ie-jL3" secondAttribute="trailing" type="default" id="QhX-GR-QXf"/>
                             <constraint firstItem="ecz-rL-91n" firstAttribute="bottom" secondItem="pOF-Ie-jL3" secondAttribute="bottom" type="default" id="V5W-Sf-O7m"/>
                             <constraint firstItem="LKd-pR-md6" firstAttribute="top" secondItem="02l-XB-59C" secondAttribute="top" type="default" id="aTb-U7-TcZ"/>
+                            <constraint firstItem="LKd-pR-md6" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" constant="300" id="e2P-Ow-vIp"/>
                             <constraint firstItem="PGY-Zz-5hK" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" type="default" id="eTc-vm-d0b"/>
-                            <constraint firstItem="LKd-pR-md6" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" type="default" id="ehe-cP-v18"/>
-                            <constraint firstItem="ecz-rL-91n" firstAttribute="top" secondItem="LKd-pR-md6" secondAttribute="top" type="default" id="kP5-1U-bZZ"/>
+                            <constraint firstItem="LKd-pR-md6" firstAttribute="leading" secondItem="by4-C6-Lkw" secondAttribute="leading" type="default" id="fGa-ey-4g8"/>
                             <constraint firstItem="PGY-Zz-5hK" firstAttribute="top" secondItem="pOF-Ie-jL3" secondAttribute="top" type="default" id="m2J-ST-tLw"/>
-                            <constraint firstItem="LKd-pR-md6" firstAttribute="trailing" secondItem="pOF-Ie-jL3" secondAttribute="trailing" type="default" id="rNv-0t-HAc"/>
+                            <constraint firstItem="LKd-pR-md6" firstAttribute="trailing" secondItem="ecz-rL-91n" secondAttribute="trailing" type="default" id="pBL-Sd-bnp"/>
                             <constraint firstItem="by4-C6-Lkw" firstAttribute="bottom" secondItem="pOF-Ie-jL3" secondAttribute="bottom" type="default" id="re3-42-Eg0"/>
+                            <constraint firstItem="ecz-rL-91n" firstAttribute="leading" secondItem="by4-C6-Lkw" secondAttribute="leading" type="default" id="sMs-2B-iEr"/>
+                            <constraint firstAttribute="trailing" secondItem="LKd-pR-md6" secondAttribute="trailing" constant="-300" id="u28-5I-uuk"/>
                             <constraint firstItem="02l-XB-59C" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" type="default" id="zFI-Uh-uQd"/>
                         </constraints>
                     </view>
