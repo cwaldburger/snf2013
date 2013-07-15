@@ -50,6 +50,13 @@
 		F62C3FFA16F4939600BA9138 /* ProgrammDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = F62C3FF916F4939600BA9138 /* ProgrammDoc.m */; };
 		F62C3FFD16F4999000BA9138 /* snfFestbeizenTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F62C3FFC16F4999000BA9138 /* snfFestbeizenTableViewController.m */; };
 		F62C400016F49A0F00BA9138 /* festbeizenTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F62C3FFF16F49A0E00BA9138 /* festbeizenTableView.m */; };
+		F63AF592178B7FAB006650B1 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F63AF58E178B7FAB006650B1 /* libTestFlight.a */; };
+		F63AF593178B7FAB006650B1 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F63AF58E178B7FAB006650B1 /* libTestFlight.a */; };
+		F63AF594178B7FAB006650B1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F63AF58F178B7FAB006650B1 /* README.md */; };
+		F63AF595178B7FAB006650B1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F63AF58F178B7FAB006650B1 /* README.md */; };
+		F63AF596178B7FAB006650B1 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = F63AF590178B7FAB006650B1 /* release_notes.md */; };
+		F63AF597178B7FAB006650B1 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = F63AF590178B7FAB006650B1 /* release_notes.md */; };
+		F63AF599178B7FE3006650B1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F63AF598178B7FE3006650B1 /* libz.dylib */; };
 		F6428E0516E90EBF0041C4D8 /* startscreen_3.5inch.png in Resources */ = {isa = PBXBuildFile; fileRef = F6428DFD16E90EBF0041C4D8 /* startscreen_3.5inch.png */; };
 		F6428E0616E90EBF0041C4D8 /* startscreen_3.5inch_low.png in Resources */ = {isa = PBXBuildFile; fileRef = F6428DFE16E90EBF0041C4D8 /* startscreen_3.5inch_low.png */; };
 		F6428E0716E90EBF0041C4D8 /* startscreen_4inch.png in Resources */ = {isa = PBXBuildFile; fileRef = F6428DFF16E90EBF0041C4D8 /* startscreen_4inch.png */; };
@@ -131,6 +138,11 @@
 		F62C3FFC16F4999000BA9138 /* snfFestbeizenTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfFestbeizenTableViewController.m; sourceTree = "<group>"; };
 		F62C3FFE16F49A0E00BA9138 /* festbeizenTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = festbeizenTableView.h; sourceTree = "<group>"; };
 		F62C3FFF16F49A0E00BA9138 /* festbeizenTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = festbeizenTableView.m; sourceTree = "<group>"; };
+		F63AF58E178B7FAB006650B1 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		F63AF58F178B7FAB006650B1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		F63AF590178B7FAB006650B1 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
+		F63AF591178B7FAB006650B1 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		F63AF598178B7FE3006650B1 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		F6428DFD16E90EBF0041C4D8 /* startscreen_3.5inch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startscreen_3.5inch.png; sourceTree = "<group>"; };
 		F6428DFE16E90EBF0041C4D8 /* startscreen_3.5inch_low.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startscreen_3.5inch_low.png; sourceTree = "<group>"; };
 		F6428DFF16E90EBF0041C4D8 /* startscreen_4inch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startscreen_4inch.png; sourceTree = "<group>"; };
@@ -148,9 +160,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F63AF599178B7FE3006650B1 /* libz.dylib in Frameworks */,
 				F61AA88016E69CF8001EC188 /* UIKit.framework in Frameworks */,
 				F61AA88216E69CF8001EC188 /* Foundation.framework in Frameworks */,
 				F61AA88416E69CF8001EC188 /* CoreGraphics.framework in Frameworks */,
+				F63AF592178B7FAB006650B1 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +175,7 @@
 				F61AA8B216E69CF8001EC188 /* SenTestingKit.framework in Frameworks */,
 				F61AA8B316E69CF8001EC188 /* UIKit.framework in Frameworks */,
 				F61AA8B416E69CF8001EC188 /* Foundation.framework in Frameworks */,
+				F63AF593178B7FAB006650B1 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +185,7 @@
 		F61AA87316E69CF8001EC188 = {
 			isa = PBXGroup;
 			children = (
+				F63AF598178B7FE3006650B1 /* libz.dylib */,
 				F61AA88516E69CF8001EC188 /* snf */,
 				F61AA8B716E69CF8001EC188 /* snfTests */,
 				F61AA87E16E69CF8001EC188 /* Frameworks */,
@@ -205,6 +221,7 @@
 				F61AA88616E69CF8001EC188 /* Supporting Files */,
 				F61AA88E16E69CF8001EC188 /* snfAppDelegate.h */,
 				F61AA88F16E69CF8001EC188 /* snfAppDelegate.m */,
+				F63AF58D178B7FAB006650B1 /* TestFlightSDK1.2.6 */,
 				F61AA89716E69CF8001EC188 /* MainStoryboard_iPhone.storyboard */,
 				F61AA89A16E69CF8001EC188 /* MainStoryboard_iPad.storyboard */,
 				F61AA89D16E69CF8001EC188 /* snfFirstViewController.h */,
@@ -303,6 +320,17 @@
 				F62C3FF916F4939600BA9138 /* ProgrammDoc.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		F63AF58D178B7FAB006650B1 /* TestFlightSDK1.2.6 */ = {
+			isa = PBXGroup;
+			children = (
+				F63AF58E178B7FAB006650B1 /* libTestFlight.a */,
+				F63AF58F178B7FAB006650B1 /* README.md */,
+				F63AF590178B7FAB006650B1 /* release_notes.md */,
+				F63AF591178B7FAB006650B1 /* TestFlight.h */,
+			);
+			path = TestFlightSDK1.2.6;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,6 +438,8 @@
 				F6428E1416E9111F0041C4D8 /* snfrj_icon@2x.png in Resources */,
 				F6428E1616E911240041C4D8 /* snfrj_icon.png in Resources */,
 				F6428E1816E911280041C4D8 /* snfrj_icon@2x.png in Resources */,
+				F63AF594178B7FAB006650B1 /* README.md in Resources */,
+				F63AF596178B7FAB006650B1 /* release_notes.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +448,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F61AA8BC16E69CF8001EC188 /* InfoPlist.strings in Resources */,
+				F63AF595178B7FAB006650B1 /* README.md in Resources */,
+				F63AF597178B7FAB006650B1 /* release_notes.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,7 +609,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "snf/snf-Prefix.pch";
 				INFOPLIST_FILE = "snf/snf-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/snf/TestFlightSDK1.2.6\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -588,7 +625,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "snf/snf-Prefix.pch";
 				INFOPLIST_FILE = "snf/snf-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/snf/TestFlightSDK1.2.6\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -604,6 +646,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "snf/snf-Prefix.pch";
 				INFOPLIST_FILE = "snfTests/snfTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/snf/TestFlightSDK1.2.6\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -621,6 +667,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "snf/snf-Prefix.pch";
 				INFOPLIST_FILE = "snfTests/snfTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/snf/TestFlightSDK1.2.6\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;

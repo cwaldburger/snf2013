@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
     // create url string
-    NSString *urlAddress = @"http://www.ticketcorner.ch";
+    NSString *urlAddress = @"http://www.ticketcorner.ch/Tickets.html?affiliate=MSH&fun=search&action=search&doc=search&sort_by=score&sort_direction=desc&fuzzy=yes&detailadoc=erdetaila&detailbdoc=evdetailb&suchbegriff=seenachtfest";
     
     //Create a URL object.
     NSURL *url = [NSURL URLWithString: urlAddress];

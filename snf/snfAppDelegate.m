@@ -25,6 +25,10 @@
 //    snfFestbeizenTableViewController * snfFestbeizenTableViewController = [navController.viewControllers objectAtIndex:0];
 //    snfFestbeizenTableViewController.programs = programs;
     
+    
+    // Initialize TestFlight
+    [TestFlight takeOff:@"dbf2e851-8833-4a48-9b32-85dafb3dda40"];
+    
     // Override point for customization after application launch.
     return YES;
 }
