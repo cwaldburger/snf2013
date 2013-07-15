@@ -67,7 +67,6 @@
 		F6428E1416E9111F0041C4D8 /* snfrj_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6428E1216E9111F0041C4D8 /* snfrj_icon@2x.png */; };
 		F6428E1616E911240041C4D8 /* snfrj_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F6428E1516E911240041C4D8 /* snfrj_icon.png */; };
 		F6428E1816E911280041C4D8 /* snfrj_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6428E1716E911280041C4D8 /* snfrj_icon@2x.png */; };
-		F69DD7C91794147400450214 /* snfInfoPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69DD7C81794147400450214 /* snfInfoPlanViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,8 +153,6 @@
 		F6428E1216E9111F0041C4D8 /* snfrj_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snfrj_icon@2x.png"; sourceTree = "<group>"; };
 		F6428E1516E911240041C4D8 /* snfrj_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snfrj_icon.png; sourceTree = SOURCE_ROOT; };
 		F6428E1716E911280041C4D8 /* snfrj_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snfrj_icon@2x.png"; sourceTree = SOURCE_ROOT; };
-		F69DD7C71794147400450214 /* snfInfoPlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snfInfoPlanViewController.h; sourceTree = "<group>"; };
-		F69DD7C81794147400450214 /* snfInfoPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfInfoPlanViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,8 +223,6 @@
 				F61AA88F16E69CF8001EC188 /* snfAppDelegate.m */,
 				F63AF58D178B7FAB006650B1 /* TestFlightSDK1.2.6 */,
 				F61AA89716E69CF8001EC188 /* MainStoryboard_iPhone.storyboard */,
-				F69DD7C71794147400450214 /* snfInfoPlanViewController.h */,
-				F69DD7C81794147400450214 /* snfInfoPlanViewController.m */,
 				F61AA89A16E69CF8001EC188 /* MainStoryboard_iPad.storyboard */,
 				F61AA89D16E69CF8001EC188 /* snfFirstViewController.h */,
 				F61AA89E16E69CF8001EC188 /* snfFirstViewController.m */,
@@ -493,7 +488,6 @@
 				F62C3FFA16F4939600BA9138 /* ProgrammDoc.m in Sources */,
 				F62C3FFD16F4999000BA9138 /* snfFestbeizenTableViewController.m in Sources */,
 				F62C400016F49A0F00BA9138 /* festbeizenTableView.m in Sources */,
-				F69DD7C91794147400450214 /* snfInfoPlanViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
