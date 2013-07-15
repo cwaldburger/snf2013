@@ -34,16 +34,16 @@
     [super viewDidLoad];
     
     // Load ZVV-Webview
-    NSString *urlAddress = @"http://www.zvv.ch";
+    NSString *urlAddress = @"http://m.sbb.ch";
     NSURL *url = [NSURL URLWithString: urlAddress];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [ovWebView loadRequest:requestObj];
 
-    // Load JSON stuff
-    dispatch_async(kBgQueue, ^{
-        NSData* data = [NSData dataWithContentsOfURL: kLatestKivaLoansURL];
-        [self performSelectorOnMainThread:@selector(fetchedData:) withObject:data waitUntilDone:YES];
-    });
+//    // Load JSON stuff
+//    dispatch_async(kBgQueue, ^{
+//        NSData* data = [NSData dataWithContentsOfURL: kLatestKivaLoansURL];
+//        [self performSelectorOnMainThread:@selector(fetchedData:) withObject:data waitUntilDone:YES];
+//    });
     
     
     
@@ -96,37 +96,37 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:144"]];
 }
 
-// Support Method for the JSON parsing
-- (void)fetchedData:(NSData *)responseData {
-    //parse out the json data
-    NSError* error;
-    NSDictionary* json = [NSJSONSerialization
-                          JSONObjectWithData:responseData //1
-                          
-                          options:kNilOptions
-                          error:&error];
-    
-    NSArray* latestLoans = [json objectForKey:@"loans"]; //2
-    
-    NSLog(@"loans: %@", latestLoans); //3
-
-    // 1) Get the latest loan
-    NSDictionary* loan = [latestLoans objectAtIndex:0];
-    
-    // 2) Get the funded amount and loan amount
-    NSNumber* fundedAmount = [loan objectForKey:@"funded_amount"];
-    NSNumber* loanAmount = [loan objectForKey:@"loan_amount"];
-    float outstandingAmount = [loanAmount floatValue] -
-    [fundedAmount floatValue];
-    
-    // 3) Set the label appropriately
-    humanReadable.text = [NSString stringWithFormat:@"Latest loan: %@from %@ needs another $%.2f to pursue their entrepreneural dream",
-                         [loan objectForKey:@"name"],
-                         [(NSDictionary*)[loan objectForKey:@"location"]
-                          objectForKey:@"country"],
-                         outstandingAmount];
-    
-}
+//// Support Method for the JSON parsing
+//- (void)fetchedData:(NSData *)responseData {
+//    //parse out the json data
+//    NSError* error;
+//    NSDictionary* json = [NSJSONSerialization
+//                          JSONObjectWithData:responseData //1
+//                          
+//                          options:kNilOptions
+//                          error:&error];
+//    
+//    NSArray* latestLoans = [json objectForKey:@"loans"]; //2
+//    
+//    NSLog(@"loans: %@", latestLoans); //3
+//
+//    // 1) Get the latest loan
+//    NSDictionary* loan = [latestLoans objectAtIndex:0];
+//    
+//    // 2) Get the funded amount and loan amount
+//    NSNumber* fundedAmount = [loan objectForKey:@"funded_amount"];
+//    NSNumber* loanAmount = [loan objectForKey:@"loan_amount"];
+//    float outstandingAmount = [loanAmount floatValue] -
+//    [fundedAmount floatValue];
+//    
+//    // 3) Set the label appropriately
+//    humanReadable.text = [NSString stringWithFormat:@"Latest loan: %@from %@ needs another $%.2f to pursue their entrepreneural dream",
+//                         [loan objectForKey:@"name"],
+//                         [(NSDictionary*)[loan objectForKey:@"location"]
+//                          objectForKey:@"country"],
+//                         outstandingAmount];
+//    
+//}
 
 
 
