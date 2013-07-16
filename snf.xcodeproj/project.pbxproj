@@ -67,6 +67,7 @@
 		F6428E1616E911240041C4D8 /* snfrj_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F6428E1516E911240041C4D8 /* snfrj_icon.png */; };
 		F6428E1816E911280041C4D8 /* snfrj_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6428E1716E911280041C4D8 /* snfrj_icon@2x.png */; };
 		F6504A771794E0CD007E31EE /* snfFestbeizenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6504A761794E0CD007E31EE /* snfFestbeizenViewController.m */; };
+		F6504A7A1794E888007E31EE /* snfFestbeizenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6504A791794E888007E31EE /* snfFestbeizenTableViewCell.m */; };
 		F69DD7CB17945EB600450214 /* festplan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F69DD7CA17945EB600450214 /* festplan@2x.png */; };
 		F69DD7CD17945F0200450214 /* festplan.png in Resources */ = {isa = PBXBuildFile; fileRef = F69DD7CC17945F0200450214 /* festplan.png */; };
 /* End PBXBuildFile section */
@@ -155,6 +156,8 @@
 		F6428E1716E911280041C4D8 /* snfrj_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snfrj_icon@2x.png"; sourceTree = SOURCE_ROOT; };
 		F6504A751794E0CD007E31EE /* snfFestbeizenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snfFestbeizenViewController.h; sourceTree = SOURCE_ROOT; };
 		F6504A761794E0CD007E31EE /* snfFestbeizenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfFestbeizenViewController.m; sourceTree = SOURCE_ROOT; };
+		F6504A781794E888007E31EE /* snfFestbeizenTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snfFestbeizenTableViewCell.h; sourceTree = "<group>"; };
+		F6504A791794E888007E31EE /* snfFestbeizenTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfFestbeizenTableViewCell.m; sourceTree = "<group>"; };
 		F69DD7CA17945EB600450214 /* festplan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "festplan@2x.png"; sourceTree = "<group>"; };
 		F69DD7CC17945F0200450214 /* festplan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = festplan.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -230,6 +233,8 @@
 				F61AA89A16E69CF8001EC188 /* MainStoryboard_iPad.storyboard */,
 				F6504A751794E0CD007E31EE /* snfFestbeizenViewController.h */,
 				F6504A761794E0CD007E31EE /* snfFestbeizenViewController.m */,
+				F6504A781794E888007E31EE /* snfFestbeizenTableViewCell.h */,
+				F6504A791794E888007E31EE /* snfFestbeizenTableViewCell.m */,
 				F61AA89D16E69CF8001EC188 /* snfFirstViewController.h */,
 				F61AA89E16E69CF8001EC188 /* snfFirstViewController.m */,
 				F61AA8A416E69CF8001EC188 /* snfSecondViewController.h */,
@@ -496,6 +501,7 @@
 				F62C3FFA16F4939600BA9138 /* ProgrammDoc.m in Sources */,
 				F62C400016F49A0F00BA9138 /* festbeizenTableView.m in Sources */,
 				F6504A771794E0CD007E31EE /* snfFestbeizenViewController.m in Sources */,
+				F6504A7A1794E888007E31EE /* snfFestbeizenTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

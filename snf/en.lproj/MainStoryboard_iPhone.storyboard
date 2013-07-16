@@ -130,29 +130,59 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="IvK-3S-bdd">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="68" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="IvK-3S-bdd">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="5XV-ZN-RrV" detailTextLabel="Xjk-xN-XgJ" style="IBUITableViewCellStyleSubtitle" id="eIE-zv-vka">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FestbeizenCell" rowHeight="68" id="MWR-7B-5mj" customClass="snfFestbeizenTableViewCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="68"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="67"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XV-ZN-RrV">
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="FestbeizenTitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wr6-YO-Z3B">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="256" id="lDh-UR-xMZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjk-xN-XgJ">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="FestbeizenDesc" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="JNT-hi-Lid">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="Fjy-Tv-oFZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Nr" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12e-40-9x4">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="24" id="HjG-oV-mRX"/>
+                                                        <constraint firstAttribute="height" constant="21" id="QfZ-sd-c2t"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="12e-40-9x4" firstAttribute="leading" secondItem="MWR-7B-5mj" secondAttribute="leading" constant="20" type="default" id="5YG-jf-3T4"/>
+                                            <constraint firstItem="JNT-hi-Lid" firstAttribute="leading" secondItem="MWR-7B-5mj" secondAttribute="leading" constant="20" type="default" id="Auz-nK-jdU"/>
+                                            <constraint firstItem="12e-40-9x4" firstAttribute="top" secondItem="MWR-7B-5mj" secondAttribute="top" constant="12" id="FLl-kT-kTb"/>
+                                            <constraint firstItem="12e-40-9x4" firstAttribute="top" secondItem="wr6-YO-Z3B" secondAttribute="top" type="default" id="JQm-RI-wKo"/>
+                                            <constraint firstAttribute="bottom" secondItem="JNT-hi-Lid" secondAttribute="bottom" constant="14" id="hgR-8K-ROk"/>
+                                            <constraint firstItem="12e-40-9x4" firstAttribute="baseline" secondItem="wr6-YO-Z3B" secondAttribute="baseline" type="default" id="iJi-fC-hdm"/>
+                                            <constraint firstAttribute="trailing" secondItem="wr6-YO-Z3B" secondAttribute="trailing" constant="20" type="default" id="mHr-m5-fEZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="JNT-hi-Lid" secondAttribute="trailing" constant="20" type="default" id="z7Y-ZY-K3i"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="festbeizenDesc" destination="JNT-hi-Lid" id="UUy-Cr-BDv"/>
+                                            <outlet property="festbeizenNr" destination="12e-40-9x4" id="sUG-Zc-PCe"/>
+                                            <outlet property="festbeizenTitle" destination="wr6-YO-Z3B" id="84N-g1-1e0"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -408,6 +438,14 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/snfFacebookViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="facebookWebView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="snfFestbeizenTableViewCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/snfFestbeizenTableViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="festbeizenDesc" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="festbeizenNr" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="festbeizenTitle" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="snfFestbeizenViewController" superclassName="UIViewController">
