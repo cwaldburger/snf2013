@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "snf/snfInfoViewController.h"
-         timestampString = "395609905.14622"
+         timestampString = "395630763.279147"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "30"
-         endingLineNumber = "30"
+         startingLineNumber = "27"
+         endingLineNumber = "27"
          landmarkName = "@interface snfInfoViewController"
          landmarkType = "2">
       </FileBreakpoint>
@@ -73,24 +73,24 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "snf/snfFestbeizenTableViewController.m"
-         timestampString = "395017626.435463"
+         timestampString = "395630763.279147"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "18"
-         endingLineNumber = "18"
-         landmarkName = "@implementation snfFestbeizenTableViewController"
-         landmarkType = "3">
+         startingLineNumber = "21"
+         endingLineNumber = "21"
+         landmarkName = "-initWithStyle:"
+         landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "snf/snfFestbeizenTableViewController.m"
-         timestampString = "395017628.264304"
+         timestampString = "395630763.279147"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "22"
-         endingLineNumber = "22"
+         startingLineNumber = "25"
+         endingLineNumber = "25"
          landmarkName = "-initWithStyle:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -125,11 +125,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "snf/snfInfoViewController.h"
-         timestampString = "395609905.14622"
+         timestampString = "395630763.279147"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "32"
-         endingLineNumber = "32">
+         startingLineNumber = "29"
+         endingLineNumber = "29">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "Yes"

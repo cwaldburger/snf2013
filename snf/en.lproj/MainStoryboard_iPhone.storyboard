@@ -149,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E5p-HZ-2Gu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="493" y="825"/>
+            <point key="canvasLocation" x="276" y="883"/>
         </scene>
         <!--Snf Info View Controller - Info-->
         <scene sceneID="0pJ-D4-5Pq">
@@ -339,10 +339,10 @@
             </objects>
             <point key="canvasLocation" x="68" y="180"/>
         </scene>
-        <!--Table View Controller - Festbeizen-->
+        <!--Snf Festbeizen Table View Controller - Festbeizen-->
         <scene sceneID="50W-mk-j9G">
             <objects>
-                <tableViewController id="E2L-4M-LDS" sceneMemberID="viewController">
+                <tableViewController id="E2L-4M-LDS" customClass="snfFestbeizenTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0NT-kc-sU5">
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -359,8 +359,8 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="E2L-4M-LDS" id="kdi-DG-MYf"/>
-                            <outlet property="delegate" destination="E2L-4M-LDS" id="ejL-cV-xj7"/>
+                            <outlet property="dataSource" destination="E2L-4M-LDS" id="2ya-GE-cxe"/>
+                            <outlet property="delegate" destination="E2L-4M-LDS" id="roh-Cx-FFX"/>
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Festbeizen" image="festbeiz.png" id="ywG-Qd-JDf"/>
@@ -387,18 +387,19 @@
                 <relationship kind="outlet" name="facebookWebView" candidateClass="UIWebView"/>
             </relationships>
         </class>
+        <class className="snfFestbeizenTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/snfFestbeizenTableViewController.h"/>
+        </class>
         <class className="snfInfoViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/snfInfoViewController.h"/>
             <relationships>
                 <relationship kind="action" name="call144:"/>
                 <relationship kind="action" name="segmentValueChanged:"/>
                 <relationship kind="outlet" name="call144Button" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="humanReadable" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="infoNavBar" candidateClass="UINavigationBar"/>
                 <relationship kind="outlet" name="infoSegmentedControl" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="infoTextView" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="infoView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="jsonSummary" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="notfallView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="ovView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="ovWebView" candidateClass="UIWebView"/>

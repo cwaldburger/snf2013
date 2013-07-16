@@ -19,11 +19,8 @@
 @property (strong, nonatomic) IBOutlet UIWebView *ovWebView;
 @property (strong, nonatomic) IBOutlet UIButton *call144Button;
 - (IBAction)call144:(id)sender;
-@property (strong, nonatomic) IBOutlet UILabel *jsonSummary;
-@property (strong, nonatomic) IBOutlet UILabel *humanReadable;
 
-@property (weak, nonatomic) IBOutlet UITextView *infoTextView;
-
+@property (weak, nonatomic) IBOutlet UITextView *infoTextView;  
 @property (weak, nonatomic) IBOutlet UIImageView *planImageView;
 @property (weak, nonatomic) IBOutlet UIScrollView *planScrollView;
 
