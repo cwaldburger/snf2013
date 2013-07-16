@@ -73,7 +73,7 @@
                                     <navigationItem id="YYC-6U-tuF">
                                         <nil key="title"/>
                                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="zcm-6h-N5K">
-                                            <rect key="frame" x="28" y="6" width="263" height="32"/>
+                                            <rect key="frame" x="8" y="6" width="303" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <segments>
                                                 <segment title="Freitag"/>
@@ -144,6 +144,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="68" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="IvK-3S-bdd">
                                 <color key="backgroundColor" white="0.25" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.74971648185483875" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FestbeizenCell" rowHeight="68" id="MWR-7B-5mj" customClass="snfFestbeizenTableViewCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="68"/>

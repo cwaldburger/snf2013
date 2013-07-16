@@ -35,13 +35,14 @@
 
     
     // Set Text of the infoTextView
-    NSString *infoText = @"Seenachtfest Rapperswil-Jona\n\
-    c/o Verkehrsverein Rapperswil-Jona\n\
-    Fischmarkplatz 1\n\
-    8640 Rapperswil\n\
-    info@seenachtfest-rj.ch\n\
-    Tel: 055 220 57 57";
-    
+    NSString *infoText = \
+@"Seenachtfest Rapperswil-Jona\n\
+c/o Verkehrsverein Rapperswil-Jona\n\
+Fischmarkplatz 1\n\
+8640 Rapperswil\n\
+info@seenachtfest-rj.ch\n\
+Tel: 055 220 57 57";
+
     UIFont *font=[UIFont fontWithName:@"Helvetica-Bold" size:14.0f];
     
     NSMutableAttributedString *myString = [[NSMutableAttributedString alloc] initWithString:infoText];
@@ -64,9 +65,9 @@
     [self.planImageView sizeToFit];
     
     self.planScrollView.contentSize = image.size;
-    self.planScrollView.delegate = self;
-    self.planScrollView.minimumZoomScale = 0.3;
-    self.planScrollView.maximumZoomScale = 100.0;
+//    self.planScrollView.delegate = self;
+//    self.planScrollView.minimumZoomScale = 0.3;
+//    self.planScrollView.maximumZoomScale = 100.0;
     
     
     
