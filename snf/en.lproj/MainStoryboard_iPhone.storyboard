@@ -84,13 +84,20 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Freitag, 9. August 2013" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEQ-Px-B2K">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="mre-X5-WyV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.63106303792084095" green="0.86996858016304346" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="mBt-pm-N4z" firstAttribute="bottom" secondItem="17" secondAttribute="bottom" type="default" id="39a-Q7-dXb"/>
                             <constraint firstItem="mBt-pm-N4z" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="3EB-U2-AHu"/>
                             <constraint firstItem="Vrm-9V-YEh" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="4db-MK-uhw"/>
-                            <constraint firstItem="L0C-4j-CRb" firstAttribute="top" secondItem="Vrm-9V-YEh" secondAttribute="bottom" type="default" id="Dad-cn-UlO"/>
                             <constraint firstItem="dim-nd-M5n" firstAttribute="bottom" secondItem="17" secondAttribute="bottom" type="default" id="DbH-W8-QwO"/>
                             <constraint firstItem="pRa-QD-Nuh" firstAttribute="bottom" secondItem="17" secondAttribute="bottom" type="default" id="Jbr-xZ-QaB"/>
                             <constraint firstItem="pRa-QD-Nuh" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="Jek-pb-YNh"/>
@@ -99,12 +106,16 @@
                             <constraint firstItem="L0C-4j-CRb" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="WPs-fT-LYO"/>
                             <constraint firstItem="dim-nd-M5n" firstAttribute="top" secondItem="Vrm-9V-YEh" secondAttribute="bottom" type="default" id="Z0z-oh-9RR"/>
                             <constraint firstItem="dim-nd-M5n" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="aob-f9-5V8"/>
+                            <constraint firstItem="mBt-pm-N4z" firstAttribute="top" secondItem="pRa-QD-Nuh" secondAttribute="top" type="default" id="bav-Bt-eh7"/>
                             <constraint firstItem="L0C-4j-CRb" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="bhe-Fd-4t1"/>
-                            <constraint firstItem="L0C-4j-CRb" firstAttribute="top" secondItem="pRa-QD-Nuh" secondAttribute="top" type="default" id="bla-FF-Q0w"/>
+                            <constraint firstItem="PEQ-Px-B2K" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="dET-cu-8LK"/>
                             <constraint firstItem="pRa-QD-Nuh" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="fNJ-FA-PzH"/>
-                            <constraint firstItem="mBt-pm-N4z" firstAttribute="top" secondItem="Vrm-9V-YEh" secondAttribute="bottom" type="default" id="mPM-Kt-adx"/>
+                            <constraint firstItem="mBt-pm-N4z" firstAttribute="top" secondItem="L0C-4j-CRb" secondAttribute="top" type="default" id="faR-As-4Zr"/>
+                            <constraint firstItem="dim-nd-M5n" firstAttribute="top" secondItem="mBt-pm-N4z" secondAttribute="top" type="default" id="idm-Gn-hCE"/>
+                            <constraint firstAttribute="trailing" secondItem="PEQ-Px-B2K" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="lZg-yG-PLe"/>
                             <constraint firstItem="Vrm-9V-YEh" firstAttribute="top" secondItem="17" secondAttribute="top" type="default" id="po8-Zs-db7"/>
                             <constraint firstItem="mBt-pm-N4z" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="qmB-Z3-a94"/>
+                            <constraint firstItem="PEQ-Px-B2K" firstAttribute="top" secondItem="17" secondAttribute="top" constant="60" id="rsZ-tt-rqb"/>
                             <constraint firstItem="L0C-4j-CRb" firstAttribute="bottom" secondItem="17" secondAttribute="bottom" type="default" id="ydx-f3-5bL"/>
                         </constraints>
                     </view>
@@ -114,6 +125,7 @@
                         <outlet property="kinderView" destination="dim-nd-M5n" id="eNb-Cc-0qt"/>
                         <outlet property="programmNavBar" destination="Vrm-9V-YEh" id="Hbs-Ze-B0I"/>
                         <outlet property="programmSegmentedControl" destination="zcm-6h-N5K" id="Tgx-73-ppK"/>
+                        <outlet property="programmTitleLabel" destination="PEQ-Px-B2K" id="i7N-iA-5MR"/>
                         <outlet property="samstagView" destination="mBt-pm-N4z" id="q2h-Rf-lSw"/>
                         <outlet property="sonntagView" destination="L0C-4j-CRb" id="AeD-9B-tXC"/>
                     </connections>
@@ -477,6 +489,7 @@
                 <relationship kind="outlet" name="kinderView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="programmNavBar" candidateClass="UINavigationBar"/>
                 <relationship kind="outlet" name="programmSegmentedControl" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="programmTitleLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="samstagView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="sonntagView" candidateClass="UIView"/>
             </relationships>

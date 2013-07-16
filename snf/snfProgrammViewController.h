@@ -16,5 +16,6 @@
 @property (strong, nonatomic) IBOutlet UIView *sonntagView;
 @property (strong, nonatomic) IBOutlet UIView *kinderView;
 - (IBAction)segmentedControlChanged:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *programmTitleLabel;
 
 @end

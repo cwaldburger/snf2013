@@ -13,7 +13,7 @@
 @end
 
 @implementation snfProgrammViewController
-@synthesize freitagView, samstagView, sonntagView, kinderView, programmSegmentedControl;
+@synthesize freitagView, samstagView, sonntagView, kinderView, programmSegmentedControl, programmTitleLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,6 +28,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+
+    [freitagView setBackgroundColor:[UIColor clearColor]];
+    [samstagView setBackgroundColor:[UIColor clearColor]];
+    [sonntagView setBackgroundColor:[UIColor clearColor]];
+    [kinderView setBackgroundColor:[UIColor clearColor]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,6 +50,7 @@
             self.samstagView.hidden = YES;
             self.sonntagView.hidden = YES;
             self.kinderView.hidden = YES;
+            self.programmTitleLabel.text = @"Freitag, 9. August 2013";
             break;
             //            samstag
         case 1:
@@ -52,6 +58,7 @@
             self.samstagView.hidden = NO;
             self.sonntagView.hidden = YES;
             self.kinderView.hidden = YES;
+            self.programmTitleLabel.text = @"Samstag, 10. August 2013";
             break;
             //            sonntag
         case 2:
@@ -59,6 +66,7 @@
             self.samstagView.hidden = YES;
             self.sonntagView.hidden = NO;
             self.kinderView.hidden = YES;
+            self.programmTitleLabel.text = @"Sonntag, 11. August 2013";
             break;
             //            kinder
         case 3:
@@ -66,6 +74,7 @@
             self.samstagView.hidden = YES;
             self.sonntagView.hidden = YES;
             self.kinderView.hidden = NO;
+            self.programmTitleLabel.text = @"Kinder Programm";            
             break;
      
         default:
