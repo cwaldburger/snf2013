@@ -14,6 +14,7 @@
 
 @implementation snfFacebookViewController
 
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -43,6 +44,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void) webViewDidStartLoad:(UIWebView *)webView {
+    [self.facebookLoadingIndicator startAnimating];
+    self.facebookLoadingIndicator.hidden = NO;
+}
+
+-(void) webViewDidFinishLoad:(UIWebView *)webView {
+    [self.facebookLoadingIndicator stopAnimating];
+    self.facebookLoadingIndicator.hidden = YES;
 }
 
 @end

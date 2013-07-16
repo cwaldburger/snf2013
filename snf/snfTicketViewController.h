@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface snfTicketViewController : UIViewController
+@interface snfTicketViewController : UIViewController <UIWebViewDelegate>
 @property (strong, nonatomic) IBOutlet UIWebView *ticketsWebView;
 @property (strong, nonatomic) IBOutlet UINavigationBar *ticketsNavBar;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *ticketLoadingIndicator;
 
 @end

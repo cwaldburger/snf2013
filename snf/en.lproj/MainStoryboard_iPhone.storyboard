@@ -13,16 +13,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RaJ-kw-uVE">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.25" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="erj-4W-u9x"/>
+                                </connections>
                             </webView>
                             <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="BRb-3e-Ndv">
                                 <items>
                                     <navigationItem title="Tickets" id="AYP-yk-vGg"/>
                                 </items>
                             </navigationBar>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="fMS-ZZ-UCe">
+                                <color key="color" white="0.25148059480000001" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="fMS-ZZ-UCe" firstAttribute="centerY" secondItem="RaJ-kw-uVE" secondAttribute="centerY" type="default" id="LYl-ga-u8k"/>
                             <constraint firstItem="RaJ-kw-uVE" firstAttribute="top" secondItem="BRb-3e-Ndv" secondAttribute="bottom" type="default" id="NGN-PY-pcG"/>
                             <constraint firstItem="RaJ-kw-uVE" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" type="default" id="NQv-lh-bii"/>
                             <constraint firstItem="BRb-3e-Ndv" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="TwT-hP-Oux"/>
@@ -30,10 +37,12 @@
                             <constraint firstItem="BRb-3e-Ndv" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="mix-K1-GgF"/>
                             <constraint firstItem="BRb-3e-Ndv" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="mpX-od-Pq3"/>
                             <constraint firstItem="RaJ-kw-uVE" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="q5l-tx-0u3"/>
+                            <constraint firstItem="fMS-ZZ-UCe" firstAttribute="centerX" secondItem="BRb-3e-Ndv" secondAttribute="centerX" type="default" id="xM7-Wg-njb"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tickets" image="ticket.png" id="7"/>
                     <connections>
+                        <outlet property="ticketLoadingIndicator" destination="fMS-ZZ-UCe" id="ZuI-1Q-l22"/>
                         <outlet property="ticketsNavBar" destination="BRb-3e-Ndv" id="z1U-Dn-Iy9"/>
                         <outlet property="ticketsWebView" destination="RaJ-kw-uVE" id="qig-pJ-dtS"/>
                     </connections>
@@ -134,7 +143,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="68" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="IvK-3S-bdd">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.25" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FestbeizenCell" rowHeight="68" id="MWR-7B-5mj" customClass="snfFestbeizenTableViewCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="68"/>
@@ -148,7 +157,7 @@
                                                         <constraint firstAttribute="width" constant="256" id="lDh-UR-xMZ"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="FestbeizenDesc" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="JNT-hi-Lid">
@@ -156,7 +165,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="Fjy-Tv-oFZ"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Nr" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12e-40-9x4">
@@ -165,7 +174,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="QfZ-sd-c2t"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
@@ -216,20 +225,29 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EgJ-oR-6KD">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EgJ-oR-6KD">
+                                <color key="backgroundColor" white="0.25015751008064518" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="kfe-Pn-51o" id="0TE-jw-xqa"/>
+                                </connections>
                             </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="sJy-su-hc5">
+                                <color key="color" white="0.2514805947580645" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="sJy-su-hc5" firstAttribute="centerX" secondItem="EgJ-oR-6KD" secondAttribute="centerX" type="default" id="IfM-5f-O6z"/>
                             <constraint firstItem="EgJ-oR-6KD" firstAttribute="trailing" secondItem="8nm-JE-g4b" secondAttribute="trailing" type="default" id="PXe-qN-WRx"/>
                             <constraint firstItem="EgJ-oR-6KD" firstAttribute="top" secondItem="8nm-JE-g4b" secondAttribute="top" type="default" id="XnE-EQ-ZOa"/>
                             <constraint firstItem="EgJ-oR-6KD" firstAttribute="leading" secondItem="8nm-JE-g4b" secondAttribute="leading" type="default" id="ZHw-L7-jRx"/>
                             <constraint firstItem="EgJ-oR-6KD" firstAttribute="bottom" secondItem="8nm-JE-g4b" secondAttribute="bottom" type="default" id="ddL-xq-grG"/>
+                            <constraint firstItem="sJy-su-hc5" firstAttribute="centerY" secondItem="EgJ-oR-6KD" secondAttribute="centerY" type="default" id="psl-1D-T9g"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Facebook" image="facebook.png" id="N35-kP-wO7"/>
                     <connections>
+                        <outlet property="facebookLoadingIndicator" destination="sJy-su-hc5" id="chq-rI-8pL"/>
                         <outlet property="facebookWebView" destination="EgJ-oR-6KD" id="pYR-Da-Niv"/>
                     </connections>
                 </viewController>
@@ -440,6 +458,7 @@
         <class className="snfFacebookViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/snfFacebookViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="facebookLoadingIndicator" candidateClass="UIActivityIndicatorView"/>
                 <relationship kind="outlet" name="facebookWebView" candidateClass="UIWebView"/>
             </relationships>
         </class>
@@ -488,6 +507,7 @@
         <class className="snfTicketViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/snfTicketViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="ticketLoadingIndicator" candidateClass="UIActivityIndicatorView"/>
                 <relationship kind="outlet" name="ticketsNavBar" candidateClass="UINavigationBar"/>
                 <relationship kind="outlet" name="ticketsWebView" candidateClass="UIWebView"/>
             </relationships>

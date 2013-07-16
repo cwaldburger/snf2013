@@ -45,4 +45,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void) webViewDidStartLoad:(UIWebView *)webView {
+    [self.ticketLoadingIndicator startAnimating];
+    self.ticketLoadingIndicator.hidden = NO;
+}
+
+-(void) webViewDidFinishLoad:(UIWebView *)webView {
+    [self.ticketLoadingIndicator stopAnimating];
+    self.ticketLoadingIndicator.hidden = YES;
+}
+
 @end

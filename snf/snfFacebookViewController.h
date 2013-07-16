@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface snfFacebookViewController : UIViewController
+@interface snfFacebookViewController : UIViewController <UIWebViewDelegate>
 @property (strong, nonatomic) IBOutlet UIWebView *facebookWebView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *facebookLoadingIndicator;
 
 @end
