@@ -7,24 +7,11 @@
 //
 
 #import "snfAppDelegate.h"
-#import "ProgrammDoc.h"
-#import "snfFestbeizenTableViewController.h"
 
 @implementation snfAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    // Load example rows
-//    ProgrammDoc *bug1 = [[ProgrammDoc alloc] initWithTitle:@"Potato Bug" rating:4 thumbImage:[UIImage imageNamed:@"snfrj_icon.png"] fullImage:[UIImage imageNamed:@"snfrj_icon.png"]];
-//    ProgrammDoc *bug2 = [[ProgrammDoc alloc] initWithTitle:@"House Centipede" rating:3 thumbImage:[UIImage imageNamed:@"snfrj_icon.png"] fullImage:[UIImage imageNamed:@"snfrj_icon.png"]];
-//    ProgrammDoc *bug3 = [[ProgrammDoc alloc] initWithTitle:@"Wolf Spider" rating:5 thumbImage:[UIImage imageNamed:@"snfrj_icon.png"] fullImage:[UIImage imageNamed:@"snfrj_icon.png"]];
-//    ProgrammDoc *bug4 = [[ProgrammDoc alloc] initWithTitle:@"Lady Bug" rating:1 thumbImage:[UIImage imageNamed:@"snfrj_icon.png"] fullImage:[UIImage imageNamed:@"snfrj_icon.png"]];
-//    NSMutableArray *programs = [NSMutableArray arrayWithObjects:bug1, bug2, bug3, bug4, nil];
-//    
-//    UITabBarController * navController = (UITabBarController *) self.window.rootViewController;
-//    snfFestbeizenTableViewController * snfFestbeizenTableViewController = [navController.viewControllers objectAtIndex:0];
-//    snfFestbeizenTableViewController.programs = programs;
-    
     
     // Initialize TestFlight
     [TestFlight takeOff:@"dbf2e851-8833-4a48-9b32-85dafb3dda40"];

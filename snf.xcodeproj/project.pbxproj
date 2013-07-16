@@ -48,7 +48,6 @@
 		F61AA8EE16E6A567001EC188 /* snfProgrammViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61AA8ED16E6A567001EC188 /* snfProgrammViewController.m */; };
 		F62C3FF416F4902200BA9138 /* ProgrammData.m in Sources */ = {isa = PBXBuildFile; fileRef = F62C3FF316F4902200BA9138 /* ProgrammData.m */; };
 		F62C3FFA16F4939600BA9138 /* ProgrammDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = F62C3FF916F4939600BA9138 /* ProgrammDoc.m */; };
-		F62C3FFD16F4999000BA9138 /* snfFestbeizenTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F62C3FFC16F4999000BA9138 /* snfFestbeizenTableViewController.m */; };
 		F62C400016F49A0F00BA9138 /* festbeizenTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F62C3FFF16F49A0E00BA9138 /* festbeizenTableView.m */; };
 		F63AF592178B7FAB006650B1 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F63AF58E178B7FAB006650B1 /* libTestFlight.a */; };
 		F63AF593178B7FAB006650B1 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F63AF58E178B7FAB006650B1 /* libTestFlight.a */; };
@@ -69,7 +68,6 @@
 		F6428E1816E911280041C4D8 /* snfrj_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6428E1716E911280041C4D8 /* snfrj_icon@2x.png */; };
 		F69DD7CB17945EB600450214 /* festplan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F69DD7CA17945EB600450214 /* festplan@2x.png */; };
 		F69DD7CD17945F0200450214 /* festplan.png in Resources */ = {isa = PBXBuildFile; fileRef = F69DD7CC17945F0200450214 /* festplan.png */; };
-		F69DD7D51794CD2400450214 /* KinkakuJi.png in Resources */ = {isa = PBXBuildFile; fileRef = F69DD7D41794CD2400450214 /* KinkakuJi.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,8 +135,6 @@
 		F62C3FF316F4902200BA9138 /* ProgrammData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgrammData.m; sourceTree = "<group>"; };
 		F62C3FF816F4939600BA9138 /* ProgrammDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgrammDoc.h; sourceTree = "<group>"; };
 		F62C3FF916F4939600BA9138 /* ProgrammDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgrammDoc.m; sourceTree = "<group>"; };
-		F62C3FFB16F4999000BA9138 /* snfFestbeizenTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snfFestbeizenTableViewController.h; sourceTree = "<group>"; };
-		F62C3FFC16F4999000BA9138 /* snfFestbeizenTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfFestbeizenTableViewController.m; sourceTree = "<group>"; };
 		F62C3FFE16F49A0E00BA9138 /* festbeizenTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = festbeizenTableView.h; sourceTree = "<group>"; };
 		F62C3FFF16F49A0E00BA9138 /* festbeizenTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = festbeizenTableView.m; sourceTree = "<group>"; };
 		F63AF58E178B7FAB006650B1 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
@@ -158,7 +154,6 @@
 		F6428E1716E911280041C4D8 /* snfrj_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snfrj_icon@2x.png"; sourceTree = SOURCE_ROOT; };
 		F69DD7CA17945EB600450214 /* festplan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "festplan@2x.png"; sourceTree = "<group>"; };
 		F69DD7CC17945F0200450214 /* festplan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = festplan.png; sourceTree = "<group>"; };
-		F69DD7D41794CD2400450214 /* KinkakuJi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KinkakuJi.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,8 +237,6 @@
 				F616455A16E6A84300709D62 /* snfInfoViewController.m */,
 				F616455C16E6A85300709D62 /* snfFacebookViewController.h */,
 				F616455D16E6A85300709D62 /* snfFacebookViewController.m */,
-				F62C3FFB16F4999000BA9138 /* snfFestbeizenTableViewController.h */,
-				F62C3FFC16F4999000BA9138 /* snfFestbeizenTableViewController.m */,
 				F62C3FFE16F49A0E00BA9138 /* festbeizenTableView.h */,
 				F62C3FFF16F49A0E00BA9138 /* festbeizenTableView.m */,
 			);
@@ -286,7 +279,6 @@
 		F61AA8CE16E69F1A001EC188 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				F69DD7D41794CD2400450214 /* KinkakuJi.png */,
 				F69DD7CC17945F0200450214 /* festplan.png */,
 				F69DD7CA17945EB600450214 /* festplan@2x.png */,
 				F61AA8A716E69CF8001EC188 /* second.png */,
@@ -451,7 +443,6 @@
 				F63AF596178B7FAB006650B1 /* release_notes.md in Resources */,
 				F69DD7CB17945EB600450214 /* festplan@2x.png in Resources */,
 				F69DD7CD17945F0200450214 /* festplan.png in Resources */,
-				F69DD7D51794CD2400450214 /* KinkakuJi.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,7 +489,6 @@
 				F616455E16E6A85300709D62 /* snfFacebookViewController.m in Sources */,
 				F62C3FF416F4902200BA9138 /* ProgrammData.m in Sources */,
 				F62C3FFA16F4939600BA9138 /* ProgrammDoc.m in Sources */,
-				F62C3FFD16F4999000BA9138 /* snfFestbeizenTableViewController.m in Sources */,
 				F62C400016F49A0F00BA9138 /* festbeizenTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
