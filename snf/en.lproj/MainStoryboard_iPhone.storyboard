@@ -161,16 +161,26 @@
                         <subviews>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LKd-pR-md6" userLabel="View-plan">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="grJ-aW-HIs">
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.29999999999999999" maximumZoomScale="5" translatesAutoresizingMaskIntoConstraints="NO" id="P2G-j8-uqa">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="grJ-aW-HIs"/>
+                                        </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="318" id="UR0-dy-gBg"/>
+                                            <constraint firstItem="grJ-aW-HIs" firstAttribute="centerY" secondItem="P2G-j8-uqa" secondAttribute="centerY" type="default" id="9PX-E5-lMR"/>
+                                            <constraint firstItem="grJ-aW-HIs" firstAttribute="bottom" secondItem="P2G-j8-uqa" secondAttribute="bottom" type="default" id="KsC-HN-StS"/>
+                                            <constraint firstItem="grJ-aW-HIs" firstAttribute="top" secondItem="P2G-j8-uqa" secondAttribute="top" type="default" id="Wte-z5-evC"/>
+                                            <constraint firstItem="grJ-aW-HIs" firstAttribute="leading" secondItem="P2G-j8-uqa" secondAttribute="leading" type="default" id="Zg5-bM-Eoq"/>
+                                            <constraint firstItem="grJ-aW-HIs" firstAttribute="trailing" secondItem="P2G-j8-uqa" secondAttribute="trailing" type="default" id="pxg-iZ-Bps"/>
+                                            <constraint firstItem="grJ-aW-HIs" firstAttribute="centerX" secondItem="P2G-j8-uqa" secondAttribute="centerX" type="default" id="y2J-OD-LTj"/>
                                         </constraints>
-                                    </imageView>
+                                    </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.64378826655507182" green="1" blue="0.34921907906403526" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="grJ-aW-HIs" firstAttribute="leading" secondItem="LKd-pR-md6" secondAttribute="leading" type="default" id="Kj5-wI-vDs"/>
-                                    <constraint firstItem="grJ-aW-HIs" firstAttribute="top" secondItem="LKd-pR-md6" secondAttribute="top" constant="64" id="gvd-Vq-IVB"/>
+                                    <constraint firstItem="P2G-j8-uqa" firstAttribute="top" secondItem="LKd-pR-md6" secondAttribute="top" type="default" id="aw0-Nl-wgt"/>
+                                    <constraint firstItem="P2G-j8-uqa" firstAttribute="bottom" secondItem="LKd-pR-md6" secondAttribute="bottom" type="default" id="dg9-qw-fH9"/>
+                                    <constraint firstItem="P2G-j8-uqa" firstAttribute="trailing" secondItem="LKd-pR-md6" secondAttribute="trailing" type="default" id="eff-Li-fHn"/>
+                                    <constraint firstItem="P2G-j8-uqa" firstAttribute="leading" secondItem="LKd-pR-md6" secondAttribute="leading" type="default" id="vhK-oJ-Z4L"/>
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecz-rL-91n" userLabel="View-ov">
@@ -264,25 +274,25 @@
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="by4-C6-Lkw" firstAttribute="top" secondItem="PGY-Zz-5hK" secondAttribute="bottom" type="default" id="6nx-aF-bch"/>
-                            <constraint firstAttribute="trailing" secondItem="by4-C6-Lkw" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="8gW-z7-MVc"/>
+                            <constraint firstItem="by4-C6-Lkw" firstAttribute="top" secondItem="LKd-pR-md6" secondAttribute="top" type="default" id="39G-RP-e0e"/>
+                            <constraint firstItem="by4-C6-Lkw" firstAttribute="top" secondItem="02l-XB-59C" secondAttribute="top" type="default" id="3kM-HY-bEx"/>
                             <constraint firstItem="PGY-Zz-5hK" firstAttribute="trailing" secondItem="pOF-Ie-jL3" secondAttribute="trailing" type="default" id="9Eu-0P-kn1"/>
                             <constraint firstItem="02l-XB-59C" firstAttribute="bottom" secondItem="pOF-Ie-jL3" secondAttribute="bottom" type="default" id="9t0-TX-JNd"/>
-                            <constraint firstItem="by4-C6-Lkw" firstAttribute="top" secondItem="LKd-pR-md6" secondAttribute="top" type="default" id="Cbc-Yb-u2r"/>
                             <constraint firstItem="LKd-pR-md6" firstAttribute="bottom" secondItem="pOF-Ie-jL3" secondAttribute="bottom" type="default" id="E8R-PX-Wgh"/>
-                            <constraint firstItem="ecz-rL-91n" firstAttribute="top" secondItem="by4-C6-Lkw" secondAttribute="top" type="default" id="QeJ-aE-Luy"/>
-                            <constraint firstItem="02l-XB-59C" firstAttribute="trailing" secondItem="pOF-Ie-jL3" secondAttribute="trailing" type="default" id="QhX-GR-QXf"/>
+                            <constraint firstItem="LKd-pR-md6" firstAttribute="trailing" secondItem="pOF-Ie-jL3" secondAttribute="trailing" type="default" id="K63-ly-Cfi"/>
+                            <constraint firstItem="ecz-rL-91n" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" type="default" id="KLf-75-I5Q"/>
+                            <constraint firstItem="ecz-rL-91n" firstAttribute="top" secondItem="by4-C6-Lkw" secondAttribute="top" type="default" id="Sef-S8-YSi"/>
                             <constraint firstItem="ecz-rL-91n" firstAttribute="bottom" secondItem="pOF-Ie-jL3" secondAttribute="bottom" type="default" id="V5W-Sf-O7m"/>
-                            <constraint firstItem="LKd-pR-md6" firstAttribute="top" secondItem="02l-XB-59C" secondAttribute="top" type="default" id="aTb-U7-TcZ"/>
-                            <constraint firstItem="LKd-pR-md6" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" constant="300" id="e2P-Ow-vIp"/>
+                            <constraint firstItem="LKd-pR-md6" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" type="default" id="XNc-TY-fgw"/>
+                            <constraint firstItem="02l-XB-59C" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" type="default" id="bTV-OH-A3c"/>
                             <constraint firstItem="PGY-Zz-5hK" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" type="default" id="eTc-vm-d0b"/>
-                            <constraint firstItem="LKd-pR-md6" firstAttribute="leading" secondItem="by4-C6-Lkw" secondAttribute="leading" type="default" id="fGa-ey-4g8"/>
+                            <constraint firstItem="02l-XB-59C" firstAttribute="trailing" secondItem="pOF-Ie-jL3" secondAttribute="trailing" type="default" id="exr-am-0E6"/>
+                            <constraint firstItem="02l-XB-59C" firstAttribute="top" secondItem="PGY-Zz-5hK" secondAttribute="bottom" type="default" id="k0Y-PS-6AW"/>
                             <constraint firstItem="PGY-Zz-5hK" firstAttribute="top" secondItem="pOF-Ie-jL3" secondAttribute="top" type="default" id="m2J-ST-tLw"/>
-                            <constraint firstItem="LKd-pR-md6" firstAttribute="trailing" secondItem="ecz-rL-91n" secondAttribute="trailing" type="default" id="pBL-Sd-bnp"/>
                             <constraint firstItem="by4-C6-Lkw" firstAttribute="bottom" secondItem="pOF-Ie-jL3" secondAttribute="bottom" type="default" id="re3-42-Eg0"/>
-                            <constraint firstItem="ecz-rL-91n" firstAttribute="leading" secondItem="by4-C6-Lkw" secondAttribute="leading" type="default" id="sMs-2B-iEr"/>
-                            <constraint firstAttribute="trailing" secondItem="LKd-pR-md6" secondAttribute="trailing" constant="-300" id="u28-5I-uuk"/>
-                            <constraint firstItem="02l-XB-59C" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" type="default" id="zFI-Uh-uQd"/>
+                            <constraint firstItem="ecz-rL-91n" firstAttribute="trailing" secondItem="pOF-Ie-jL3" secondAttribute="trailing" type="default" id="sjs-UV-xi7"/>
+                            <constraint firstItem="by4-C6-Lkw" firstAttribute="leading" secondItem="pOF-Ie-jL3" secondAttribute="leading" type="default" id="uJg-fT-03w"/>
+                            <constraint firstAttribute="trailing" secondItem="by4-C6-Lkw" secondAttribute="trailing" constant="320" id="vg2-Wg-nuk"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info" image="info.png" id="vDT-Wo-F8t"/>
@@ -296,6 +306,8 @@
                         <outlet property="notfallView" destination="02l-XB-59C" id="2ff-pC-B8k"/>
                         <outlet property="ovView" destination="ecz-rL-91n" id="5es-4v-8Lz"/>
                         <outlet property="ovWebView" destination="67h-Od-cKd" id="q9O-s9-5rn"/>
+                        <outlet property="planImageView" destination="grJ-aW-HIs" id="0br-1K-nye"/>
+                        <outlet property="planScrollView" destination="P2G-j8-uqa" id="Mgp-06-zii"/>
                         <outlet property="planView" destination="LKd-pR-md6" id="15f-Nl-q2j"/>
                     </connections>
                 </viewController>
@@ -394,7 +406,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Default.png" width="320" height="480"/>
         <image name="facebook.png" width="30" height="30"/>
         <image name="festbeiz.png" width="30" height="30"/>
         <image name="info.png" width="30" height="30"/>
@@ -429,6 +440,8 @@
                 <relationship kind="outlet" name="notfallView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="ovView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="ovWebView" candidateClass="UIWebView"/>
+                <relationship kind="outlet" name="planImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="planScrollView" candidateClass="UIScrollView"/>
                 <relationship kind="outlet" name="planView" candidateClass="UIView"/>
             </relationships>
         </class>

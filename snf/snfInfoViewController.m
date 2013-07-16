@@ -13,12 +13,12 @@
 
 #import "snfInfoViewController.h"
 
-@interface snfInfoViewController ()
+@interface snfInfoViewController () 
 
 @end
 
 @implementation snfInfoViewController
-@synthesize infoView, planView, ovView, notfallView, ovWebView, humanReadable, infoTextView;
+@synthesize infoView, planView, ovView, notfallView, ovWebView, humanReadable, infoTextView, planImageView, planScrollView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,6 +32,43 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    
+    // Set Text of the infoTextView
+    NSString *infoText = @"Seenachtfest Rapperswil-Jona\n\
+    c/o Verkehrsverein Rapperswil-Jona\n\
+    Fischmarkplatz 1\n\
+    8640 Rapperswil\n\
+    info@seenachtfest-rj.ch\n\
+    Tel: 055 220 57 57";
+    
+    UIFont *font=[UIFont fontWithName:@"Helvetica-Bold" size:14.0f];
+    
+    NSMutableAttributedString *myString = [[NSMutableAttributedString alloc] initWithString:infoText];
+    
+    // make 1st line bold
+    [myString addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, 28)];
+    
+    infoTextView.attributedText = myString;
+    
+    
+    // Load Plan Image View
+    
+    UIImage* image = [UIImage imageNamed:@"festplan"];
+    
+    NSAssert(image, @"image must not be nil."
+             "Check that you added the image to your bundle and that "
+             "the filename above matches the name of your image.");
+    
+    self.planImageView.image = image;
+    [self.planImageView sizeToFit];
+    
+    self.planScrollView.contentSize = image.size;
+    self.planScrollView.delegate = self;
+    self.planScrollView.minimumZoomScale = 0.3;
+    self.planScrollView.maximumZoomScale = 100.0;
+    
+    
     
     // Load ZVV-Webview
     NSString *urlAddress = @"http://m.sbb.ch";
@@ -39,22 +76,7 @@
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [ovWebView loadRequest:requestObj];
     
-    // Set Text of the infoTextView
-    NSString *infoText = @"Seenachtfest Rapperswil-Jona\n\
-c/o Verkehrsverein Rapperswil-Jona\n\
-Fischmarkplatz 1\n\
-8640 Rapperswil\n\
-info@seenachtfest-rj.ch\n\
-Tel: 055 220 57 57";
-    
-    UIFont *font=[UIFont fontWithName:@"Helvetica-Bold" size:14.0f];
 
-    NSMutableAttributedString *myString = [[NSMutableAttributedString alloc] initWithString:infoText];
-    
-    // make 1st line bold
-    [myString addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, 28)];
-    
-    infoTextView.attributedText = myString;
 
 }
 
@@ -111,6 +133,11 @@ Tel: 055 220 57 57";
     }
     
 //    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:144"]];
+}
+
+- (UIView*)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return self.planImageView;
 }
 
 //// Support Method for the JSON parsing

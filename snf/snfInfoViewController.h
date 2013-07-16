@@ -24,4 +24,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextView *infoTextView;
 
+@property (weak, nonatomic) IBOutlet UIImageView *planImageView;
+@property (weak, nonatomic) IBOutlet UIScrollView *planScrollView;
+
 @end
