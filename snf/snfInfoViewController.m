@@ -58,8 +58,8 @@ Tel: 055 220 57 57";
     UIImage* image = [UIImage imageNamed:@"festplan"];
     
     NSAssert(image, @"image must not be nil."
-             "Check that you added the image to your bundle and that "
-             "the filename above matches the name of your image.");
+ "Check that you added the image to your bundle and that "
+ "the filename above matches the name of your image.");
     
     self.planImageView.image = image;
     [self.planImageView sizeToFit];
@@ -72,7 +72,7 @@ Tel: 055 220 57 57";
     
     
     // Load ZVV-Webview
-    NSString *urlAddress = @"http://m.sbb.ch";
+    NSString *urlAddress = @"http://online.fahrplan.zvv.ch//bin/query.exe/dox";
     NSURL *url = [NSURL URLWithString: urlAddress];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [ovWebView loadRequest:requestObj];
