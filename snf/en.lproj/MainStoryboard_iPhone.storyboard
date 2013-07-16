@@ -59,9 +59,6 @@
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0C-4j-CRb" userLabel="View-sonntag">
                                 <color key="backgroundColor" red="0.25759959809403121" green="1" blue="0.99479610240877359" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dim-nd-M5n" userLabel="View-kinder">
-                                <color key="backgroundColor" red="0.89383727611489816" green="0.65507283642541891" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                             <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="Vrm-9V-YEh">
                                 <items>
                                     <navigationItem id="YYC-6U-tuF">
@@ -69,7 +66,6 @@
                                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="zcm-6h-N5K">
                                             <rect key="frame" x="28" y="6" width="263" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <segments>
                                                 <segment title="Freitag"/>
                                                 <segment title="Samstag"/>
@@ -97,21 +93,17 @@
                         <constraints>
                             <constraint firstItem="mBt-pm-N4z" firstAttribute="bottom" secondItem="17" secondAttribute="bottom" type="default" id="39a-Q7-dXb"/>
                             <constraint firstItem="mBt-pm-N4z" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="3EB-U2-AHu"/>
+                            <constraint firstItem="L0C-4j-CRb" firstAttribute="top" secondItem="pRa-QD-Nuh" secondAttribute="top" type="default" id="3nN-aF-4zf"/>
                             <constraint firstItem="Vrm-9V-YEh" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="4db-MK-uhw"/>
-                            <constraint firstItem="dim-nd-M5n" firstAttribute="bottom" secondItem="17" secondAttribute="bottom" type="default" id="DbH-W8-QwO"/>
                             <constraint firstItem="pRa-QD-Nuh" firstAttribute="bottom" secondItem="17" secondAttribute="bottom" type="default" id="Jbr-xZ-QaB"/>
                             <constraint firstItem="pRa-QD-Nuh" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="Jek-pb-YNh"/>
+                            <constraint firstItem="L0C-4j-CRb" firstAttribute="top" secondItem="Vrm-9V-YEh" secondAttribute="bottom" type="default" id="TIu-Ed-tyT"/>
                             <constraint firstItem="Vrm-9V-YEh" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="Uaa-ZM-hOf"/>
-                            <constraint firstItem="dim-nd-M5n" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="Uia-nZ-p1j"/>
                             <constraint firstItem="L0C-4j-CRb" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="WPs-fT-LYO"/>
-                            <constraint firstItem="dim-nd-M5n" firstAttribute="top" secondItem="Vrm-9V-YEh" secondAttribute="bottom" type="default" id="Z0z-oh-9RR"/>
-                            <constraint firstItem="dim-nd-M5n" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="aob-f9-5V8"/>
-                            <constraint firstItem="mBt-pm-N4z" firstAttribute="top" secondItem="pRa-QD-Nuh" secondAttribute="top" type="default" id="bav-Bt-eh7"/>
                             <constraint firstItem="L0C-4j-CRb" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="bhe-Fd-4t1"/>
                             <constraint firstItem="PEQ-Px-B2K" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="dET-cu-8LK"/>
                             <constraint firstItem="pRa-QD-Nuh" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="fNJ-FA-PzH"/>
                             <constraint firstItem="mBt-pm-N4z" firstAttribute="top" secondItem="L0C-4j-CRb" secondAttribute="top" type="default" id="faR-As-4Zr"/>
-                            <constraint firstItem="dim-nd-M5n" firstAttribute="top" secondItem="mBt-pm-N4z" secondAttribute="top" type="default" id="idm-Gn-hCE"/>
                             <constraint firstAttribute="trailing" secondItem="PEQ-Px-B2K" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="lZg-yG-PLe"/>
                             <constraint firstItem="Vrm-9V-YEh" firstAttribute="top" secondItem="17" secondAttribute="top" type="default" id="po8-Zs-db7"/>
                             <constraint firstItem="mBt-pm-N4z" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="qmB-Z3-a94"/>
@@ -122,7 +114,6 @@
                     <tabBarItem key="tabBarItem" title="Programm" image="programm.png" id="6"/>
                     <connections>
                         <outlet property="freitagView" destination="pRa-QD-Nuh" id="J4p-lO-rfP"/>
-                        <outlet property="kinderView" destination="dim-nd-M5n" id="eNb-Cc-0qt"/>
                         <outlet property="programmNavBar" destination="Vrm-9V-YEh" id="Hbs-Ze-B0I"/>
                         <outlet property="programmSegmentedControl" destination="zcm-6h-N5K" id="Tgx-73-ppK"/>
                         <outlet property="programmTitleLabel" destination="PEQ-Px-B2K" id="i7N-iA-5MR"/>
