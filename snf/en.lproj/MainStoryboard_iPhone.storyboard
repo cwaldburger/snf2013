@@ -195,6 +195,7 @@
                                             <outlet property="festbeizenDesc" destination="JNT-hi-Lid" id="UUy-Cr-BDv"/>
                                             <outlet property="festbeizenNr" destination="12e-40-9x4" id="sUG-Zc-PCe"/>
                                             <outlet property="festbeizenTitle" destination="wr6-YO-Z3B" id="84N-g1-1e0"/>
+                                            <segue destination="UaL-Dm-Iip" kind="modal" identifier="PickFestbeiz" modalTransitionStyle="crossDissolve" id="CK2-p3-lJC"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -217,6 +218,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Bg-pG-O7F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="826" y="106"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MHL-Sv-PH8">
+            <objects>
+                <viewController id="UaL-Dm-Iip" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uLR-o5-DhC">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKn-BI-NH4">
+                                <items>
+                                    <navigationItem title="Title" id="8iK-vg-3Ak">
+                                        <barButtonItem key="rightBarButtonItem" title="Schliessen" style="done" id="yvW-9G-c6p"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fKn-BI-NH4" firstAttribute="leading" secondItem="uLR-o5-DhC" secondAttribute="leading" type="default" id="FKo-eZ-dTm"/>
+                            <constraint firstItem="fKn-BI-NH4" firstAttribute="trailing" secondItem="uLR-o5-DhC" secondAttribute="trailing" type="default" id="N5q-i9-YOk"/>
+                            <constraint firstItem="fKn-BI-NH4" firstAttribute="top" secondItem="uLR-o5-DhC" secondAttribute="top" type="default" id="tMg-Y9-PnR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WXt-eU-8hf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Dm-p0-QUU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1275" y="106"/>
         </scene>
         <!--Snf Facebook View Controller - Facebook-->
         <scene sceneID="KyL-ab-drq">

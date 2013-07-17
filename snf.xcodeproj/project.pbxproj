@@ -68,6 +68,7 @@
 		F6504A7A1794E888007E31EE /* snfFestbeizenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6504A791794E888007E31EE /* snfFestbeizenTableViewCell.m */; };
 		F69DD7CB17945EB600450214 /* festplan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F69DD7CA17945EB600450214 /* festplan@2x.png */; };
 		F69DD7CD17945F0200450214 /* festplan.png in Resources */ = {isa = PBXBuildFile; fileRef = F69DD7CC17945F0200450214 /* festplan.png */; };
+		F6EDD8001797048400F59BAF /* snfFestbeizenDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EDD7FF1797048400F59BAF /* snfFestbeizenDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +155,8 @@
 		F6504A791794E888007E31EE /* snfFestbeizenTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfFestbeizenTableViewCell.m; sourceTree = "<group>"; };
 		F69DD7CA17945EB600450214 /* festplan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "festplan@2x.png"; sourceTree = "<group>"; };
 		F69DD7CC17945F0200450214 /* festplan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = festplan.png; sourceTree = "<group>"; };
+		F6EDD7FE1797048400F59BAF /* snfFestbeizenDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snfFestbeizenDetailViewController.h; sourceTree = "<group>"; };
+		F6EDD7FF1797048400F59BAF /* snfFestbeizenDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfFestbeizenDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +227,8 @@
 				F61AA88F16E69CF8001EC188 /* snfAppDelegate.m */,
 				F63AF58D178B7FAB006650B1 /* TestFlightSDK1.2.6 */,
 				F61AA89716E69CF8001EC188 /* MainStoryboard_iPhone.storyboard */,
+				F6EDD7FE1797048400F59BAF /* snfFestbeizenDetailViewController.h */,
+				F6EDD7FF1797048400F59BAF /* snfFestbeizenDetailViewController.m */,
 				F61AA89A16E69CF8001EC188 /* MainStoryboard_iPad.storyboard */,
 				F6504A751794E0CD007E31EE /* snfFestbeizenViewController.h */,
 				F6504A761794E0CD007E31EE /* snfFestbeizenViewController.m */,
@@ -490,6 +495,7 @@
 				F62C400016F49A0F00BA9138 /* festbeizenTableView.m in Sources */,
 				F6504A771794E0CD007E31EE /* snfFestbeizenViewController.m in Sources */,
 				F6504A7A1794E888007E31EE /* snfFestbeizenTableViewCell.m in Sources */,
+				F6EDD8001797048400F59BAF /* snfFestbeizenDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
