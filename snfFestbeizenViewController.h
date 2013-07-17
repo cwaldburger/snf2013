@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface snfFestbeizenViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+#import "snfFestbeizenDetailViewController.h"
+
+@interface snfFestbeizenViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, snfFestbeizenDetailViewControllerDelegate>
 
 @end

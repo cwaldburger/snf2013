@@ -69,4 +69,22 @@
     return cell;
 }
 
+#pragma mark - snfFestbeizenDetailViewControllerDelegate
+
+- (void)snfFestbeizenDetailViewControllerDidClose: (snfFestbeizenDetailViewController *)controller
+{
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+	if ([segue.identifier isEqualToString:@"PickFestbeiz"])
+	{
+		UINavigationController *navigationController = segue.destinationViewController;
+		snfFestbeizenDetailViewController *festbeizenDetailsViewController = [[navigationController viewControllers] objectAtIndex:0];
+		festbeizenDetailsViewController.delegate = self;
+	}
+}
+
+
 @end
