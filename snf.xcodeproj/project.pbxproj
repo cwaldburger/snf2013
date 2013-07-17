@@ -69,6 +69,9 @@
 		F69DD7CB17945EB600450214 /* festplan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F69DD7CA17945EB600450214 /* festplan@2x.png */; };
 		F69DD7CD17945F0200450214 /* festplan.png in Resources */ = {isa = PBXBuildFile; fileRef = F69DD7CC17945F0200450214 /* festplan.png */; };
 		F6EDD8001797048400F59BAF /* snfFestbeizenDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EDD7FF1797048400F59BAF /* snfFestbeizenDetailViewController.m */; };
+		F6EDD805179716E300F59BAF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EDD804179716E300F59BAF /* MapKit.framework */; };
+		F6EDD80B17971D4C00F59BAF /* FestbeizLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EDD80A17971D4C00F59BAF /* FestbeizLocation.m */; };
+		F6EDD80D17971EB500F59BAF /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EDD80C17971EB500F59BAF /* AddressBook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +160,10 @@
 		F69DD7CC17945F0200450214 /* festplan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = festplan.png; sourceTree = "<group>"; };
 		F6EDD7FE1797048400F59BAF /* snfFestbeizenDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snfFestbeizenDetailViewController.h; sourceTree = "<group>"; };
 		F6EDD7FF1797048400F59BAF /* snfFestbeizenDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfFestbeizenDetailViewController.m; sourceTree = "<group>"; };
+		F6EDD804179716E300F59BAF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F6EDD80917971D4C00F59BAF /* FestbeizLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FestbeizLocation.h; path = ../FestbeizLocation.h; sourceTree = "<group>"; };
+		F6EDD80A17971D4C00F59BAF /* FestbeizLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FestbeizLocation.m; path = ../FestbeizLocation.m; sourceTree = "<group>"; };
+		F6EDD80C17971EB500F59BAF /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +171,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6EDD80D17971EB500F59BAF /* AddressBook.framework in Frameworks */,
+				F6EDD805179716E300F59BAF /* MapKit.framework in Frameworks */,
 				F63AF599178B7FE3006650B1 /* libz.dylib in Frameworks */,
 				F61AA88016E69CF8001EC188 /* UIKit.framework in Frameworks */,
 				F61AA88216E69CF8001EC188 /* Foundation.framework in Frameworks */,
@@ -189,6 +198,8 @@
 		F61AA87316E69CF8001EC188 = {
 			isa = PBXGroup;
 			children = (
+				F6EDD80C17971EB500F59BAF /* AddressBook.framework */,
+				F6EDD804179716E300F59BAF /* MapKit.framework */,
 				F63AF598178B7FE3006650B1 /* libz.dylib */,
 				F61AA88516E69CF8001EC188 /* snf */,
 				F61AA8B716E69CF8001EC188 /* snfTests */,
@@ -229,6 +240,8 @@
 				F61AA89716E69CF8001EC188 /* MainStoryboard_iPhone.storyboard */,
 				F6EDD7FE1797048400F59BAF /* snfFestbeizenDetailViewController.h */,
 				F6EDD7FF1797048400F59BAF /* snfFestbeizenDetailViewController.m */,
+				F6EDD80917971D4C00F59BAF /* FestbeizLocation.h */,
+				F6EDD80A17971D4C00F59BAF /* FestbeizLocation.m */,
 				F61AA89A16E69CF8001EC188 /* MainStoryboard_iPad.storyboard */,
 				F6504A751794E0CD007E31EE /* snfFestbeizenViewController.h */,
 				F6504A761794E0CD007E31EE /* snfFestbeizenViewController.m */,
@@ -496,6 +509,7 @@
 				F6504A771794E0CD007E31EE /* snfFestbeizenViewController.m in Sources */,
 				F6504A7A1794E888007E31EE /* snfFestbeizenTableViewCell.m in Sources */,
 				F6EDD8001797048400F59BAF /* snfFestbeizenDetailViewController.m in Sources */,
+				F6EDD80B17971D4C00F59BAF /* FestbeizLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

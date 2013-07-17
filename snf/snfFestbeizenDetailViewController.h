@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 @class snfFestbeizenDetailViewController;
 
@@ -18,6 +19,7 @@
 @interface snfFestbeizenDetailViewController : UIViewController
 
 @property (nonatomic, weak) id <snfFestbeizenDetailViewControllerDelegate> delegate;
+@property (weak, nonatomic) IBOutlet MKMapView *festbeizenMapView;
 
 - (IBAction)close:(id)sender;
 

@@ -195,7 +195,7 @@
                                             <outlet property="festbeizenDesc" destination="JNT-hi-Lid" id="UUy-Cr-BDv"/>
                                             <outlet property="festbeizenNr" destination="12e-40-9x4" id="sUG-Zc-PCe"/>
                                             <outlet property="festbeizenTitle" destination="wr6-YO-Z3B" id="84N-g1-1e0"/>
-                                            <segue destination="4zn-Is-5Q6" kind="modal" identifier="PickFestbeiz" modalTransitionStyle="crossDissolve" id="CK2-p3-lJC"/>
+                                            <segue destination="4zn-Is-5Q6" kind="modal" identifier="PickFestbeiz" modalTransitionStyle="partialCurl" id="CK2-p3-lJC"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -224,17 +224,62 @@
             <objects>
                 <viewController id="UaL-Dm-Iip" customClass="snfFestbeizenDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uLR-o5-DhC">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Festbeiz X" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0L-gP-D92">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="tUW-h7-JKk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Description Description Description Description" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="wEh-9t-1Qe">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="aFM-cR-9TV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p4z-ed-aeA">
+                                <color key="backgroundColor" white="0.25148059480000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="324" id="cq6-Q1-p77"/>
+                                </constraints>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="hWI-Ak-SJp">
+                                <items>
+                                    <barButtonItem width="217" style="plain" systemItem="fixedSpace" id="dSd-KD-oBi"/>
+                                    <barButtonItem title="Schliessen" style="done" id="yvW-9G-c6p">
+                                        <connections>
+                                            <action selector="close:" destination="UaL-Dm-Iip" id="2KC-m7-Jtf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.25148059480000001" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e0L-gP-D92" firstAttribute="top" secondItem="uLR-o5-DhC" secondAttribute="top" constant="84" id="4Lr-kg-nFC"/>
+                            <constraint firstItem="hWI-Ak-SJp" firstAttribute="trailing" secondItem="uLR-o5-DhC" secondAttribute="trailing" type="default" id="DUq-gC-j7O"/>
+                            <constraint firstItem="e0L-gP-D92" firstAttribute="leading" secondItem="uLR-o5-DhC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Eho-a7-QoT"/>
+                            <constraint firstItem="wEh-9t-1Qe" firstAttribute="leading" secondItem="uLR-o5-DhC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="FSq-Wa-uJE"/>
+                            <constraint firstAttribute="trailing" secondItem="wEh-9t-1Qe" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Flr-Ao-bNH"/>
+                            <constraint firstAttribute="trailing" secondItem="p4z-ed-aeA" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="anv-HR-fSa"/>
+                            <constraint firstItem="hWI-Ak-SJp" firstAttribute="bottom" secondItem="uLR-o5-DhC" secondAttribute="bottom" type="default" id="blg-N4-K2h"/>
+                            <constraint firstAttribute="trailing" secondItem="e0L-gP-D92" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ccx-xk-uOJ"/>
+                            <constraint firstItem="p4z-ed-aeA" firstAttribute="top" secondItem="uLR-o5-DhC" secondAttribute="top" constant="159" id="iOP-hF-nGu"/>
+                            <constraint firstItem="p4z-ed-aeA" firstAttribute="leading" secondItem="uLR-o5-DhC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="kqG-nc-vLP"/>
+                            <constraint firstItem="hWI-Ak-SJp" firstAttribute="leading" secondItem="uLR-o5-DhC" secondAttribute="leading" type="default" id="ukO-Yf-7r9"/>
+                            <constraint firstItem="wEh-9t-1Qe" firstAttribute="top" secondItem="uLR-o5-DhC" secondAttribute="top" constant="98" id="wxc-G3-scm"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Festbeiz" id="WXt-eU-8hf">
-                        <barButtonItem key="rightBarButtonItem" title="Schliessen" style="done" id="yvW-9G-c6p">
-                            <connections>
-                                <action selector="close:" destination="UaL-Dm-Iip" id="2KC-m7-Jtf"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Festbeiz" id="WXt-eU-8hf"/>
+                    <connections>
+                        <outlet property="festbeizenMapView" destination="p4z-ed-aeA" id="KzD-KZ-qkc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Dm-p0-QUU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -469,9 +514,9 @@
         <!--Navigation Controller-->
         <scene sceneID="i6a-Z6-Y9z">
             <objects>
-                <navigationController id="4zn-Is-5Q6" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="4zn-Is-5Q6" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="OLq-nd-Vu4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -508,6 +553,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/snfFestbeizenDetailViewController.h"/>
             <relationships>
                 <relationship kind="action" name="close:"/>
+                <relationship kind="outlet" name="festbeizenMapView" candidateClass="MKMapView"/>
             </relationships>
         </class>
         <class className="snfFestbeizenTableViewCell" superclassName="UITableViewCell">
