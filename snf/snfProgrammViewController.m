@@ -13,7 +13,7 @@
 @end
 
 @implementation snfProgrammViewController
-@synthesize freitagView, samstagView, sonntagView, kinderView, programmSegmentedControl, programmTitleLabel; //, programmScrollView;
+@synthesize programmSegmentedControl, programmTextView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,27 +27,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	// Do any additional setup after loading the view.    
+    
+    NSString *freitagPath = [[NSBundle mainBundle] pathForResource:@"freitagText" ofType:@"txt"];
+    NSString *freitagText = [NSString stringWithContentsOfFile:freitagPath encoding:NSUTF8StringEncoding error:nil];
 
-    [freitagView setBackgroundColor:[UIColor clearColor]];
-    [samstagView setBackgroundColor:[UIColor clearColor]];
-    [sonntagView setBackgroundColor:[UIColor clearColor]];
-    [kinderView setBackgroundColor:[UIColor clearColor]];
-    
-    freitagView.hidden = YES;
-    samstagView.hidden = YES;
-    sonntagView.hidden = YES;
-    kinderView.hidden = YES;
-//    
-//    [programmScrollView setScrollEnabled: YES];
-//    [programmScrollView setContentSize: CGSizeMake(320, 800)];
-
-    
-    self.programmScrollView.contentSize = CGSizeMake(320, 800);
-    self.programmScrollView.scrollEnabled = YES;
-    UIImageView *programmImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"festplan.png"]];
-    
-    [self.programmScrollView addSubview: programmImageView];
+    programmTextView.text = freitagText;
     
 }
 
@@ -59,42 +44,34 @@
 
 - (IBAction)segmentedControlChanged:(UISegmentedControl *)sender {
 
+    NSString *tagID = nil;
+    
     switch (sender.selectedSegmentIndex) {
             //            freitag
         case 0:
-//            self.freitagView.hidden = NO;
-//            self.samstagView.hidden = YES;
-//            self.sonntagView.hidden = YES;
-//            self.kinderView.hidden = YES;
-            self.programmTitleLabel.text = @"Freitag, 9. August 2013";
+            tagID = @"freitagText";
             break;
             //            samstag
         case 1:
-//            self.freitagView.hidden = YES;
-//            self.samstagView.hidden = NO;
-//            self.sonntagView.hidden = YES;
-//            self.kinderView.hidden = YES;
-            self.programmTitleLabel.text = @"Samstag, 10. August 2013";
+            tagID = @"samstagText";
             break;
             //            sonntag
         case 2:
-//            self.freitagView.hidden = YES;
-//            self.samstagView.hidden = YES;
-//            self.sonntagView.hidden = NO;
-//            self.kinderView.hidden = YES;
-            self.programmTitleLabel.text = @"Sonntag, 11. August 2013";
+            tagID = @"sonntagText";
             break;
             //            kinder
         case 3:
-//            self.freitagView.hidden = YES;
-//            self.samstagView.hidden = YES;
-//            self.sonntagView.hidden = YES;
-//            self.kinderView.hidden = NO;
-            self.programmTitleLabel.text = @"Kinder Programm";
+            tagID = @"kinderText";
             break;
      
         default:
             break;
     }
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:tagID ofType:@"txt"];
+    NSString *newText = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    programmTextView.text = newText;
+    [self.programmTextView setContentOffset:CGPointZero animated:NO];
+    
 }
 @end

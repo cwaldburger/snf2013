@@ -51,6 +51,10 @@
 		F6D727181798097500CFAE34 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D727151798097500CFAE34 /* Default-568h@2x.png */; };
 		F6D727191798097500CFAE34 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D727161798097500CFAE34 /* Default.png */; };
 		F6D7271A1798097500CFAE34 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D727171798097500CFAE34 /* Default@2x.png */; };
+		F6D7271E1798535B00CFAE34 /* samstagText.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6D7271D1798535B00CFAE34 /* samstagText.txt */; };
+		F6D72722179854E200CFAE34 /* freitagText.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6D7271F179854E200CFAE34 /* freitagText.txt */; };
+		F6D72723179854E200CFAE34 /* kinderText.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6D72720179854E200CFAE34 /* kinderText.txt */; };
+		F6D72724179854E200CFAE34 /* sonntagText.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6D72721179854E200CFAE34 /* sonntagText.txt */; };
 		F6EDD8001797048400F59BAF /* snfFestbeizenDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EDD7FF1797048400F59BAF /* snfFestbeizenDetailViewController.m */; };
 		F6EDD805179716E300F59BAF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EDD804179716E300F59BAF /* MapKit.framework */; };
 		F6EDD80B17971D4C00F59BAF /* FestbeizLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EDD80A17971D4C00F59BAF /* FestbeizLocation.m */; };
@@ -122,6 +126,10 @@
 		F6D727151798097500CFAE34 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F6D727161798097500CFAE34 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		F6D727171798097500CFAE34 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F6D7271D1798535B00CFAE34 /* samstagText.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = samstagText.txt; sourceTree = "<group>"; };
+		F6D7271F179854E200CFAE34 /* freitagText.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = freitagText.txt; sourceTree = "<group>"; };
+		F6D72720179854E200CFAE34 /* kinderText.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kinderText.txt; sourceTree = "<group>"; };
+		F6D72721179854E200CFAE34 /* sonntagText.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sonntagText.txt; sourceTree = "<group>"; };
 		F6EDD7FE1797048400F59BAF /* snfFestbeizenDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snfFestbeizenDetailViewController.h; sourceTree = "<group>"; };
 		F6EDD7FF1797048400F59BAF /* snfFestbeizenDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfFestbeizenDetailViewController.m; sourceTree = "<group>"; };
 		F6EDD804179716E300F59BAF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -195,6 +203,10 @@
 		F61AA88516E69CF8001EC188 /* snf */ = {
 			isa = PBXGroup;
 			children = (
+				F6D7271D1798535B00CFAE34 /* samstagText.txt */,
+				F6D7271F179854E200CFAE34 /* freitagText.txt */,
+				F6D72720179854E200CFAE34 /* kinderText.txt */,
+				F6D72721179854E200CFAE34 /* sonntagText.txt */,
 				F61AA8CE16E69F1A001EC188 /* Assets */,
 				F61AA88616E69CF8001EC188 /* Supporting Files */,
 				F61AA88E16E69CF8001EC188 /* snfAppDelegate.h */,
@@ -383,6 +395,10 @@
 				F6D727181798097500CFAE34 /* Default-568h@2x.png in Resources */,
 				F6D727191798097500CFAE34 /* Default.png in Resources */,
 				F6D7271A1798097500CFAE34 /* Default@2x.png in Resources */,
+				F6D7271E1798535B00CFAE34 /* samstagText.txt in Resources */,
+				F6D72722179854E200CFAE34 /* freitagText.txt in Resources */,
+				F6D72723179854E200CFAE34 /* kinderText.txt in Resources */,
+				F6D72724179854E200CFAE34 /* sonntagText.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
