@@ -55,6 +55,14 @@
 		F6D72722179854E200CFAE34 /* freitagText.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6D7271F179854E200CFAE34 /* freitagText.txt */; };
 		F6D72723179854E200CFAE34 /* kinderText.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6D72720179854E200CFAE34 /* kinderText.txt */; };
 		F6D72724179854E200CFAE34 /* sonntagText.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6D72721179854E200CFAE34 /* sonntagText.txt */; };
+		F6D7272D1798976300CFAE34 /* seenachtfest_app_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D727251798976300CFAE34 /* seenachtfest_app_logo.png */; };
+		F6D7272E1798976300CFAE34 /* seenachtfest_app_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D727261798976300CFAE34 /* seenachtfest_app_logo@2x.png */; };
+		F6D7272F1798976300CFAE34 /* snfrj_app_heineken_info.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D727271798976300CFAE34 /* snfrj_app_heineken_info.png */; };
+		F6D727301798976300CFAE34 /* snfrj_app_heineken_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D727281798976300CFAE34 /* snfrj_app_heineken_info@2x.png */; };
+		F6D727311798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D727291798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info.png */; };
+		F6D727321798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D7272A1798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info@2x.png */; };
+		F6D727331798976300CFAE34 /* snfrj_app_rj_info.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D7272B1798976300CFAE34 /* snfrj_app_rj_info.png */; };
+		F6D727341798976300CFAE34 /* snfrj_app_rj_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D7272C1798976300CFAE34 /* snfrj_app_rj_info@2x.png */; };
 		F6EDD8001797048400F59BAF /* snfFestbeizenDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EDD7FF1797048400F59BAF /* snfFestbeizenDetailViewController.m */; };
 		F6EDD805179716E300F59BAF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EDD804179716E300F59BAF /* MapKit.framework */; };
 		F6EDD80B17971D4C00F59BAF /* FestbeizLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EDD80A17971D4C00F59BAF /* FestbeizLocation.m */; };
@@ -130,6 +138,14 @@
 		F6D7271F179854E200CFAE34 /* freitagText.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = freitagText.txt; sourceTree = "<group>"; };
 		F6D72720179854E200CFAE34 /* kinderText.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kinderText.txt; sourceTree = "<group>"; };
 		F6D72721179854E200CFAE34 /* sonntagText.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sonntagText.txt; sourceTree = "<group>"; };
+		F6D727251798976300CFAE34 /* seenachtfest_app_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seenachtfest_app_logo.png; sourceTree = "<group>"; };
+		F6D727261798976300CFAE34 /* seenachtfest_app_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seenachtfest_app_logo@2x.png"; sourceTree = "<group>"; };
+		F6D727271798976300CFAE34 /* snfrj_app_heineken_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snfrj_app_heineken_info.png; sourceTree = "<group>"; };
+		F6D727281798976300CFAE34 /* snfrj_app_heineken_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snfrj_app_heineken_info@2x.png"; sourceTree = "<group>"; };
+		F6D727291798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snfrj_app_hensa_schiffahrtsbetrieb_info.png; sourceTree = "<group>"; };
+		F6D7272A1798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snfrj_app_hensa_schiffahrtsbetrieb_info@2x.png"; sourceTree = "<group>"; };
+		F6D7272B1798976300CFAE34 /* snfrj_app_rj_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snfrj_app_rj_info.png; sourceTree = "<group>"; };
+		F6D7272C1798976300CFAE34 /* snfrj_app_rj_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snfrj_app_rj_info@2x.png"; sourceTree = "<group>"; };
 		F6EDD7FE1797048400F59BAF /* snfFestbeizenDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snfFestbeizenDetailViewController.h; sourceTree = "<group>"; };
 		F6EDD7FF1797048400F59BAF /* snfFestbeizenDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfFestbeizenDetailViewController.m; sourceTree = "<group>"; };
 		F6EDD804179716E300F59BAF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -272,6 +288,14 @@
 		F61AA8CE16E69F1A001EC188 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F6D727251798976300CFAE34 /* seenachtfest_app_logo.png */,
+				F6D727261798976300CFAE34 /* seenachtfest_app_logo@2x.png */,
+				F6D727271798976300CFAE34 /* snfrj_app_heineken_info.png */,
+				F6D727281798976300CFAE34 /* snfrj_app_heineken_info@2x.png */,
+				F6D727291798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info.png */,
+				F6D7272A1798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info@2x.png */,
+				F6D7272B1798976300CFAE34 /* snfrj_app_rj_info.png */,
+				F6D7272C1798976300CFAE34 /* snfrj_app_rj_info@2x.png */,
 				F69DD7CC17945F0200450214 /* festplan.png */,
 				F69DD7CA17945EB600450214 /* festplan@2x.png */,
 				F6428E1716E911280041C4D8 /* snfrj_icon@2x.png */,
@@ -399,6 +423,14 @@
 				F6D72722179854E200CFAE34 /* freitagText.txt in Resources */,
 				F6D72723179854E200CFAE34 /* kinderText.txt in Resources */,
 				F6D72724179854E200CFAE34 /* sonntagText.txt in Resources */,
+				F6D7272D1798976300CFAE34 /* seenachtfest_app_logo.png in Resources */,
+				F6D7272E1798976300CFAE34 /* seenachtfest_app_logo@2x.png in Resources */,
+				F6D7272F1798976300CFAE34 /* snfrj_app_heineken_info.png in Resources */,
+				F6D727301798976300CFAE34 /* snfrj_app_heineken_info@2x.png in Resources */,
+				F6D727311798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info.png in Resources */,
+				F6D727321798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info@2x.png in Resources */,
+				F6D727331798976300CFAE34 /* snfrj_app_rj_info.png in Resources */,
+				F6D727341798976300CFAE34 /* snfrj_app_rj_info@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
