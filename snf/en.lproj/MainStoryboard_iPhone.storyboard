@@ -400,7 +400,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.70314056045692608" green="0.07927406551759475" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.25" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="P5U-0B-RmQ" firstAttribute="leading" secondItem="02l-XB-59C" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ply-Rt-N27"/>
                                     <constraint firstAttribute="trailing" secondItem="oVo-cg-E6c" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="SX5-QZ-VTw"/>
