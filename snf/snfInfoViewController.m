@@ -18,7 +18,7 @@
 @end
 
 @implementation snfInfoViewController
-@synthesize infoView, planView, ovView, notfallView, ovWebView, infoTextView, planImageView, planScrollView;
+@synthesize infoView, planView, ovView, notfallView, ovWebView, infoTextView, planImageView, planScrollView, notfallMap;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
