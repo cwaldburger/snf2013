@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F616455B16E6A84300709D62 /* snfInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F616455A16E6A84300709D62 /* snfInfoViewController.m */; };
+		F616455B16E6A84300709D62 /* snfInfo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F616455A16E6A84300709D62 /* snfInfo2ViewController.m */; };
 		F616455E16E6A85300709D62 /* snfFacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F616455D16E6A85300709D62 /* snfFacebookViewController.m */; };
 		F61AA88016E69CF8001EC188 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61AA87F16E69CF8001EC188 /* UIKit.framework */; };
 		F61AA88216E69CF8001EC188 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61AA88116E69CF8001EC188 /* Foundation.framework */; };
@@ -63,6 +63,8 @@
 		F6D727321798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D7272A1798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info@2x.png */; };
 		F6D727331798976300CFAE34 /* snfrj_app_rj_info.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D7272B1798976300CFAE34 /* snfrj_app_rj_info.png */; };
 		F6D727341798976300CFAE34 /* snfrj_app_rj_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D7272C1798976300CFAE34 /* snfrj_app_rj_info@2x.png */; };
+		F6D72737179899AD00CFAE34 /* snfInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D72736179899AD00CFAE34 /* snfInfoViewController.m */; };
+		F6D7273B17989D5400CFAE34 /* infoText.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6D7273A17989D5400CFAE34 /* infoText.txt */; };
 		F6EDD8001797048400F59BAF /* snfFestbeizenDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EDD7FF1797048400F59BAF /* snfFestbeizenDetailViewController.m */; };
 		F6EDD805179716E300F59BAF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EDD804179716E300F59BAF /* MapKit.framework */; };
 		F6EDD80B17971D4C00F59BAF /* FestbeizLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EDD80A17971D4C00F59BAF /* FestbeizLocation.m */; };
@@ -80,8 +82,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F616455916E6A84300709D62 /* snfInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snfInfoViewController.h; sourceTree = "<group>"; };
-		F616455A16E6A84300709D62 /* snfInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfInfoViewController.m; sourceTree = "<group>"; };
+		F616455916E6A84300709D62 /* snfInfo2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snfInfo2ViewController.h; sourceTree = "<group>"; };
+		F616455A16E6A84300709D62 /* snfInfo2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfInfo2ViewController.m; sourceTree = "<group>"; };
 		F616455C16E6A85300709D62 /* snfFacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snfFacebookViewController.h; sourceTree = "<group>"; };
 		F616455D16E6A85300709D62 /* snfFacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfFacebookViewController.m; sourceTree = "<group>"; };
 		F61AA87C16E69CF8001EC188 /* snf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snf.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +148,9 @@
 		F6D7272A1798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snfrj_app_hensa_schiffahrtsbetrieb_info@2x.png"; sourceTree = "<group>"; };
 		F6D7272B1798976300CFAE34 /* snfrj_app_rj_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snfrj_app_rj_info.png; sourceTree = "<group>"; };
 		F6D7272C1798976300CFAE34 /* snfrj_app_rj_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snfrj_app_rj_info@2x.png"; sourceTree = "<group>"; };
+		F6D72735179899AD00CFAE34 /* snfInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snfInfoViewController.h; sourceTree = "<group>"; };
+		F6D72736179899AD00CFAE34 /* snfInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfInfoViewController.m; sourceTree = "<group>"; };
+		F6D7273A17989D5400CFAE34 /* infoText.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = infoText.txt; sourceTree = "<group>"; };
 		F6EDD7FE1797048400F59BAF /* snfFestbeizenDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snfFestbeizenDetailViewController.h; sourceTree = "<group>"; };
 		F6EDD7FF1797048400F59BAF /* snfFestbeizenDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfFestbeizenDetailViewController.m; sourceTree = "<group>"; };
 		F6EDD804179716E300F59BAF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -219,6 +224,7 @@
 		F61AA88516E69CF8001EC188 /* snf */ = {
 			isa = PBXGroup;
 			children = (
+				F6D7273A17989D5400CFAE34 /* infoText.txt */,
 				F6D7271D1798535B00CFAE34 /* samstagText.txt */,
 				F6D7271F179854E200CFAE34 /* freitagText.txt */,
 				F6D72720179854E200CFAE34 /* kinderText.txt */,
@@ -243,8 +249,10 @@
 				F61AA8EA16E6A0E9001EC188 /* snfTicketViewController.m */,
 				F61AA8EC16E6A567001EC188 /* snfProgrammViewController.h */,
 				F61AA8ED16E6A567001EC188 /* snfProgrammViewController.m */,
-				F616455916E6A84300709D62 /* snfInfoViewController.h */,
-				F616455A16E6A84300709D62 /* snfInfoViewController.m */,
+				F616455916E6A84300709D62 /* snfInfo2ViewController.h */,
+				F616455A16E6A84300709D62 /* snfInfo2ViewController.m */,
+				F6D72735179899AD00CFAE34 /* snfInfoViewController.h */,
+				F6D72736179899AD00CFAE34 /* snfInfoViewController.m */,
 				F616455C16E6A85300709D62 /* snfFacebookViewController.h */,
 				F616455D16E6A85300709D62 /* snfFacebookViewController.m */,
 				F63AF58D178B7FAB006650B1 /* TestFlightSDK1.2.6 */,
@@ -431,6 +439,7 @@
 				F6D727321798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info@2x.png in Resources */,
 				F6D727331798976300CFAE34 /* snfrj_app_rj_info.png in Resources */,
 				F6D727341798976300CFAE34 /* snfrj_app_rj_info@2x.png in Resources */,
+				F6D7273B17989D5400CFAE34 /* infoText.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,13 +480,14 @@
 				F61AA89016E69CF8001EC188 /* snfAppDelegate.m in Sources */,
 				F61AA8EB16E6A0E9001EC188 /* snfTicketViewController.m in Sources */,
 				F61AA8EE16E6A567001EC188 /* snfProgrammViewController.m in Sources */,
-				F616455B16E6A84300709D62 /* snfInfoViewController.m in Sources */,
+				F616455B16E6A84300709D62 /* snfInfo2ViewController.m in Sources */,
 				F616455E16E6A85300709D62 /* snfFacebookViewController.m in Sources */,
 				F62C400016F49A0F00BA9138 /* festbeizenTableView.m in Sources */,
 				F6504A771794E0CD007E31EE /* snfFestbeizenViewController.m in Sources */,
 				F6504A7A1794E888007E31EE /* snfFestbeizenTableViewCell.m in Sources */,
 				F6EDD8001797048400F59BAF /* snfFestbeizenDetailViewController.m in Sources */,
 				F6EDD80B17971D4C00F59BAF /* FestbeizLocation.m in Sources */,
+				F6D72737179899AD00CFAE34 /* snfInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

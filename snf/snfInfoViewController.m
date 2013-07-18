@@ -2,23 +2,19 @@
 //  snfInfoViewController.m
 //  snf
 //
-//  Created by Cédric Waldburger on 3/5/13.
+//  Created by Cédric Waldburger on 7/18/13.
 //  Copyright (c) 2013 mediasign. All rights reserved.
 //
 
-// ADD INFO FOR JSON IMPORT
-#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0) //1
-#define kLatestKivaLoansURL [NSURL URLWithString:@"http://api.kivaws.org/v1/loans/search.json?status=fundraising"] //2
-
-
 #import "snfInfoViewController.h"
 
-@interface snfInfoViewController () 
+@interface snfInfoViewController ()
 
 @end
 
 @implementation snfInfoViewController
-@synthesize infoView, planView, ovView, notfallView, ovWebView, infoTextView, planImageView, planScrollView, notfallMap;
+
+@synthesize infoTextView, infoPicturesView, planScrollView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,53 +28,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+	// Do any additional setup after loading the view.
     
-    // Set Text of the infoTextView
-    NSString *infoText = \
-@"Seenachtfest Rapperswil-Jona\n\
-c/o Verkehrsverein Rapperswil-Jona\n\
-Fischmarkplatz 1\n\
-8640 Rapperswil\n\
-info@seenachtfest-rj.ch\n\
-Tel: 055 220 57 57";
-
-    UIFont *font=[UIFont fontWithName:@"Helvetica-Bold" size:14.0f];
+    // Info Text
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"infoText" ofType:@"txt"];
+    NSString *infoText = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
     
-    NSMutableAttributedString *myString = [[NSMutableAttributedString alloc] initWithString:infoText];
+    infoTextView.text = infoText;
     
-    // make 1st line bold
-    [myString addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, 28)];
-    
-    infoTextView.attributedText = myString;
-    
-    
-    // Load Plan Image View
-    
-    UIImage* image = [UIImage imageNamed:@"festplan"];
-    
-    NSAssert(image, @"image must not be nil."
- "Check that you added the image to your bundle and that "
- "the filename above matches the name of your image.");
-    
-    self.planImageView.image = image;
-    [self.planImageView sizeToFit];
-    
-    self.planScrollView.contentSize = image.size;
-//    self.planScrollView.delegate = self;
-//    self.planScrollView.minimumZoomScale = 0.3;
-//    self.planScrollView.maximumZoomScale = 100.0;
+    // Load Plan
     
     
     
-    // Load ZVV-Webview
-    NSString *urlAddress = @"http://online.fahrplan.zvv.ch//bin/query.exe/dox";
-    NSURL *url = [NSURL URLWithString: urlAddress];
-    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-    [ovWebView loadRequest:requestObj];
+    //    // Load ZVV-Webview
+    //    NSString *urlAddress = @"http://online.fahrplan.zvv.ch//bin/query.exe/dox";
+    //    NSURL *url = [NSURL URLWithString: urlAddress];
+    //    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    //    [ovWebView loadRequest:requestObj];
     
-
-
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -87,136 +57,54 @@ Tel: 055 220 57 57";
     // Dispose of any resources that can be recreated.
 }
 
+
+
 - (IBAction)segmentValueChanged:(UISegmentedControl *)sender {
-    
+
     switch (sender.selectedSegmentIndex) {
 //            info
         case 0:
-            self.infoView.hidden = NO;
-            self.planView.hidden = YES;
-            self.ovView.hidden = YES;
-            self.notfallView.hidden = YES;
+            self.infoPicturesView.hidden = NO;
+            self.infoTextView.hidden = NO;
+  
             break;
 //            plan
         case 1:
-            self.infoView.hidden = YES;
-            self.planView.hidden = NO;
-            self.ovView.hidden = YES;
-            self.notfallView.hidden = YES;
+            self.infoPicturesView.hidden = YES;
+            self.infoTextView.hidden = YES;
+            
             break;
 //            OV
         case 2:
-            self.infoView.hidden = YES;
-            self.planView.hidden = YES;
-            self.ovView.hidden = NO;
-            self.notfallView.hidden = YES;
+            self.infoPicturesView.hidden = YES;
+            self.infoTextView.hidden = YES;
+
             break;
 //            Notfall
         case 3:
-            self.infoView.hidden = YES;
-            self.planView.hidden = YES;
-            self.ovView.hidden = YES;
-            self.notfallView.hidden = NO;
+            self.infoPicturesView.hidden = YES;
+            self.infoTextView.hidden = YES;
+
             break;
-            
-            
+
+
         default:
             break;
     }
 }
-- (IBAction)call144:(id)sender {
-    UIDevice *device = [UIDevice currentDevice];
-    if ([[device model] isEqualToString:@"iPhone"] ) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:144"]]];
-    } else {
-        UIAlertView *notpermitted=[[UIAlertView alloc] initWithTitle:@"Fehler" message:@"Ihr Gerät unterstützt keine Anrufe." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [notpermitted show];
-    }
-    
-//    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:144"]];
-}
 
-- (UIView*)viewForZoomingInScrollView:(UIScrollView *)scrollView
-{
-    return self.planImageView;
-}
 
-//// Support Method for the JSON parsing
-//- (void)fetchedData:(NSData *)responseData {
-//    //parse out the json data
-//    NSError* error;
-//    NSDictionary* json = [NSJSONSerialization
-//                          JSONObjectWithData:responseData //1
-//                          
-//                          options:kNilOptions
-//                          error:&error];
-//    
-//    NSArray* latestLoans = [json objectForKey:@"loans"]; //2
-//    
-//    NSLog(@"loans: %@", latestLoans); //3
+//- (IBAction)call144:(id)sender {
+//    UIDevice *device = [UIDevice currentDevice];
+//    if ([[device model] isEqualToString:@"iPhone"] ) {
+//        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:144"]]];
+//    } else {
+//        UIAlertView *notpermitted=[[UIAlertView alloc] initWithTitle:@"Fehler" message:@"Ihr Gerät unterstützt keine Anrufe." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//        [notpermitted show];
+//    }
 //
-//    // 1) Get the latest loan
-//    NSDictionary* loan = [latestLoans objectAtIndex:0];
-//    
-//    // 2) Get the funded amount and loan amount
-//    NSNumber* fundedAmount = [loan objectForKey:@"funded_amount"];
-//    NSNumber* loanAmount = [loan objectForKey:@"loan_amount"];
-//    float outstandingAmount = [loanAmount floatValue] -
-//    [fundedAmount floatValue];
-//    
-//    // 3) Set the label appropriately
-//    humanReadable.text = [NSString stringWithFormat:@"Latest loan: %@from %@ needs another $%.2f to pursue their entrepreneural dream",
-//                         [loan objectForKey:@"name"],
-//                         [(NSDictionary*)[loan objectForKey:@"location"]
-//                          objectForKey:@"country"],
-//                         outstandingAmount];
-//    
+////    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:144"]];
 //}
 
 
-
-
-
-
-
-
-
-
-
-
-
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
