@@ -17,5 +17,6 @@
 @property (strong, nonatomic) IBOutlet UIView *kinderView;
 - (IBAction)segmentedControlChanged:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *programmTitleLabel;
+@property (weak, nonatomic) IBOutlet UIScrollView *programmScrollView;
 
 @end
