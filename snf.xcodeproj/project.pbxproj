@@ -20,18 +20,11 @@
 		F61AA89616E69CF8001EC188 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61AA89516E69CF8001EC188 /* Default-568h@2x.png */; };
 		F61AA89916E69CF8001EC188 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F61AA89716E69CF8001EC188 /* MainStoryboard_iPhone.storyboard */; };
 		F61AA89C16E69CF8001EC188 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F61AA89A16E69CF8001EC188 /* MainStoryboard_iPad.storyboard */; };
-		F61AA8A116E69CF8001EC188 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = F61AA8A016E69CF8001EC188 /* first.png */; };
-		F61AA8A316E69CF8001EC188 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61AA8A216E69CF8001EC188 /* first@2x.png */; };
-		F61AA8A816E69CF8001EC188 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = F61AA8A716E69CF8001EC188 /* second.png */; };
-		F61AA8AA16E69CF8001EC188 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61AA8A916E69CF8001EC188 /* second@2x.png */; };
 		F61AA8B216E69CF8001EC188 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61AA8B116E69CF8001EC188 /* SenTestingKit.framework */; };
 		F61AA8B316E69CF8001EC188 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61AA87F16E69CF8001EC188 /* UIKit.framework */; };
 		F61AA8B416E69CF8001EC188 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61AA88116E69CF8001EC188 /* Foundation.framework */; };
 		F61AA8BC16E69CF8001EC188 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F61AA8BA16E69CF8001EC188 /* InfoPlist.strings */; };
 		F61AA8BF16E69CF8001EC188 /* snfTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F61AA8BE16E69CF8001EC188 /* snfTests.m */; };
-		F61AA8C916E69E25001EC188 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61AA8C816E69E25001EC188 /* Default-568h@2x.png */; };
-		F61AA8CB16E69E28001EC188 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F61AA8CA16E69E28001EC188 /* Default.png */; };
-		F61AA8CD16E69E2E001EC188 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61AA8CC16E69E2E001EC188 /* Default@2x.png */; };
 		F61AA8DC16E69F2F001EC188 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = F61AA8CF16E69F2F001EC188 /* facebook.png */; };
 		F61AA8DD16E69F2F001EC188 /* facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61AA8D016E69F2F001EC188 /* facebook@2x.png */; };
 		F61AA8DE16E69F2F001EC188 /* festbeiz.png in Resources */ = {isa = PBXBuildFile; fileRef = F61AA8D116E69F2F001EC188 /* festbeiz.png */; };
@@ -54,14 +47,6 @@
 		F63AF596178B7FAB006650B1 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = F63AF590178B7FAB006650B1 /* release_notes.md */; };
 		F63AF597178B7FAB006650B1 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = F63AF590178B7FAB006650B1 /* release_notes.md */; };
 		F63AF599178B7FE3006650B1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F63AF598178B7FE3006650B1 /* libz.dylib */; };
-		F6428E0516E90EBF0041C4D8 /* startscreen_3.5inch.png in Resources */ = {isa = PBXBuildFile; fileRef = F6428DFD16E90EBF0041C4D8 /* startscreen_3.5inch.png */; };
-		F6428E0616E90EBF0041C4D8 /* startscreen_3.5inch_low.png in Resources */ = {isa = PBXBuildFile; fileRef = F6428DFE16E90EBF0041C4D8 /* startscreen_3.5inch_low.png */; };
-		F6428E0716E90EBF0041C4D8 /* startscreen_4inch.png in Resources */ = {isa = PBXBuildFile; fileRef = F6428DFF16E90EBF0041C4D8 /* startscreen_4inch.png */; };
-		F6428E0E16E910100041C4D8 /* startscreen_snfrj_4.png in Resources */ = {isa = PBXBuildFile; fileRef = F6428E0B16E910100041C4D8 /* startscreen_snfrj_4.png */; };
-		F6428E0F16E910100041C4D8 /* startscreen_snfrj_35.png in Resources */ = {isa = PBXBuildFile; fileRef = F6428E0C16E910100041C4D8 /* startscreen_snfrj_35.png */; };
-		F6428E1016E910100041C4D8 /* startscreen_snfrj_35@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6428E0D16E910100041C4D8 /* startscreen_snfrj_35@2x.png */; };
-		F6428E1316E9111F0041C4D8 /* snfrj_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F6428E1116E9111F0041C4D8 /* snfrj_icon.png */; };
-		F6428E1416E9111F0041C4D8 /* snfrj_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6428E1216E9111F0041C4D8 /* snfrj_icon@2x.png */; };
 		F6428E1616E911240041C4D8 /* snfrj_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F6428E1516E911240041C4D8 /* snfrj_icon.png */; };
 		F6428E1816E911280041C4D8 /* snfrj_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6428E1716E911280041C4D8 /* snfrj_icon@2x.png */; };
 		F6504A771794E0CD007E31EE /* snfFestbeizenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6504A761794E0CD007E31EE /* snfFestbeizenViewController.m */; };
@@ -104,19 +89,12 @@
 		F61AA89516E69CF8001EC188 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F61AA89816E69CF8001EC188 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		F61AA89B16E69CF8001EC188 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		F61AA8A016E69CF8001EC188 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		F61AA8A216E69CF8001EC188 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		F61AA8A716E69CF8001EC188 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		F61AA8A916E69CF8001EC188 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		F61AA8B016E69CF8001EC188 /* snfTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = snfTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F61AA8B116E69CF8001EC188 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		F61AA8B916E69CF8001EC188 /* snfTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "snfTests-Info.plist"; sourceTree = "<group>"; };
 		F61AA8BB16E69CF8001EC188 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F61AA8BD16E69CF8001EC188 /* snfTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = snfTests.h; sourceTree = "<group>"; };
 		F61AA8BE16E69CF8001EC188 /* snfTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = snfTests.m; sourceTree = "<group>"; };
-		F61AA8C816E69E25001EC188 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
-		F61AA8CA16E69E28001EC188 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
-		F61AA8CC16E69E2E001EC188 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		F61AA8CF16E69F2F001EC188 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		F61AA8D016E69F2F001EC188 /* facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook@2x.png"; sourceTree = "<group>"; };
 		F61AA8D116E69F2F001EC188 /* festbeiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = festbeiz.png; sourceTree = "<group>"; };
@@ -142,14 +120,6 @@
 		F63AF590178B7FAB006650B1 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
 		F63AF591178B7FAB006650B1 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		F63AF598178B7FE3006650B1 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		F6428DFD16E90EBF0041C4D8 /* startscreen_3.5inch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startscreen_3.5inch.png; sourceTree = "<group>"; };
-		F6428DFE16E90EBF0041C4D8 /* startscreen_3.5inch_low.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startscreen_3.5inch_low.png; sourceTree = "<group>"; };
-		F6428DFF16E90EBF0041C4D8 /* startscreen_4inch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startscreen_4inch.png; sourceTree = "<group>"; };
-		F6428E0B16E910100041C4D8 /* startscreen_snfrj_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startscreen_snfrj_4.png; sourceTree = "<group>"; };
-		F6428E0C16E910100041C4D8 /* startscreen_snfrj_35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startscreen_snfrj_35.png; sourceTree = "<group>"; };
-		F6428E0D16E910100041C4D8 /* startscreen_snfrj_35@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "startscreen_snfrj_35@2x.png"; sourceTree = "<group>"; };
-		F6428E1116E9111F0041C4D8 /* snfrj_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snfrj_icon.png; sourceTree = "<group>"; };
-		F6428E1216E9111F0041C4D8 /* snfrj_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snfrj_icon@2x.png"; sourceTree = "<group>"; };
 		F6428E1516E911240041C4D8 /* snfrj_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snfrj_icon.png; sourceTree = SOURCE_ROOT; };
 		F6428E1716E911280041C4D8 /* snfrj_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snfrj_icon@2x.png"; sourceTree = SOURCE_ROOT; };
 		F6504A751794E0CD007E31EE /* snfFestbeizenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snfFestbeizenViewController.h; sourceTree = SOURCE_ROOT; };
@@ -299,23 +269,8 @@
 			children = (
 				F69DD7CC17945F0200450214 /* festplan.png */,
 				F69DD7CA17945EB600450214 /* festplan@2x.png */,
-				F61AA8A716E69CF8001EC188 /* second.png */,
-				F61AA8A916E69CF8001EC188 /* second@2x.png */,
-				F61AA8A016E69CF8001EC188 /* first.png */,
-				F61AA8A216E69CF8001EC188 /* first@2x.png */,
 				F6428E1716E911280041C4D8 /* snfrj_icon@2x.png */,
 				F6428E1516E911240041C4D8 /* snfrj_icon.png */,
-				F61AA8CC16E69E2E001EC188 /* Default@2x.png */,
-				F61AA8CA16E69E28001EC188 /* Default.png */,
-				F61AA8C816E69E25001EC188 /* Default-568h@2x.png */,
-				F6428E1116E9111F0041C4D8 /* snfrj_icon.png */,
-				F6428E1216E9111F0041C4D8 /* snfrj_icon@2x.png */,
-				F6428E0B16E910100041C4D8 /* startscreen_snfrj_4.png */,
-				F6428E0C16E910100041C4D8 /* startscreen_snfrj_35.png */,
-				F6428E0D16E910100041C4D8 /* startscreen_snfrj_35@2x.png */,
-				F6428DFD16E90EBF0041C4D8 /* startscreen_3.5inch.png */,
-				F6428DFE16E90EBF0041C4D8 /* startscreen_3.5inch_low.png */,
-				F6428DFF16E90EBF0041C4D8 /* startscreen_4inch.png */,
 				F61AA8CF16E69F2F001EC188 /* facebook.png */,
 				F61AA8D016E69F2F001EC188 /* facebook@2x.png */,
 				F61AA8D116E69F2F001EC188 /* festbeiz.png */,
@@ -430,13 +385,6 @@
 				F61AA89616E69CF8001EC188 /* Default-568h@2x.png in Resources */,
 				F61AA89916E69CF8001EC188 /* MainStoryboard_iPhone.storyboard in Resources */,
 				F61AA89C16E69CF8001EC188 /* MainStoryboard_iPad.storyboard in Resources */,
-				F61AA8A116E69CF8001EC188 /* first.png in Resources */,
-				F61AA8A316E69CF8001EC188 /* first@2x.png in Resources */,
-				F61AA8A816E69CF8001EC188 /* second.png in Resources */,
-				F61AA8AA16E69CF8001EC188 /* second@2x.png in Resources */,
-				F61AA8C916E69E25001EC188 /* Default-568h@2x.png in Resources */,
-				F61AA8CB16E69E28001EC188 /* Default.png in Resources */,
-				F61AA8CD16E69E2E001EC188 /* Default@2x.png in Resources */,
 				F61AA8DC16E69F2F001EC188 /* facebook.png in Resources */,
 				F61AA8DD16E69F2F001EC188 /* facebook@2x.png in Resources */,
 				F61AA8DE16E69F2F001EC188 /* festbeiz.png in Resources */,
@@ -447,14 +395,6 @@
 				F61AA8E316E69F2F001EC188 /* programm@2x.png in Resources */,
 				F61AA8E716E69F2F001EC188 /* ticket.png in Resources */,
 				F61AA8E816E69F2F001EC188 /* ticket@2x.png in Resources */,
-				F6428E0516E90EBF0041C4D8 /* startscreen_3.5inch.png in Resources */,
-				F6428E0616E90EBF0041C4D8 /* startscreen_3.5inch_low.png in Resources */,
-				F6428E0716E90EBF0041C4D8 /* startscreen_4inch.png in Resources */,
-				F6428E0E16E910100041C4D8 /* startscreen_snfrj_4.png in Resources */,
-				F6428E0F16E910100041C4D8 /* startscreen_snfrj_35.png in Resources */,
-				F6428E1016E910100041C4D8 /* startscreen_snfrj_35@2x.png in Resources */,
-				F6428E1316E9111F0041C4D8 /* snfrj_icon.png in Resources */,
-				F6428E1416E9111F0041C4D8 /* snfrj_icon@2x.png in Resources */,
 				F6428E1616E911240041C4D8 /* snfrj_icon.png in Resources */,
 				F6428E1816E911280041C4D8 /* snfrj_icon@2x.png in Resources */,
 				F63AF594178B7FAB006650B1 /* README.md in Resources */,
@@ -631,6 +571,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "snf/snf-Prefix.pch";
 				INFOPLIST_FILE = "snf/snf-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/snf/TestFlightSDK1.2.6\"",
@@ -647,6 +588,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "snf/snf-Prefix.pch";
 				INFOPLIST_FILE = "snf/snf-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/snf/TestFlightSDK1.2.6\"",
