@@ -37,8 +37,6 @@
 		F61AA8E816E69F2F001EC188 /* ticket@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61AA8DB16E69F2F001EC188 /* ticket@2x.png */; };
 		F61AA8EB16E6A0E9001EC188 /* snfTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61AA8EA16E6A0E9001EC188 /* snfTicketViewController.m */; };
 		F61AA8EE16E6A567001EC188 /* snfProgrammViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61AA8ED16E6A567001EC188 /* snfProgrammViewController.m */; };
-		F62C3FF416F4902200BA9138 /* ProgrammData.m in Sources */ = {isa = PBXBuildFile; fileRef = F62C3FF316F4902200BA9138 /* ProgrammData.m */; };
-		F62C3FFA16F4939600BA9138 /* ProgrammDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = F62C3FF916F4939600BA9138 /* ProgrammDoc.m */; };
 		F62C400016F49A0F00BA9138 /* festbeizenTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F62C3FFF16F49A0E00BA9138 /* festbeizenTableView.m */; };
 		F63AF592178B7FAB006650B1 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F63AF58E178B7FAB006650B1 /* libTestFlight.a */; };
 		F63AF593178B7FAB006650B1 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F63AF58E178B7FAB006650B1 /* libTestFlight.a */; };
@@ -112,10 +110,6 @@
 		F61AA8EA16E6A0E9001EC188 /* snfTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfTicketViewController.m; sourceTree = "<group>"; };
 		F61AA8EC16E6A567001EC188 /* snfProgrammViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snfProgrammViewController.h; sourceTree = "<group>"; };
 		F61AA8ED16E6A567001EC188 /* snfProgrammViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfProgrammViewController.m; sourceTree = "<group>"; };
-		F62C3FF216F4902200BA9138 /* ProgrammData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgrammData.h; sourceTree = "<group>"; };
-		F62C3FF316F4902200BA9138 /* ProgrammData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgrammData.m; sourceTree = "<group>"; };
-		F62C3FF816F4939600BA9138 /* ProgrammDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgrammDoc.h; sourceTree = "<group>"; };
-		F62C3FF916F4939600BA9138 /* ProgrammDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgrammDoc.m; sourceTree = "<group>"; };
 		F62C3FFE16F49A0E00BA9138 /* festbeizenTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = festbeizenTableView.h; sourceTree = "<group>"; };
 		F62C3FFF16F49A0E00BA9138 /* festbeizenTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = festbeizenTableView.m; sourceTree = "<group>"; };
 		F63AF58E178B7FAB006650B1 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
@@ -131,9 +125,9 @@
 		F6504A791794E888007E31EE /* snfFestbeizenTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfFestbeizenTableViewCell.m; sourceTree = "<group>"; };
 		F69DD7CA17945EB600450214 /* festplan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "festplan@2x.png"; sourceTree = "<group>"; };
 		F69DD7CC17945F0200450214 /* festplan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = festplan.png; sourceTree = "<group>"; };
-		F6D726AF1797EBBA00CFAE34 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		F6D726B11797EC0800CFAE34 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		F6D7270F1797F12F00CFAE34 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F6D726AF1797EBBA00CFAE34 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		F6D726B11797EC0800CFAE34 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		F6D7270F1797F12F00CFAE34 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		F6EDD7FE1797048400F59BAF /* snfFestbeizenDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snfFestbeizenDetailViewController.h; sourceTree = "<group>"; };
 		F6EDD7FF1797048400F59BAF /* snfFestbeizenDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfFestbeizenDetailViewController.m; sourceTree = "<group>"; };
 		F6EDD804179716E300F59BAF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -174,9 +168,6 @@
 		F61AA87316E69CF8001EC188 = {
 			isa = PBXGroup;
 			children = (
-				F6D7270F1797F12F00CFAE34 /* Default@2x.png */,
-				F6D726B11797EC0800CFAE34 /* Default-568h@2x.png */,
-				F6D726AF1797EBBA00CFAE34 /* Default.png */,
 				F6EDD80C17971EB500F59BAF /* AddressBook.framework */,
 				F6EDD804179716E300F59BAF /* MapKit.framework */,
 				F63AF598178B7FE3006650B1 /* libz.dylib */,
@@ -210,12 +201,10 @@
 		F61AA88516E69CF8001EC188 /* snf */ = {
 			isa = PBXGroup;
 			children = (
-				F62C3FF116F48FFC00BA9138 /* Model */,
 				F61AA8CE16E69F1A001EC188 /* Assets */,
 				F61AA88616E69CF8001EC188 /* Supporting Files */,
 				F61AA88E16E69CF8001EC188 /* snfAppDelegate.h */,
 				F61AA88F16E69CF8001EC188 /* snfAppDelegate.m */,
-				F63AF58D178B7FAB006650B1 /* TestFlightSDK1.2.6 */,
 				F61AA89716E69CF8001EC188 /* MainStoryboard_iPhone.storyboard */,
 				F6EDD7FE1797048400F59BAF /* snfFestbeizenDetailViewController.h */,
 				F6EDD7FF1797048400F59BAF /* snfFestbeizenDetailViewController.m */,
@@ -236,6 +225,7 @@
 				F616455A16E6A84300709D62 /* snfInfoViewController.m */,
 				F616455C16E6A85300709D62 /* snfFacebookViewController.h */,
 				F616455D16E6A85300709D62 /* snfFacebookViewController.m */,
+				F63AF58D178B7FAB006650B1 /* TestFlightSDK1.2.6 */,
 			);
 			path = snf;
 			sourceTree = "<group>";
@@ -276,6 +266,9 @@
 		F61AA8CE16E69F1A001EC188 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F6D7270F1797F12F00CFAE34 /* Default@2x.png */,
+				F6D726B11797EC0800CFAE34 /* Default-568h@2x.png */,
+				F6D726AF1797EBBA00CFAE34 /* Default.png */,
 				F69DD7CC17945F0200450214 /* festplan.png */,
 				F69DD7CA17945EB600450214 /* festplan@2x.png */,
 				F6428E1716E911280041C4D8 /* snfrj_icon@2x.png */,
@@ -292,17 +285,6 @@
 				F61AA8DB16E69F2F001EC188 /* ticket@2x.png */,
 			);
 			name = Assets;
-			sourceTree = "<group>";
-		};
-		F62C3FF116F48FFC00BA9138 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F62C3FF216F4902200BA9138 /* ProgrammData.h */,
-				F62C3FF316F4902200BA9138 /* ProgrammData.m */,
-				F62C3FF816F4939600BA9138 /* ProgrammDoc.h */,
-				F62C3FF916F4939600BA9138 /* ProgrammDoc.m */,
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 		F63AF58D178B7FAB006650B1 /* TestFlightSDK1.2.6 */ = {
@@ -455,8 +437,6 @@
 				F61AA8EE16E6A567001EC188 /* snfProgrammViewController.m in Sources */,
 				F616455B16E6A84300709D62 /* snfInfoViewController.m in Sources */,
 				F616455E16E6A85300709D62 /* snfFacebookViewController.m in Sources */,
-				F62C3FF416F4902200BA9138 /* ProgrammData.m in Sources */,
-				F62C3FFA16F4939600BA9138 /* ProgrammDoc.m in Sources */,
 				F62C400016F49A0F00BA9138 /* festbeizenTableView.m in Sources */,
 				F6504A771794E0CD007E31EE /* snfFestbeizenViewController.m in Sources */,
 				F6504A7A1794E888007E31EE /* snfFestbeizenTableViewCell.m in Sources */,
