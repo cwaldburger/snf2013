@@ -71,7 +71,7 @@
     CLLocationCoordinate2D coordinate;
     coordinate.latitude = 47.227048;
     coordinate.longitude = 8.814532;
-    NSString * address = @"Haldenstrasse 13";
+    NSString * address = @"";
     FestbeizLocation *annotation = [[FestbeizLocation alloc] initWithName:@"Test" address:address coordinate:coordinate] ;
     [festbeizenMapView addAnnotation:annotation];
     
