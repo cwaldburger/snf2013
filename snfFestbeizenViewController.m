@@ -98,16 +98,9 @@
         festbeizenDetailsViewController.detailDesc = [tableDataDesc objectAtIndex:indexPath.row];
         festbeizenDetailsViewController.detailLat = [tableDataLat objectAtIndex:indexPath.row];
         festbeizenDetailsViewController.detailLong = [tableDataLong objectAtIndex:indexPath.row];
-
-        
-        //Get the selected object in order to fill out the detail view
-//        id myValue = [myLocations objectForKey:[locationsIndex objectAtIndex:indexPath.row]];
-        
-//        DetailViewController *dest = [segue destinationViewController];
-//        dest.locTitle = [myValue valueForKeyPath:@"title"];
-//        dest.locInfo = [myValue valueForKeyPath:@"info"];
-        
 	}
+    
+    
 }
 
 

@@ -51,25 +51,6 @@
 
 // Add new method above refreshTapped
 - (void)plotCrimePositions:(NSData *)responseData {
-//    for (id<MKAnnotation> annotation in festbeizenMapView.annotations) {
-//        [festbeizenMapView removeAnnotation:annotation];
-//    }
-    
-//    NSDictionary *root = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:nil];
-//    NSArray *data = [root objectForKey:@"data"];
-    
-//    for (NSArray *row in data) {
-//        NSNumber * latitude = [[row objectAtIndex:22]objectAtIndex:1];
-//        NSNumber * longitude = [[row objectAtIndex:22]objectAtIndex:2];
-//        NSString * crimeDescription = [row objectAtIndex:18];
-//        NSString * address = [row objectAtIndex:14];
-//        
-//        CLLocationCoordinate2D coordinate;
-//        coordinate.latitude = latitude.doubleValue;
-//        coordinate.longitude = longitude.doubleValue;
-//        MyLocation *annotation = [[MyLocation alloc] initWithName:crimeDescription address:address coordinate:coordinate] ;
-//        [_mapView addAnnotation:annotation];
-//	}
     
     CLLocationCoordinate2D coordinate;
     coordinate.latitude = [detailLat doubleValue];
