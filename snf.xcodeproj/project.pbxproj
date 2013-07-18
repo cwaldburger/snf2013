@@ -48,6 +48,9 @@
 		F6504A7A1794E888007E31EE /* snfFestbeizenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6504A791794E888007E31EE /* snfFestbeizenTableViewCell.m */; };
 		F69DD7CB17945EB600450214 /* festplan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F69DD7CA17945EB600450214 /* festplan@2x.png */; };
 		F69DD7CD17945F0200450214 /* festplan.png in Resources */ = {isa = PBXBuildFile; fileRef = F69DD7CC17945F0200450214 /* festplan.png */; };
+		F6D727181798097500CFAE34 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D727151798097500CFAE34 /* Default-568h@2x.png */; };
+		F6D727191798097500CFAE34 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D727161798097500CFAE34 /* Default.png */; };
+		F6D7271A1798097500CFAE34 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D727171798097500CFAE34 /* Default@2x.png */; };
 		F6EDD8001797048400F59BAF /* snfFestbeizenDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EDD7FF1797048400F59BAF /* snfFestbeizenDetailViewController.m */; };
 		F6EDD805179716E300F59BAF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EDD804179716E300F59BAF /* MapKit.framework */; };
 		F6EDD80B17971D4C00F59BAF /* FestbeizLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EDD80A17971D4C00F59BAF /* FestbeizLocation.m */; };
@@ -116,6 +119,9 @@
 		F6504A791794E888007E31EE /* snfFestbeizenTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfFestbeizenTableViewCell.m; sourceTree = "<group>"; };
 		F69DD7CA17945EB600450214 /* festplan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "festplan@2x.png"; sourceTree = "<group>"; };
 		F69DD7CC17945F0200450214 /* festplan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = festplan.png; sourceTree = "<group>"; };
+		F6D727151798097500CFAE34 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F6D727161798097500CFAE34 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F6D727171798097500CFAE34 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		F6EDD7FE1797048400F59BAF /* snfFestbeizenDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snfFestbeizenDetailViewController.h; sourceTree = "<group>"; };
 		F6EDD7FF1797048400F59BAF /* snfFestbeizenDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfFestbeizenDetailViewController.m; sourceTree = "<group>"; };
 		F6EDD804179716E300F59BAF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -221,6 +227,9 @@
 		F61AA88616E69CF8001EC188 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F6D727151798097500CFAE34 /* Default-568h@2x.png */,
+				F6D727161798097500CFAE34 /* Default.png */,
+				F6D727171798097500CFAE34 /* Default@2x.png */,
 				F61AA88716E69CF8001EC188 /* snf-Info.plist */,
 				F61AA88816E69CF8001EC188 /* InfoPlist.strings */,
 				F61AA88B16E69CF8001EC188 /* main.m */,
@@ -371,6 +380,9 @@
 				F63AF596178B7FAB006650B1 /* release_notes.md in Resources */,
 				F69DD7CB17945EB600450214 /* festplan@2x.png in Resources */,
 				F69DD7CD17945F0200450214 /* festplan.png in Resources */,
+				F6D727181798097500CFAE34 /* Default-568h@2x.png in Resources */,
+				F6D727191798097500CFAE34 /* Default.png in Resources */,
+				F6D7271A1798097500CFAE34 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
