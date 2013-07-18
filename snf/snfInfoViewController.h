@@ -14,6 +14,7 @@
 - (IBAction)segmentValueChanged:(id)sender;
 @property (weak, nonatomic) IBOutlet UIView *infoPicturesView;
 @property (weak, nonatomic) IBOutlet UIScrollView *planScrollView;
+@property (strong, nonatomic) IBOutlet UIWebView *ovWebView;
 
 
 //@property (strong, nonatomic) IBOutlet UIButton *call144Button;

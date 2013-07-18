@@ -17,7 +17,7 @@
 
 @implementation snfInfoViewController
 
-@synthesize infoTextView, infoPicturesView, planScrollView;
+@synthesize infoTextView, infoPicturesView, planScrollView, ovWebView;
 @synthesize planImageView = _planImageView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -68,11 +68,20 @@
     
     
     
-    //    // Load ZVV-Webview
-    //    NSString *urlAddress = @"http://online.fahrplan.zvv.ch//bin/query.exe/dox";
-    //    NSURL *url = [NSURL URLWithString: urlAddress];
-    //    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-    //    [ovWebView loadRequest:requestObj];
+    // Load ZVV-Webview
+    NSString *urlAddress = @"http://online.fahrplan.zvv.ch//bin/query.exe/dox";
+    NSURL *url = [NSURL URLWithString: urlAddress];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    [ovWebView loadRequest:requestObj];
+    
+    
+    
+    // show the info page
+    self.infoPicturesView.hidden = NO;
+    self.infoTextView.hidden = NO;
+    self.planScrollView.hidden = YES;
+    self.ovWebView.hidden = YES;
+    
     
 }
 
@@ -98,26 +107,28 @@
             self.infoPicturesView.hidden = NO;
             self.infoTextView.hidden = NO;
             self.planScrollView.hidden = YES;
+            self.ovWebView.hidden = YES;
             break;
 //            plan
         case 1:
             self.infoPicturesView.hidden = YES;
             self.infoTextView.hidden = YES;
             self.planScrollView.hidden = NO;
+            self.ovWebView.hidden = YES;
             break;
 //            OV
         case 2:
             self.infoPicturesView.hidden = YES;
             self.infoTextView.hidden = YES;
             self.planScrollView.hidden = YES;
-
+            self.ovWebView.hidden = NO;
             break;
 //            Notfall
         case 3:
             self.infoPicturesView.hidden = YES;
             self.infoTextView.hidden = YES;
             self.planScrollView.hidden = YES;
-            
+            self.ovWebView.hidden = YES;            
             break;
 
 
