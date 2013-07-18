@@ -570,7 +570,6 @@
                                 </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="287" type="user" id="Oqs-YF-obK"/>
-                                    <constraint firstAttribute="width" constant="320" id="i8d-tr-10o"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -618,25 +617,26 @@
                                     <constraint firstAttribute="bottom" secondItem="xQm-LA-vMx" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="oSs-um-hOe"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGR-Rc-WWQ"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="aGR-Rc-WWQ"/>
                         </subviews>
                         <color key="backgroundColor" white="0.25" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aGR-Rc-WWQ" firstAttribute="top" secondItem="AAA-5z-Joo" secondAttribute="top" constant="44" type="user" id="00z-8N-DYv"/>
-                            <constraint firstItem="aGR-Rc-WWQ" firstAttribute="trailing" secondItem="AAA-5z-Joo" secondAttribute="trailing" type="default" id="0eH-Fs-Laa"/>
                             <constraint firstItem="BKC-BS-F8e" firstAttribute="top" secondItem="JcV-l3-yfu" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="2F4-NR-eAb"/>
                             <constraint firstItem="JcV-l3-yfu" firstAttribute="top" secondItem="cbw-ZC-7Q4" secondAttribute="bottom" type="user" id="AUZ-Y0-R6E"/>
-                            <constraint firstItem="JcV-l3-yfu" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" constant="300" id="HIM-Pz-xqg"/>
+                            <constraint firstAttribute="trailing" secondItem="aGR-Rc-WWQ" secondAttribute="trailing" constant="-300" id="Cc1-qg-Tq5"/>
                             <constraint firstItem="BKC-BS-F8e" firstAttribute="bottom" secondItem="AAA-5z-Joo" secondAttribute="bottom" type="user" id="Hjb-8g-hpj"/>
                             <constraint firstItem="cbw-ZC-7Q4" firstAttribute="top" secondItem="AAA-5z-Joo" secondAttribute="top" type="user" id="Paq-eW-b6G"/>
-                            <constraint firstItem="JcV-l3-yfu" firstAttribute="trailing" secondItem="BKC-BS-F8e" secondAttribute="trailing" type="default" id="YAX-FR-7Cc"/>
+                            <constraint firstItem="aGR-Rc-WWQ" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" constant="300" id="U0R-jk-5sf"/>
                             <constraint firstItem="aGR-Rc-WWQ" firstAttribute="bottom" secondItem="AAA-5z-Joo" secondAttribute="bottom" type="user" id="YQC-L3-wpF"/>
+                            <constraint firstItem="aGR-Rc-WWQ" firstAttribute="trailing" secondItem="JcV-l3-yfu" secondAttribute="trailing" type="default" id="aFT-Mp-HtA"/>
+                            <constraint firstItem="aGR-Rc-WWQ" firstAttribute="trailing" secondItem="BKC-BS-F8e" secondAttribute="trailing" type="default" id="eP8-RH-XG2"/>
                             <constraint firstItem="aGR-Rc-WWQ" firstAttribute="bottom" secondItem="AAA-5z-Joo" secondAttribute="bottom" type="user" id="keB-bU-qW5"/>
                             <constraint firstItem="cbw-ZC-7Q4" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" type="default" id="mpl-2z-7ue"/>
                             <constraint firstItem="aGR-Rc-WWQ" firstAttribute="top" secondItem="cbw-ZC-7Q4" secondAttribute="bottom" type="user" id="tFS-VZ-yhF"/>
                             <constraint firstItem="JcV-l3-yfu" firstAttribute="leading" secondItem="BKC-BS-F8e" secondAttribute="leading" type="default" id="uc6-z8-oGT"/>
                             <constraint firstItem="cbw-ZC-7Q4" firstAttribute="trailing" secondItem="AAA-5z-Joo" secondAttribute="trailing" type="default" id="v4V-5m-GWy"/>
-                            <constraint firstItem="aGR-Rc-WWQ" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" type="default" id="yXF-Hi-9F3"/>
+                            <constraint firstItem="aGR-Rc-WWQ" firstAttribute="leading" secondItem="JcV-l3-yfu" secondAttribute="leading" type="default" id="x5r-RN-GAx"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info" image="info.png" id="rXJ-Nh-6zr"/>

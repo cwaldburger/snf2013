@@ -10,11 +10,15 @@
 
 @interface snfInfoViewController ()
 
+@property (nonatomic, strong) UIImageView *planImageView;
+- (void)centerScrollViewContents;
+
 @end
 
 @implementation snfInfoViewController
 
 @synthesize infoTextView, infoPicturesView, planScrollView;
+@synthesize planImageView = _planImageView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,6 +27,25 @@
         // Custom initialization
     }
     return self;
+}
+
+- (void)centerScrollViewContents {
+    CGSize boundsSize = self.planScrollView.bounds.size;
+    CGRect contentsFrame = self.planImageView.frame;
+    
+    if (contentsFrame.size.width < boundsSize.width) {
+        contentsFrame.origin.x = (boundsSize.width - contentsFrame.size.width) / 2.0f;
+    } else {
+        contentsFrame.origin.x = 0.0f;
+    }
+    
+    if (contentsFrame.size.height < boundsSize.height) {
+        contentsFrame.origin.y = (boundsSize.height - contentsFrame.size.height) / 2.0f;
+    } else {
+        contentsFrame.origin.y = 0.0f;
+    }
+    
+    self.planImageView.frame = contentsFrame;
 }
 
 - (void)viewDidLoad
@@ -37,6 +60,11 @@
     infoTextView.text = infoText;
     
     // Load Plan
+    self.planScrollView.contentSize = CGSizeMake(750, 697);
+    self.planImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"festplan"]];
+//    UIImageView *planImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"festplan"]];
+    
+    [self.planScrollView addSubview:_planImageView];
     
     
     
@@ -46,9 +74,12 @@
     //    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     //    [ovWebView loadRequest:requestObj];
     
-    
-    
-    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    [self centerScrollViewContents];
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,25 +97,27 @@
         case 0:
             self.infoPicturesView.hidden = NO;
             self.infoTextView.hidden = NO;
-  
+            self.planScrollView.hidden = YES;
             break;
 //            plan
         case 1:
             self.infoPicturesView.hidden = YES;
             self.infoTextView.hidden = YES;
-            
+            self.planScrollView.hidden = NO;
             break;
 //            OV
         case 2:
             self.infoPicturesView.hidden = YES;
             self.infoTextView.hidden = YES;
+            self.planScrollView.hidden = YES;
 
             break;
 //            Notfall
         case 3:
             self.infoPicturesView.hidden = YES;
             self.infoTextView.hidden = YES;
-
+            self.planScrollView.hidden = YES;
+            
             break;
 
 
