@@ -11,5 +11,6 @@
 #import "snfFestbeizenDetailViewController.h"
 
 @interface snfFestbeizenViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, snfFestbeizenDetailViewControllerDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *festbeizenTableView;
 
 @end

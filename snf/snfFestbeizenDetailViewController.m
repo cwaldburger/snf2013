@@ -17,7 +17,7 @@
 
 @implementation snfFestbeizenDetailViewController
 
-@synthesize delegate, festbeizenMapView;
+@synthesize delegate, festbeizenMapView, detailDesc, detailLat, detailLong, detailTitle, festbeizTitle, festbeizDesc;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,6 +32,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [festbeizTitle setText:detailTitle];
+    [festbeizDesc setText:detailDesc];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -69,10 +72,10 @@
 //	}
     
     CLLocationCoordinate2D coordinate;
-    coordinate.latitude = 47.227048;
-    coordinate.longitude = 8.814532;
+    coordinate.latitude = [detailLat doubleValue];
+    coordinate.longitude = [detailLong doubleValue];
     NSString * address = @"";
-    FestbeizLocation *annotation = [[FestbeizLocation alloc] initWithName:@"Test" address:address coordinate:coordinate] ;
+    FestbeizLocation *annotation = [[FestbeizLocation alloc] initWithName:detailTitle address:address coordinate:coordinate] ;
     [festbeizenMapView addAnnotation:annotation];
     
 }
