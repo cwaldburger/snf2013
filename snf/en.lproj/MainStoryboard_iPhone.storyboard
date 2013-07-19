@@ -358,40 +358,29 @@
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="seenachtfest_app_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="5h9-oK-LgF">
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="91" id="fvt-UM-e8M"/>
-                                            <constraint firstAttribute="width" constant="105" id="uPt-bY-O6J"/>
+                                            <constraint firstAttribute="width" constant="79" id="19m-kA-C2g"/>
+                                            <constraint firstAttribute="height" constant="69" id="Zzy-l0-vGz"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="snfrj_app_heineken_info.png" translatesAutoresizingMaskIntoConstraints="NO" id="P6A-N1-W2Q">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="snfrj_app_heineken_info.png" translatesAutoresizingMaskIntoConstraints="NO" id="P6A-N1-W2Q"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="snfrj_app_rj_info.png" translatesAutoresizingMaskIntoConstraints="NO" id="xQm-LA-vMx"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="mediasign.png" translatesAutoresizingMaskIntoConstraints="NO" id="0o6-U0-gcJ">
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="102" id="0CX-JT-pym"/>
-                                            <constraint firstAttribute="height" constant="80" id="109-cg-2FJ"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="snfrj_app_hensa_schiffahrtsbetrieb_info.png" translatesAutoresizingMaskIntoConstraints="NO" id="h9c-kk-q9I">
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="190" id="ZWi-0t-c0q"/>
-                                            <constraint firstAttribute="height" constant="63" id="eDp-4F-lXf"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="snfrj_app_rj_info.png" translatesAutoresizingMaskIntoConstraints="NO" id="xQm-LA-vMx">
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="67" id="Qaa-Du-tMd"/>
-                                            <constraint firstAttribute="width" constant="77" id="oKr-we-9UA"/>
+                                            <constraint firstAttribute="height" constant="80" id="LNv-wu-CQB"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.25" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="P6A-N1-W2Q" secondAttribute="trailing" constant="16" id="1eg-nM-xFp"/>
-                                    <constraint firstItem="h9c-kk-q9I" firstAttribute="leading" secondItem="5h9-oK-LgF" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="24u-uz-10a"/>
-                                    <constraint firstItem="xQm-LA-vMx" firstAttribute="leading" secondItem="5h9-oK-LgF" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="9fP-xi-xZW"/>
+                                    <constraint firstAttribute="trailing" secondItem="xQm-LA-vMx" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="1L8-eA-OHr"/>
+                                    <constraint firstItem="P6A-N1-W2Q" firstAttribute="centerX" secondItem="JcV-l3-yfu" secondAttribute="centerX" type="default" id="1cn-i0-yCe"/>
+                                    <constraint firstItem="0o6-U0-gcJ" firstAttribute="top" secondItem="P6A-N1-W2Q" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="6CM-H2-kkV"/>
                                     <constraint firstAttribute="height" constant="160" type="user" id="JCC-5X-rSV"/>
-                                    <constraint firstItem="P6A-N1-W2Q" firstAttribute="top" secondItem="JcV-l3-yfu" secondAttribute="top" constant="71" id="Osi-gG-rmp"/>
-                                    <constraint firstItem="h9c-kk-q9I" firstAttribute="top" secondItem="JcV-l3-yfu" secondAttribute="top" constant="10" id="RXp-eY-bt6"/>
-                                    <constraint firstItem="5h9-oK-LgF" firstAttribute="top" secondItem="JcV-l3-yfu" secondAttribute="top" constant="15" id="e5K-Cr-QRB"/>
-                                    <constraint firstItem="5h9-oK-LgF" firstAttribute="leading" secondItem="JcV-l3-yfu" secondAttribute="leading" constant="2" id="jN6-Zh-H9K"/>
-                                    <constraint firstAttribute="bottom" secondItem="xQm-LA-vMx" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="oSs-um-hOe"/>
+                                    <constraint firstItem="xQm-LA-vMx" firstAttribute="top" secondItem="JcV-l3-yfu" secondAttribute="top" constant="20" symbolic="YES" type="default" id="SaJ-Zv-fi3"/>
+                                    <constraint firstItem="0o6-U0-gcJ" firstAttribute="leading" secondItem="JcV-l3-yfu" secondAttribute="leading" constant="56" id="g4R-DY-Hs8"/>
+                                    <constraint firstItem="P6A-N1-W2Q" firstAttribute="top" secondItem="JcV-l3-yfu" secondAttribute="top" constant="20" symbolic="YES" type="default" id="hhW-Lu-wLZ"/>
+                                    <constraint firstItem="5h9-oK-LgF" firstAttribute="top" secondItem="JcV-l3-yfu" secondAttribute="top" constant="20" symbolic="YES" type="default" id="kiz-ht-WZd"/>
+                                    <constraint firstItem="5h9-oK-LgF" firstAttribute="leading" secondItem="JcV-l3-yfu" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="vKv-Oe-Vau"/>
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="aGR-Rc-WWQ"/>
@@ -503,14 +492,13 @@
                             <constraint firstItem="aGR-Rc-WWQ" firstAttribute="top" secondItem="AAA-5z-Joo" secondAttribute="top" constant="44" type="user" id="00z-8N-DYv"/>
                             <constraint firstItem="giG-hk-ene" firstAttribute="bottom" secondItem="AAA-5z-Joo" secondAttribute="bottom" type="user" id="1IY-oE-YRb"/>
                             <constraint firstItem="JcV-l3-yfu" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" type="default" id="1UF-sF-rTF"/>
-                            <constraint firstItem="tla-mc-6En" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" type="default" id="1ok-wc-8LR"/>
                             <constraint firstItem="BKC-BS-F8e" firstAttribute="top" secondItem="JcV-l3-yfu" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="2F4-NR-eAb"/>
+                            <constraint firstItem="giG-hk-ene" firstAttribute="trailing" secondItem="aGR-Rc-WWQ" secondAttribute="trailing" type="default" id="4tz-bw-tgr"/>
                             <constraint firstItem="BKC-BS-F8e" firstAttribute="trailing" secondItem="AAA-5z-Joo" secondAttribute="trailing" type="default" id="8VY-5L-b6U"/>
-                            <constraint firstItem="aGR-Rc-WWQ" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" type="default" id="9bb-VC-In9"/>
                             <constraint firstItem="JcV-l3-yfu" firstAttribute="top" secondItem="cbw-ZC-7Q4" secondAttribute="bottom" type="user" id="AUZ-Y0-R6E"/>
                             <constraint firstItem="JcV-l3-yfu" firstAttribute="trailing" secondItem="AAA-5z-Joo" secondAttribute="trailing" type="default" id="BgK-qE-kLi"/>
                             <constraint firstItem="tla-mc-6En" firstAttribute="top" secondItem="cbw-ZC-7Q4" secondAttribute="bottom" type="user" id="K0Q-SO-djU"/>
-                            <constraint firstItem="giG-hk-ene" firstAttribute="trailing" secondItem="AAA-5z-Joo" secondAttribute="trailing" type="default" id="KLQ-Zk-AVT"/>
+                            <constraint firstItem="giG-hk-ene" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" constant="300" id="Lfn-ZS-9mU"/>
                             <constraint firstAttribute="bottom" secondItem="tla-mc-6En" secondAttribute="bottom" constant="-6" type="user" id="Nux-v9-sf1"/>
                             <constraint firstItem="cbw-ZC-7Q4" firstAttribute="top" secondItem="AAA-5z-Joo" secondAttribute="top" type="user" id="Paq-eW-b6G"/>
                             <constraint firstItem="giG-hk-ene" firstAttribute="top" secondItem="cbw-ZC-7Q4" secondAttribute="bottom" type="user" id="Xbc-3N-lIV"/>
@@ -520,16 +508,17 @@
                             <constraint firstItem="JcV-l3-yfu" firstAttribute="centerX" secondItem="7BT-XS-tjE" secondAttribute="centerX" type="default" id="abN-tA-06t"/>
                             <constraint firstItem="giG-hk-ene" firstAttribute="bottom" secondItem="AAA-5z-Joo" secondAttribute="bottom" type="user" id="arK-oN-Z7H"/>
                             <constraint firstItem="7BT-XS-tjE" firstAttribute="centerY" secondItem="tla-mc-6En" secondAttribute="centerY" type="default" id="cWe-d3-1Al"/>
-                            <constraint firstItem="giG-hk-ene" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" type="default" id="dJb-gs-aIu"/>
-                            <constraint firstItem="aGR-Rc-WWQ" firstAttribute="trailing" secondItem="AAA-5z-Joo" secondAttribute="trailing" type="default" id="k2C-lp-jJT"/>
+                            <constraint firstItem="tla-mc-6En" firstAttribute="leading" secondItem="aGR-Rc-WWQ" secondAttribute="leading" type="default" id="dYn-oF-u65"/>
+                            <constraint firstItem="giG-hk-ene" firstAttribute="leading" secondItem="aGR-Rc-WWQ" secondAttribute="leading" type="default" id="ijn-JG-tSy"/>
                             <constraint firstItem="aGR-Rc-WWQ" firstAttribute="bottom" secondItem="AAA-5z-Joo" secondAttribute="bottom" type="user" id="keB-bU-qW5"/>
                             <constraint firstItem="cbw-ZC-7Q4" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" type="default" id="mpl-2z-7ue"/>
                             <constraint firstItem="BKC-BS-F8e" firstAttribute="top" secondItem="AAA-5z-Joo" secondAttribute="top" constant="212" type="user" id="n7E-VF-hel"/>
+                            <constraint firstAttribute="trailing" secondItem="giG-hk-ene" secondAttribute="trailing" constant="-300" id="ou1-2Q-ozH"/>
                             <constraint firstItem="BKC-BS-F8e" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" type="default" id="qj7-WR-EvE"/>
                             <constraint firstItem="aGR-Rc-WWQ" firstAttribute="top" secondItem="cbw-ZC-7Q4" secondAttribute="bottom" type="user" id="tFS-VZ-yhF"/>
-                            <constraint firstItem="tla-mc-6En" firstAttribute="trailing" secondItem="AAA-5z-Joo" secondAttribute="trailing" type="default" id="uME-H2-klW"/>
                             <constraint firstItem="tla-mc-6En" firstAttribute="top" secondItem="AAA-5z-Joo" secondAttribute="top" constant="44" type="user" id="umX-Xq-DWi"/>
                             <constraint firstItem="cbw-ZC-7Q4" firstAttribute="trailing" secondItem="AAA-5z-Joo" secondAttribute="trailing" type="default" id="v4V-5m-GWy"/>
+                            <constraint firstItem="giG-hk-ene" firstAttribute="trailing" secondItem="tla-mc-6En" secondAttribute="trailing" type="default" id="xQV-KH-lpG"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info" image="info.png" id="rXJ-Nh-6zr"/>
@@ -599,10 +588,10 @@
         <image name="facebook.png" width="30" height="30"/>
         <image name="festbeiz.png" width="30" height="30"/>
         <image name="info.png" width="30" height="30"/>
+        <image name="mediasign.png" width="200" height="48"/>
         <image name="programm.png" width="30" height="30"/>
         <image name="seenachtfest_app_logo.png" width="122" height="122"/>
         <image name="snfrj_app_heineken_info.png" width="123" height="62"/>
-        <image name="snfrj_app_hensa_schiffahrtsbetrieb_info.png" width="286" height="69"/>
         <image name="snfrj_app_rj_info.png" width="62" height="62"/>
         <image name="ticket.png" width="30" height="30"/>
     </resources>
