@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "snf/snfInfoViewController.h"
-         timestampString = "395885159.720008"
+         timestampString = "395886553.526628"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "49"
-         endingLineNumber = "49">
+         startingLineNumber = "51"
+         endingLineNumber = "51">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "Yes"
@@ -45,11 +45,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "snf/snfInfoViewController.m"
-         timestampString = "395884069.599695"
+         timestampString = "395887432.089528"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "29"
-         endingLineNumber = "29"
+         startingLineNumber = "32"
+         endingLineNumber = "32"
          landmarkName = "-initWithNibName:bundle:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -123,55 +123,55 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "snf/snfInfoViewController.h"
-         timestampString = "395885159.720008"
+         timestampString = "395886553.526628"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "51"
-         endingLineNumber = "51">
+         startingLineNumber = "53"
+         endingLineNumber = "53">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "snf/snfInfoViewController.m"
-         timestampString = "395885063.842791"
+         timestampString = "395887809.209079"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "188"
-         endingLineNumber = "188">
+         startingLineNumber = "263"
+         endingLineNumber = "263">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "snf/snfInfoViewController.m"
-         timestampString = "395885063.842791"
+         timestampString = "395887809.209079"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "189"
-         endingLineNumber = "189">
+         startingLineNumber = "264"
+         endingLineNumber = "264">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "snf/snfInfoViewController.m"
-         timestampString = "395885063.842791"
+         timestampString = "395887809.209079"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "190"
-         endingLineNumber = "190">
+         startingLineNumber = "265"
+         endingLineNumber = "265">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "snf/snfInfoViewController.m"
-         timestampString = "395885063.842791"
+         timestampString = "395887809.209079"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "191"
-         endingLineNumber = "191">
+         startingLineNumber = "266"
+         endingLineNumber = "266">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -197,6 +197,19 @@
          startingLineNumber = "85"
          endingLineNumber = "85"
          landmarkName = "-snfFestbeizenDetailViewControllerDidClose:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "snf/snfInfoViewController.m"
+         timestampString = "395887809.209079"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "112"
+         endingLineNumber = "112"
+         landmarkName = "-plotCrimePositions:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

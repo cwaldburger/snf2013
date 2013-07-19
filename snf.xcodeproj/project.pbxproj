@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F616455B16E6A84300709D62 /* snfInfo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F616455A16E6A84300709D62 /* snfInfo2ViewController.m */; };
 		F616455E16E6A85300709D62 /* snfFacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F616455D16E6A85300709D62 /* snfFacebookViewController.m */; };
 		F61AA88016E69CF8001EC188 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61AA87F16E69CF8001EC188 /* UIKit.framework */; };
 		F61AA88216E69CF8001EC188 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61AA88116E69CF8001EC188 /* Foundation.framework */; };
@@ -82,8 +81,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F616455916E6A84300709D62 /* snfInfo2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snfInfo2ViewController.h; sourceTree = "<group>"; };
-		F616455A16E6A84300709D62 /* snfInfo2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfInfo2ViewController.m; sourceTree = "<group>"; };
 		F616455C16E6A85300709D62 /* snfFacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snfFacebookViewController.h; sourceTree = "<group>"; };
 		F616455D16E6A85300709D62 /* snfFacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfFacebookViewController.m; sourceTree = "<group>"; };
 		F61AA87C16E69CF8001EC188 /* snf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snf.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -249,8 +246,6 @@
 				F61AA8EA16E6A0E9001EC188 /* snfTicketViewController.m */,
 				F61AA8EC16E6A567001EC188 /* snfProgrammViewController.h */,
 				F61AA8ED16E6A567001EC188 /* snfProgrammViewController.m */,
-				F616455916E6A84300709D62 /* snfInfo2ViewController.h */,
-				F616455A16E6A84300709D62 /* snfInfo2ViewController.m */,
 				F6D72735179899AD00CFAE34 /* snfInfoViewController.h */,
 				F6D72736179899AD00CFAE34 /* snfInfoViewController.m */,
 				F616455C16E6A85300709D62 /* snfFacebookViewController.h */,
@@ -480,7 +475,6 @@
 				F61AA89016E69CF8001EC188 /* snfAppDelegate.m in Sources */,
 				F61AA8EB16E6A0E9001EC188 /* snfTicketViewController.m in Sources */,
 				F61AA8EE16E6A567001EC188 /* snfProgrammViewController.m in Sources */,
-				F616455B16E6A84300709D62 /* snfInfo2ViewController.m in Sources */,
 				F616455E16E6A85300709D62 /* snfFacebookViewController.m in Sources */,
 				F62C400016F49A0F00BA9138 /* festbeizenTableView.m in Sources */,
 				F6504A771794E0CD007E31EE /* snfFestbeizenViewController.m in Sources */,
