@@ -206,7 +206,7 @@
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
     [ovActivityIndicator stopAnimating];
-    ovActivityIndicator.hidden = TRUE;
+    ovActivityIndicator.hidden = YES;
 }
 
 - (IBAction)call144:(id)sender {
