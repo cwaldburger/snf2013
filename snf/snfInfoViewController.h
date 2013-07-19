@@ -8,14 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface snfInfoViewController : UIViewController
+@interface snfInfoViewController : UIViewController <UIWebViewDelegate>
+
 @property (weak, nonatomic) IBOutlet UITextView *infoTextView;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *infoSegmentedControl;
 - (IBAction)segmentValueChanged:(id)sender;
 @property (weak, nonatomic) IBOutlet UIView *infoPicturesView;
 @property (weak, nonatomic) IBOutlet UIScrollView *planScrollView;
 @property (strong, nonatomic) IBOutlet UIWebView *ovWebView;
-
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *ovActivityIndicator;
 
 //@property (strong, nonatomic) IBOutlet UIButton *call144Button;
 //- (IBAction)call144:(id)sender;

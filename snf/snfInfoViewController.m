@@ -17,7 +17,7 @@
 
 @implementation snfInfoViewController
 
-@synthesize infoTextView, infoPicturesView, planScrollView, ovWebView;
+@synthesize infoTextView, infoPicturesView, planScrollView, ovWebView, ovActivityIndicator;
 @synthesize planImageView = _planImageView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -108,6 +108,7 @@
             self.infoTextView.hidden = NO;
             self.planScrollView.hidden = YES;
             self.ovWebView.hidden = YES;
+            self.ovActivityIndicator.hidden = YES;
             break;
 //            plan
         case 1:
@@ -115,6 +116,7 @@
             self.infoTextView.hidden = YES;
             self.planScrollView.hidden = NO;
             self.ovWebView.hidden = YES;
+            self.ovActivityIndicator.hidden = YES;
             break;
 //            OV
         case 2:
@@ -122,13 +124,15 @@
             self.infoTextView.hidden = YES;
             self.planScrollView.hidden = YES;
             self.ovWebView.hidden = NO;
+            self.ovActivityIndicator.hidden = NO;
             break;
 //            Notfall
         case 3:
             self.infoPicturesView.hidden = YES;
             self.infoTextView.hidden = YES;
             self.planScrollView.hidden = YES;
-            self.ovWebView.hidden = YES;            
+            self.ovWebView.hidden = YES;
+            self.ovActivityIndicator.hidden = YES;            
             break;
 
 
@@ -137,6 +141,16 @@
     }
 }
 
+- (void)webViewDidStartLoad:(UIWebView *)webView
+{
+    [ovActivityIndicator startAnimating];
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    [ovActivityIndicator stopAnimating];
+    ovActivityIndicator.hidden = TRUE;
+}
 
 //- (IBAction)call144:(id)sender {
 //    UIDevice *device = [UIDevice currentDevice];

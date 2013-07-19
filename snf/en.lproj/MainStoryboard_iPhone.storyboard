@@ -569,8 +569,8 @@
                                     <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="DPM-bP-iy1"/>
                                     <constraint firstAttribute="height" constant="287" type="user" id="Oqs-YF-obK"/>
+                                    <constraint firstAttribute="width" constant="320" id="xaf-aT-NQ9"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -619,29 +619,43 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="aGR-Rc-WWQ"/>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tla-mc-6En">
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tla-mc-6En">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="461" type="user" id="hSe-Vy-j3b"/>
                                 </constraints>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                                <connections>
+                                    <outlet property="delegate" destination="c1i-1y-A1j" id="em5-14-2BY"/>
+                                </connections>
                             </webView>
+                            <activityIndicatorView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="7BT-XS-tjE"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="giG-hk-ene">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.25" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aGR-Rc-WWQ" firstAttribute="top" secondItem="AAA-5z-Joo" secondAttribute="top" constant="44" type="user" id="00z-8N-DYv"/>
+                            <constraint firstItem="giG-hk-ene" firstAttribute="bottom" secondItem="AAA-5z-Joo" secondAttribute="bottom" type="default" id="1IY-oE-YRb"/>
                             <constraint firstItem="BKC-BS-F8e" firstAttribute="top" secondItem="JcV-l3-yfu" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="2F4-NR-eAb"/>
+                            <constraint firstItem="JcV-l3-yfu" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" constant="300" id="7Xc-QY-eLc"/>
                             <constraint firstItem="JcV-l3-yfu" firstAttribute="top" secondItem="cbw-ZC-7Q4" secondAttribute="bottom" type="user" id="AUZ-Y0-R6E"/>
-                            <constraint firstItem="tla-mc-6En" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" type="default" id="B2E-ni-y4P"/>
+                            <constraint firstItem="7BT-XS-tjE" firstAttribute="centerX" secondItem="cbw-ZC-7Q4" secondAttribute="centerX" type="default" id="AcV-IK-3kw"/>
                             <constraint firstItem="BKC-BS-F8e" firstAttribute="bottom" secondItem="AAA-5z-Joo" secondAttribute="bottom" type="user" id="Hjb-8g-hpj"/>
                             <constraint firstItem="tla-mc-6En" firstAttribute="top" secondItem="cbw-ZC-7Q4" secondAttribute="bottom" type="user" id="K0Q-SO-djU"/>
+                            <constraint firstItem="giG-hk-ene" firstAttribute="trailing" secondItem="AAA-5z-Joo" secondAttribute="trailing" type="default" id="KLQ-Zk-AVT"/>
+                            <constraint firstItem="tla-mc-6En" firstAttribute="trailing" secondItem="JcV-l3-yfu" secondAttribute="trailing" type="default" id="MC5-XA-UIe"/>
                             <constraint firstItem="cbw-ZC-7Q4" firstAttribute="top" secondItem="AAA-5z-Joo" secondAttribute="top" type="user" id="Paq-eW-b6G"/>
-                            <constraint firstItem="JcV-l3-yfu" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" constant="300" id="TuM-cc-VZu"/>
+                            <constraint firstItem="giG-hk-ene" firstAttribute="top" secondItem="cbw-ZC-7Q4" secondAttribute="bottom" type="default" id="Xbc-3N-lIV"/>
                             <constraint firstItem="aGR-Rc-WWQ" firstAttribute="bottom" secondItem="AAA-5z-Joo" secondAttribute="bottom" type="user" id="YQC-L3-wpF"/>
                             <constraint firstItem="aGR-Rc-WWQ" firstAttribute="trailing" secondItem="JcV-l3-yfu" secondAttribute="trailing" type="default" id="aFT-Mp-HtA"/>
+                            <constraint firstItem="tla-mc-6En" firstAttribute="leading" secondItem="BKC-BS-F8e" secondAttribute="leading" type="default" id="bd5-RD-w9L"/>
+                            <constraint firstItem="7BT-XS-tjE" firstAttribute="centerY" secondItem="tla-mc-6En" secondAttribute="centerY" type="default" id="cWe-d3-1Al"/>
+                            <constraint firstItem="giG-hk-ene" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" type="default" id="dJb-gs-aIu"/>
                             <constraint firstAttribute="bottom" secondItem="tla-mc-6En" secondAttribute="bottom" constant="-6" type="user" id="ilc-0v-vAR"/>
                             <constraint firstItem="aGR-Rc-WWQ" firstAttribute="bottom" secondItem="AAA-5z-Joo" secondAttribute="bottom" type="user" id="keB-bU-qW5"/>
                             <constraint firstItem="cbw-ZC-7Q4" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" type="default" id="mpl-2z-7ue"/>
-                            <constraint firstItem="tla-mc-6En" firstAttribute="trailing" secondItem="AAA-5z-Joo" secondAttribute="trailing" type="default" id="rbo-1u-hdf"/>
                             <constraint firstItem="aGR-Rc-WWQ" firstAttribute="top" secondItem="cbw-ZC-7Q4" secondAttribute="bottom" type="user" id="tFS-VZ-yhF"/>
                             <constraint firstItem="JcV-l3-yfu" firstAttribute="leading" secondItem="BKC-BS-F8e" secondAttribute="leading" type="default" id="uc6-z8-oGT"/>
                             <constraint firstItem="tla-mc-6En" firstAttribute="top" secondItem="AAA-5z-Joo" secondAttribute="top" constant="44" type="user" id="umX-Xq-DWi"/>
@@ -655,6 +669,7 @@
                         <outlet property="infoPicturesView" destination="JcV-l3-yfu" id="Dlq-LT-Tf3"/>
                         <outlet property="infoSegmentedControl" destination="5M8-N4-voc" id="8z2-AO-rdp"/>
                         <outlet property="infoTextView" destination="BKC-BS-F8e" id="dKt-XF-NRB"/>
+                        <outlet property="ovActivityIndicator" destination="7BT-XS-tjE" id="Bzq-XN-wXa"/>
                         <outlet property="ovWebView" destination="tla-mc-6En" id="eaK-Hw-H9H"/>
                         <outlet property="planScrollView" destination="aGR-Rc-WWQ" id="ZR0-W4-rfH"/>
                     </connections>
@@ -759,6 +774,7 @@
                 <relationship kind="outlet" name="infoPicturesView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="infoSegmentedControl" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="infoTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="ovActivityIndicator" candidateClass="UIActivityIndicatorView"/>
                 <relationship kind="outlet" name="ovWebView" candidateClass="UIWebView"/>
                 <relationship kind="outlet" name="planScrollView" candidateClass="UIScrollView"/>
             </relationships>
