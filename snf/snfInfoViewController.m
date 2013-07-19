@@ -60,7 +60,26 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"infoText" ofType:@"txt"];
     NSString *infoText = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
     
-    infoTextView.text = infoText;
+    // format string
+    NSMutableAttributedString *infoString = [[NSMutableAttributedString alloc]
+                                         initWithString: infoText];
+    
+    [infoString addAttribute:NSFontAttributeName
+                   value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                   range:NSMakeRange(896,9)];
+    
+    [infoString addAttribute:NSFontAttributeName
+                       value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                       range:NSMakeRange(1068,7)];
+    
+    [infoString addAttribute:NSFontAttributeName
+                       value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                       range:NSMakeRange(1320,13)];
+    
+    
+//    label.attributedText = string;
+    
+    infoTextView.attributedText = infoString;
     
     // Load Plan
     self.planScrollView.contentSize = CGSizeMake(750, 697);
