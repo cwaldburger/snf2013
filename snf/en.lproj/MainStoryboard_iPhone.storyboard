@@ -376,11 +376,11 @@
                                     <constraint firstItem="P6A-N1-W2Q" firstAttribute="centerX" secondItem="JcV-l3-yfu" secondAttribute="centerX" type="default" id="1cn-i0-yCe"/>
                                     <constraint firstItem="0o6-U0-gcJ" firstAttribute="top" secondItem="P6A-N1-W2Q" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="6CM-H2-kkV"/>
                                     <constraint firstAttribute="height" constant="160" type="user" id="JCC-5X-rSV"/>
+                                    <constraint firstItem="P6A-N1-W2Q" firstAttribute="leading" secondItem="5h9-oK-LgF" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="K9i-8B-3fQ"/>
                                     <constraint firstItem="xQm-LA-vMx" firstAttribute="top" secondItem="JcV-l3-yfu" secondAttribute="top" constant="20" symbolic="YES" type="default" id="SaJ-Zv-fi3"/>
                                     <constraint firstItem="0o6-U0-gcJ" firstAttribute="leading" secondItem="JcV-l3-yfu" secondAttribute="leading" constant="56" id="g4R-DY-Hs8"/>
                                     <constraint firstItem="P6A-N1-W2Q" firstAttribute="top" secondItem="JcV-l3-yfu" secondAttribute="top" constant="20" symbolic="YES" type="default" id="hhW-Lu-wLZ"/>
                                     <constraint firstItem="5h9-oK-LgF" firstAttribute="top" secondItem="JcV-l3-yfu" secondAttribute="top" constant="20" symbolic="YES" type="default" id="kiz-ht-WZd"/>
-                                    <constraint firstItem="5h9-oK-LgF" firstAttribute="leading" secondItem="JcV-l3-yfu" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="vKv-Oe-Vau"/>
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="aGR-Rc-WWQ"/>
@@ -491,14 +491,13 @@
                         <constraints>
                             <constraint firstItem="aGR-Rc-WWQ" firstAttribute="top" secondItem="AAA-5z-Joo" secondAttribute="top" constant="44" type="user" id="00z-8N-DYv"/>
                             <constraint firstItem="giG-hk-ene" firstAttribute="bottom" secondItem="AAA-5z-Joo" secondAttribute="bottom" type="user" id="1IY-oE-YRb"/>
+                            <constraint firstItem="giG-hk-ene" firstAttribute="trailing" secondItem="AAA-5z-Joo" secondAttribute="trailing" type="default" id="1Tq-hm-ebk"/>
                             <constraint firstItem="JcV-l3-yfu" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" type="default" id="1UF-sF-rTF"/>
                             <constraint firstItem="BKC-BS-F8e" firstAttribute="top" secondItem="JcV-l3-yfu" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="2F4-NR-eAb"/>
-                            <constraint firstItem="giG-hk-ene" firstAttribute="trailing" secondItem="aGR-Rc-WWQ" secondAttribute="trailing" type="default" id="4tz-bw-tgr"/>
                             <constraint firstItem="BKC-BS-F8e" firstAttribute="trailing" secondItem="AAA-5z-Joo" secondAttribute="trailing" type="default" id="8VY-5L-b6U"/>
                             <constraint firstItem="JcV-l3-yfu" firstAttribute="top" secondItem="cbw-ZC-7Q4" secondAttribute="bottom" type="user" id="AUZ-Y0-R6E"/>
                             <constraint firstItem="JcV-l3-yfu" firstAttribute="trailing" secondItem="AAA-5z-Joo" secondAttribute="trailing" type="default" id="BgK-qE-kLi"/>
                             <constraint firstItem="tla-mc-6En" firstAttribute="top" secondItem="cbw-ZC-7Q4" secondAttribute="bottom" type="user" id="K0Q-SO-djU"/>
-                            <constraint firstItem="giG-hk-ene" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" constant="300" id="Lfn-ZS-9mU"/>
                             <constraint firstAttribute="bottom" secondItem="tla-mc-6En" secondAttribute="bottom" constant="-6" type="user" id="Nux-v9-sf1"/>
                             <constraint firstItem="cbw-ZC-7Q4" firstAttribute="top" secondItem="AAA-5z-Joo" secondAttribute="top" type="user" id="Paq-eW-b6G"/>
                             <constraint firstItem="giG-hk-ene" firstAttribute="top" secondItem="cbw-ZC-7Q4" secondAttribute="bottom" type="user" id="Xbc-3N-lIV"/>
@@ -507,18 +506,19 @@
                             <constraint firstItem="giG-hk-ene" firstAttribute="top" secondItem="AAA-5z-Joo" secondAttribute="top" constant="44" type="user" id="Z4l-JI-lmF"/>
                             <constraint firstItem="JcV-l3-yfu" firstAttribute="centerX" secondItem="7BT-XS-tjE" secondAttribute="centerX" type="default" id="abN-tA-06t"/>
                             <constraint firstItem="giG-hk-ene" firstAttribute="bottom" secondItem="AAA-5z-Joo" secondAttribute="bottom" type="user" id="arK-oN-Z7H"/>
+                            <constraint firstItem="aGR-Rc-WWQ" firstAttribute="trailing" secondItem="AAA-5z-Joo" secondAttribute="trailing" type="default" id="cRL-Tf-y6r"/>
                             <constraint firstItem="7BT-XS-tjE" firstAttribute="centerY" secondItem="tla-mc-6En" secondAttribute="centerY" type="default" id="cWe-d3-1Al"/>
-                            <constraint firstItem="tla-mc-6En" firstAttribute="leading" secondItem="aGR-Rc-WWQ" secondAttribute="leading" type="default" id="dYn-oF-u65"/>
-                            <constraint firstItem="giG-hk-ene" firstAttribute="leading" secondItem="aGR-Rc-WWQ" secondAttribute="leading" type="default" id="ijn-JG-tSy"/>
+                            <constraint firstItem="tla-mc-6En" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" type="default" id="imd-4a-Kdl"/>
                             <constraint firstItem="aGR-Rc-WWQ" firstAttribute="bottom" secondItem="AAA-5z-Joo" secondAttribute="bottom" type="user" id="keB-bU-qW5"/>
+                            <constraint firstItem="aGR-Rc-WWQ" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" type="default" id="lqa-an-fGM"/>
                             <constraint firstItem="cbw-ZC-7Q4" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" type="default" id="mpl-2z-7ue"/>
                             <constraint firstItem="BKC-BS-F8e" firstAttribute="top" secondItem="AAA-5z-Joo" secondAttribute="top" constant="212" type="user" id="n7E-VF-hel"/>
-                            <constraint firstAttribute="trailing" secondItem="giG-hk-ene" secondAttribute="trailing" constant="-300" id="ou1-2Q-ozH"/>
+                            <constraint firstItem="giG-hk-ene" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" type="default" id="qWd-an-ivv"/>
                             <constraint firstItem="BKC-BS-F8e" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" type="default" id="qj7-WR-EvE"/>
                             <constraint firstItem="aGR-Rc-WWQ" firstAttribute="top" secondItem="cbw-ZC-7Q4" secondAttribute="bottom" type="user" id="tFS-VZ-yhF"/>
+                            <constraint firstItem="tla-mc-6En" firstAttribute="trailing" secondItem="AAA-5z-Joo" secondAttribute="trailing" type="default" id="uUy-LH-oqb"/>
                             <constraint firstItem="tla-mc-6En" firstAttribute="top" secondItem="AAA-5z-Joo" secondAttribute="top" constant="44" type="user" id="umX-Xq-DWi"/>
                             <constraint firstItem="cbw-ZC-7Q4" firstAttribute="trailing" secondItem="AAA-5z-Joo" secondAttribute="trailing" type="default" id="v4V-5m-GWy"/>
-                            <constraint firstItem="giG-hk-ene" firstAttribute="trailing" secondItem="tla-mc-6En" secondAttribute="trailing" type="default" id="xQV-KH-lpG"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info" image="info.png" id="rXJ-Nh-6zr"/>
