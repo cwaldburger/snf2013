@@ -164,23 +164,145 @@
             programmTextView.attributedText = infoString;
             
             break;
+
             //            samstag
         case 1:
             tagID = @"samstagText";
             path = [[NSBundle mainBundle] pathForResource:tagID ofType:@"txt"];
             newText = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+            
+            infoString = [[NSMutableAttributedString alloc] initWithString:newText];
+            
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:17.0]
+                               range:NSMakeRange(0,24)];
+            [infoString addAttribute:NSForegroundColorAttributeName value:_green range:NSMakeRange(0, 24)];
+            
+            
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(26,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(75,19)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(136,9)]; //2
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(190,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(220,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(298,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(328,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(377,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(437,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(484,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(523,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(553,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(583,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(634,9)]; // 13
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(694,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(743,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(823,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(863,9)];//17
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(902,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(936,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(994,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(1052,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(1093,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(1135,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(1184,9)];
+
+            
+            programmTextView.attributedText = infoString;
             break;
+
             //            sonntag
         case 2:
             tagID = @"sonntagText";
             path = [[NSBundle mainBundle] pathForResource:tagID ofType:@"txt"];
             newText = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+            
+            infoString = [[NSMutableAttributedString alloc] initWithString:newText];
+            
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:17.0]
+                               range:NSMakeRange(0,24)];
+            [infoString addAttribute:NSForegroundColorAttributeName value:_green range:NSMakeRange(0, 24)];
+            
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(26,9)];
+            
+            
+            
+            programmTextView.attributedText = infoString;
             break;
+            break;
+
             //            kinder
         case 3:
             tagID = @"kinderText";
             path = [[NSBundle mainBundle] pathForResource:tagID ofType:@"txt"];
             newText = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+            
+            infoString = [[NSMutableAttributedString alloc] initWithString:newText];
+            
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:17.0]
+                               range:NSMakeRange(0,14)];
+            [infoString addAttribute:NSForegroundColorAttributeName value:_green range:NSMakeRange(0, 14)];
+            
+            
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(520,15)];
+
+            
+            programmTextView.attributedText = infoString;
+            break;
             break;
      
         default:
