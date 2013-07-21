@@ -275,6 +275,30 @@
             [infoString addAttribute:NSFontAttributeName
                                value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
                                range:NSMakeRange(26,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(76,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(192,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(252,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(336,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(378,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(432,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(512,9)];
+            [infoString addAttribute:NSFontAttributeName
+                               value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
+                               range:NSMakeRange(604,9)];
             
             
             
