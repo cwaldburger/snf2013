@@ -525,8 +525,7 @@
                             <constraint firstItem="BKC-BS-F8e" firstAttribute="trailing" secondItem="AAA-5z-Joo" secondAttribute="trailing" type="default" id="8VY-5L-b6U"/>
                             <constraint firstItem="JcV-l3-yfu" firstAttribute="top" secondItem="cbw-ZC-7Q4" secondAttribute="bottom" type="user" id="AUZ-Y0-R6E"/>
                             <constraint firstItem="JcV-l3-yfu" firstAttribute="trailing" secondItem="AAA-5z-Joo" secondAttribute="trailing" type="default" id="BgK-qE-kLi"/>
-                            <constraint firstItem="tla-mc-6En" firstAttribute="top" secondItem="cbw-ZC-7Q4" secondAttribute="bottom" type="user" id="K0Q-SO-djU"/>
-                            <constraint firstAttribute="bottom" secondItem="tla-mc-6En" secondAttribute="bottom" constant="-6" type="user" id="Nux-v9-sf1"/>
+                            <constraint firstItem="tla-mc-6En" firstAttribute="top" secondItem="JcV-l3-yfu" secondAttribute="top" type="default" id="DUv-Fh-4ZF"/>
                             <constraint firstItem="cbw-ZC-7Q4" firstAttribute="top" secondItem="AAA-5z-Joo" secondAttribute="top" type="user" id="Paq-eW-b6G"/>
                             <constraint firstItem="giG-hk-ene" firstAttribute="trailing" secondItem="AAA-5z-Joo" secondAttribute="trailing" type="default" id="Toj-ny-zFf"/>
                             <constraint firstItem="giG-hk-ene" firstAttribute="top" secondItem="cbw-ZC-7Q4" secondAttribute="bottom" type="user" id="Xbc-3N-lIV"/>
@@ -544,7 +543,6 @@
                             <constraint firstItem="BKC-BS-F8e" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" type="default" id="qj7-WR-EvE"/>
                             <constraint firstItem="giG-hk-ene" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" type="default" id="spy-MM-jlJ"/>
                             <constraint firstItem="aGR-Rc-WWQ" firstAttribute="top" secondItem="cbw-ZC-7Q4" secondAttribute="bottom" type="user" id="tFS-VZ-yhF"/>
-                            <constraint firstItem="tla-mc-6En" firstAttribute="top" secondItem="AAA-5z-Joo" secondAttribute="top" constant="44" type="user" id="umX-Xq-DWi"/>
                             <constraint firstItem="cbw-ZC-7Q4" firstAttribute="trailing" secondItem="AAA-5z-Joo" secondAttribute="trailing" type="default" id="v4V-5m-GWy"/>
                         </constraints>
                     </view>
