@@ -60,8 +60,8 @@
 		F6D727301798976300CFAE34 /* snfrj_app_heineken_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D727281798976300CFAE34 /* snfrj_app_heineken_info@2x.png */; };
 		F6D727311798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D727291798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info.png */; };
 		F6D727321798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D7272A1798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info@2x.png */; };
-		F6D727331798976300CFAE34 /* snfrj_app_rj_info.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D7272B1798976300CFAE34 /* snfrj_app_rj_info.png */; };
-		F6D727341798976300CFAE34 /* snfrj_app_rj_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D7272C1798976300CFAE34 /* snfrj_app_rj_info@2x.png */; };
+		F6D727331798976300CFAE34 /* snf_rj.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D7272B1798976300CFAE34 /* snf_rj.png */; };
+		F6D727341798976300CFAE34 /* snf_rj@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D7272C1798976300CFAE34 /* snf_rj@2x.png */; };
 		F6D72737179899AD00CFAE34 /* snfInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D72736179899AD00CFAE34 /* snfInfoViewController.m */; };
 		F6D7273B17989D5400CFAE34 /* infoText.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6D7273A17989D5400CFAE34 /* infoText.txt */; };
 		F6D727421798B33E00CFAE34 /* festplan.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D727401798B33E00CFAE34 /* festplan.png */; };
@@ -145,8 +145,8 @@
 		F6D727281798976300CFAE34 /* snfrj_app_heineken_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snfrj_app_heineken_info@2x.png"; sourceTree = "<group>"; };
 		F6D727291798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snfrj_app_hensa_schiffahrtsbetrieb_info.png; sourceTree = "<group>"; };
 		F6D7272A1798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snfrj_app_hensa_schiffahrtsbetrieb_info@2x.png"; sourceTree = "<group>"; };
-		F6D7272B1798976300CFAE34 /* snfrj_app_rj_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snfrj_app_rj_info.png; sourceTree = "<group>"; };
-		F6D7272C1798976300CFAE34 /* snfrj_app_rj_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snfrj_app_rj_info@2x.png"; sourceTree = "<group>"; };
+		F6D7272B1798976300CFAE34 /* snf_rj.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snf_rj.png; sourceTree = "<group>"; };
+		F6D7272C1798976300CFAE34 /* snf_rj@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snf_rj@2x.png"; sourceTree = "<group>"; };
 		F6D72735179899AD00CFAE34 /* snfInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snfInfoViewController.h; sourceTree = "<group>"; };
 		F6D72736179899AD00CFAE34 /* snfInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfInfoViewController.m; sourceTree = "<group>"; };
 		F6D7273A17989D5400CFAE34 /* infoText.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = infoText.txt; sourceTree = "<group>"; };
@@ -305,8 +305,8 @@
 				F6D727281798976300CFAE34 /* snfrj_app_heineken_info@2x.png */,
 				F6D727291798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info.png */,
 				F6D7272A1798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info@2x.png */,
-				F6D7272B1798976300CFAE34 /* snfrj_app_rj_info.png */,
-				F6D7272C1798976300CFAE34 /* snfrj_app_rj_info@2x.png */,
+				F6D7272B1798976300CFAE34 /* snf_rj.png */,
+				F6D7272C1798976300CFAE34 /* snf_rj@2x.png */,
 				F6428E1716E911280041C4D8 /* snfrj_icon@2x.png */,
 				F6428E1516E911240041C4D8 /* snfrj_icon.png */,
 				F61AA8CF16E69F2F001EC188 /* facebook.png */,
@@ -436,8 +436,8 @@
 				F6D727301798976300CFAE34 /* snfrj_app_heineken_info@2x.png in Resources */,
 				F6D727311798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info.png in Resources */,
 				F6D727321798976300CFAE34 /* snfrj_app_hensa_schiffahrtsbetrieb_info@2x.png in Resources */,
-				F6D727331798976300CFAE34 /* snfrj_app_rj_info.png in Resources */,
-				F6D727341798976300CFAE34 /* snfrj_app_rj_info@2x.png in Resources */,
+				F6D727331798976300CFAE34 /* snf_rj.png in Resources */,
+				F6D727341798976300CFAE34 /* snf_rj@2x.png in Resources */,
 				F6D7273B17989D5400CFAE34 /* infoText.txt in Resources */,
 				F6D727421798B33E00CFAE34 /* festplan.png in Resources */,
 				F6D727431798B33E00CFAE34 /* festplan@2x.png in Resources */,

@@ -370,7 +370,7 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="snfrj_app_heineken_info.png" translatesAutoresizingMaskIntoConstraints="NO" id="P6A-N1-W2Q"/>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="snfrj_app_rj_info.png" translatesAutoresizingMaskIntoConstraints="NO" id="xQm-LA-vMx"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="snf_rj.png" translatesAutoresizingMaskIntoConstraints="NO" id="xQm-LA-vMx"/>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="mediasign.png" translatesAutoresizingMaskIntoConstraints="NO" id="0o6-U0-gcJ">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="LNv-wu-CQB"/>
@@ -419,9 +419,6 @@
                                     <outlet property="delegate" destination="c1i-1y-A1j" id="3Pe-2e-we5"/>
                                 </connections>
                             </webView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="7BT-XS-tjE">
-                                <color key="color" white="0.25" alpha="1" colorSpace="calibratedWhite"/>
-                            </activityIndicatorView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="giG-hk-ene">
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Notruf-Dienste" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCa-mz-ga7">
@@ -532,9 +529,7 @@
                             <constraint firstItem="BKC-BS-F8e" firstAttribute="bottom" secondItem="AAA-5z-Joo" secondAttribute="bottom" type="user" id="YPv-Iy-E3S"/>
                             <constraint firstItem="aGR-Rc-WWQ" firstAttribute="bottom" secondItem="AAA-5z-Joo" secondAttribute="bottom" type="user" id="YQC-L3-wpF"/>
                             <constraint firstItem="giG-hk-ene" firstAttribute="top" secondItem="AAA-5z-Joo" secondAttribute="top" constant="44" type="user" id="Z4l-JI-lmF"/>
-                            <constraint firstItem="JcV-l3-yfu" firstAttribute="centerX" secondItem="7BT-XS-tjE" secondAttribute="centerX" type="default" id="abN-tA-06t"/>
                             <constraint firstItem="giG-hk-ene" firstAttribute="bottom" secondItem="AAA-5z-Joo" secondAttribute="bottom" type="user" id="arK-oN-Z7H"/>
-                            <constraint firstItem="7BT-XS-tjE" firstAttribute="centerY" secondItem="tla-mc-6En" secondAttribute="centerY" type="default" id="cWe-d3-1Al"/>
                             <constraint firstItem="tla-mc-6En" firstAttribute="leading" secondItem="AAA-5z-Joo" secondAttribute="leading" type="default" id="dgo-zG-ogO"/>
                             <constraint firstItem="aGR-Rc-WWQ" firstAttribute="bottom" secondItem="AAA-5z-Joo" secondAttribute="bottom" type="user" id="keB-bU-qW5"/>
                             <constraint firstItem="tla-mc-6En" firstAttribute="trailing" secondItem="AAA-5z-Joo" secondAttribute="trailing" type="default" id="lpy-qn-LWw"/>
@@ -556,7 +551,6 @@
                         <outlet property="infoTextView" destination="BKC-BS-F8e" id="dKt-XF-NRB"/>
                         <outlet property="notfallMap" destination="5i6-HD-ac4" id="sGX-i7-0kJ"/>
                         <outlet property="notfallView" destination="giG-hk-ene" id="mQ1-4w-4SH"/>
-                        <outlet property="ovActivityIndicator" destination="7BT-XS-tjE" id="Bzq-XN-wXa"/>
                         <outlet property="ovWebView" destination="tla-mc-6En" id="eaK-Hw-H9H"/>
                         <outlet property="planScrollView" destination="aGR-Rc-WWQ" id="ZR0-W4-rfH"/>
                     </connections>
@@ -616,8 +610,8 @@
         <image name="mediasign.png" width="200" height="48"/>
         <image name="programm.png" width="30" height="30"/>
         <image name="seenachtfest_app_logo.png" width="122" height="122"/>
+        <image name="snf_rj.png" width="62" height="62"/>
         <image name="snfrj_app_heineken_info.png" width="123" height="62"/>
-        <image name="snfrj_app_rj_info.png" width="62" height="62"/>
         <image name="ticket.png" width="30" height="30"/>
     </resources>
     <classes>
@@ -669,7 +663,6 @@
                 <relationship kind="outlet" name="infoTextView" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="notfallMap" candidateClass="MKMapView"/>
                 <relationship kind="outlet" name="notfallView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="ovActivityIndicator" candidateClass="UIActivityIndicatorView"/>
                 <relationship kind="outlet" name="ovWebView" candidateClass="UIWebView"/>
                 <relationship kind="outlet" name="planScrollView" candidateClass="UIScrollView"/>
             </relationships>

@@ -20,7 +20,7 @@
 
 @implementation snfInfoViewController
 
-@synthesize infoTextView, infoPicturesView, planScrollView, ovWebView, ovActivityIndicator, call117Button, call118Button, call144Button, notfallMap;
+@synthesize infoTextView, infoPicturesView, planScrollView, ovWebView, call117Button, call118Button, call144Button, notfallMap;
 @synthesize planImageView = _planImageView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -107,7 +107,6 @@
     self.infoTextView.hidden = NO;
     self.planScrollView.hidden = YES;
     self.ovWebView.hidden = YES;
-    self.ovActivityIndicator.hidden = YES;
     self.notfallView.hidden = YES;
     
     
@@ -184,7 +183,6 @@
             self.infoTextView.hidden = NO;
             self.planScrollView.hidden = YES;
             self.ovWebView.hidden = YES;
-            self.ovActivityIndicator.hidden = YES;
             self.notfallView.hidden = YES;
             break;
 //            plan
@@ -193,7 +191,6 @@
             self.infoTextView.hidden = YES;
             self.planScrollView.hidden = NO;
             self.ovWebView.hidden = YES;
-            self.ovActivityIndicator.hidden = YES;
             self.notfallView.hidden = YES;
             break;
 //            OV
@@ -202,7 +199,6 @@
             self.infoTextView.hidden = YES;
             self.planScrollView.hidden = YES;
             self.ovWebView.hidden = NO;
-            self.ovActivityIndicator.hidden = NO;
             self.notfallView.hidden = YES;
             break;
 //            Notfall
@@ -211,7 +207,6 @@
             self.infoTextView.hidden = YES;
             self.planScrollView.hidden = YES;
             self.ovWebView.hidden = YES;
-            self.ovActivityIndicator.hidden = YES;            
             self.notfallView.hidden = NO;
             break;
 
@@ -220,19 +215,6 @@
             break;
     }
 }
-
-- (void)webViewDidStartLoad:(UIWebView *)webView
-{
-    [self.ovActivityIndicator startAnimating];
-    self.ovActivityIndicator.hidden = NO;
-}
-
-- (void)webViewDidFinishLoad:(UIWebView *)webView
-{
-    [self.ovActivityIndicator stopAnimating];
-    self.ovActivityIndicator.hidden = YES;
-}
-
 
 - (IBAction)call144:(id)sender {
     UIDevice *device = [UIDevice currentDevice];

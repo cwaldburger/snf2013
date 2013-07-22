@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
-@interface snfInfoViewController : UIViewController <UIWebViewDelegate>
+@interface snfInfoViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextView *infoTextView;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *infoSegmentedControl;
@@ -17,7 +17,6 @@
 @property (weak, nonatomic) IBOutlet UIView *infoPicturesView;
 @property (weak, nonatomic) IBOutlet UIScrollView *planScrollView;
 @property (strong, nonatomic) IBOutlet UIWebView *ovWebView;
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *ovActivityIndicator;
 @property (weak, nonatomic) IBOutlet UIView *notfallView;
 
 @property (strong, nonatomic) IBOutlet UIButton *call144Button;
