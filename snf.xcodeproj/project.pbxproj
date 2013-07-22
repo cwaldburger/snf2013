@@ -44,6 +44,7 @@
 		F63AF599178B7FE3006650B1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F63AF598178B7FE3006650B1 /* libz.dylib */; };
 		F6428E1616E911240041C4D8 /* snfrj_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F6428E1516E911240041C4D8 /* snfrj_icon.png */; };
 		F6428E1816E911280041C4D8 /* snfrj_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6428E1716E911280041C4D8 /* snfrj_icon@2x.png */; };
+		F64890A4179D1DB200FEEBD9 /* mediasign@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F64890A3179D1DB200FEEBD9 /* mediasign@2x.png */; };
 		F6504A771794E0CD007E31EE /* snfFestbeizenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6504A761794E0CD007E31EE /* snfFestbeizenViewController.m */; };
 		F6504A7A1794E888007E31EE /* snfFestbeizenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6504A791794E888007E31EE /* snfFestbeizenTableViewCell.m */; };
 		F6D727181798097500CFAE34 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D727151798097500CFAE34 /* Default-568h@2x.png */; };
@@ -126,6 +127,7 @@
 		F63AF598178B7FE3006650B1 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		F6428E1516E911240041C4D8 /* snfrj_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snfrj_icon.png; sourceTree = SOURCE_ROOT; };
 		F6428E1716E911280041C4D8 /* snfrj_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snfrj_icon@2x.png"; sourceTree = SOURCE_ROOT; };
+		F64890A3179D1DB200FEEBD9 /* mediasign@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mediasign@2x.png"; sourceTree = "<group>"; };
 		F6504A751794E0CD007E31EE /* snfFestbeizenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snfFestbeizenViewController.h; sourceTree = SOURCE_ROOT; };
 		F6504A761794E0CD007E31EE /* snfFestbeizenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snfFestbeizenViewController.m; sourceTree = SOURCE_ROOT; };
 		F6504A781794E888007E31EE /* snfFestbeizenTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snfFestbeizenTableViewCell.h; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 		F61AA8CE16E69F1A001EC188 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F64890A3179D1DB200FEEBD9 /* mediasign@2x.png */,
 				F600850D17999B7800C898FA /* mediasign.png */,
 				F6D727401798B33E00CFAE34 /* festplan.png */,
 				F6D727411798B33E00CFAE34 /* festplan@2x.png */,
@@ -439,6 +442,7 @@
 				F6D727421798B33E00CFAE34 /* festplan.png in Resources */,
 				F6D727431798B33E00CFAE34 /* festplan@2x.png in Resources */,
 				F600850E17999B7800C898FA /* mediasign.png in Resources */,
+				F64890A4179D1DB200FEEBD9 /* mediasign@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

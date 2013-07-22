@@ -65,6 +65,10 @@
                                          initWithString: infoText];
     
     [infoString addAttribute:NSFontAttributeName
+                       value:[UIFont fontWithName:@"HelveticaNeue-Light" size:15.0]
+                       range:NSMakeRange(0,infoString.length)];
+    
+    [infoString addAttribute:NSFontAttributeName
                    value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0]
                    range:NSMakeRange(896,9)];
     
@@ -219,14 +223,16 @@
 
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
-    [ovActivityIndicator startAnimating];
+    [self.ovActivityIndicator startAnimating];
+    self.ovActivityIndicator.hidden = NO;
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
-    [ovActivityIndicator stopAnimating];
-    ovActivityIndicator.hidden = YES;
+    [self.ovActivityIndicator stopAnimating];
+    self.ovActivityIndicator.hidden = YES;
 }
+
 
 - (IBAction)call144:(id)sender {
     UIDevice *device = [UIDevice currentDevice];
